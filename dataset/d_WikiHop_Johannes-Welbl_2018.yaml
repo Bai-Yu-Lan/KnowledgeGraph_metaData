@@ -1,0 +1,23 @@
+description: "WikiHop is a multi-hop question answering dataset. Queries for 
+WikiHop are constructed using entities and relationships in WikiData, and 
+the supporting documentation is from WikiReading. First build a bipartite 
+graph connecting entities and documents, and find the answer to each 
+query by traversing the graph. Contains candidates that are consistent 
+with the answer type and have the same relationship to the answer in 
+the query, resulting in a set of candidates. The total number of 
+samples in the training set is about 43K, the number of samples in 
+the development set is about 5K, and the number of samples in the 
+test set is about 2.5K. A test set is not provided. The task is to 
+predict the correct answer given a query and multiple supporting documents."
+
+download_url: http://qangaroo.cs.ucl.ac.uk/
+name: WikiHop
+papers: Constructing Datasets for Multi-hop Reading Comprehension Across Documents
+supporter:
+- Johannes Welbl
+- Pontus Stenetorp
+- Sebastian Riedel
+task:
+- Question Answering
+update_time: 2018
+logo_file: "WikiHop.png"

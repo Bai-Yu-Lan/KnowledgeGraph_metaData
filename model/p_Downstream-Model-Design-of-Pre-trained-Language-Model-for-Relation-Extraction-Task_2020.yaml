@@ -1,0 +1,96 @@
+# 论文作者上传该论文有关的数据时所需要的信息以及格式要求
+# 所有内容最好用英文
+
+abbreviation: REDN          
+domain:                  
+  - NLP
+  - RE
+task: 
+  - Relation Extraction               
+paper:
+  title: "Downstream Model Design of Pre-trained Language Model for Relation Extraction Task"
+  authors:               
+  - Cheng Li
+  - Ye Tian
+  organization:
+  - AI Application Research Center, Huawei Technologies
+  publish_year: 2020      
+  volume: ACL-2020
+  press: ACL             
+  pages: None       
+  download_url: https://arxiv.org/abs/2004.03786
+  doi: 
+  citation_number: 17     
+code: https://github.com/slczgwh/REDN                  
+performance:              
+  dataset:               
+    NYT:
+      Normal:
+        F1: "94.5"      
+      EPO:
+        F1: "83.2"
+      SEO:
+        F1: "85.0"
+    WebNLG:
+      Normal:
+        F1: "94.5"      
+      EPO:
+        F1: "94.9"
+      SEO:
+        F1: "96.8"
+  GraphRel1p:               
+    "Graphrel: Modeling textas relational graphs for joint entity and relation extraction":
+      NYT:
+        Normal:
+          F1: "67.4"      
+        EPO:
+          F1: "56.5"
+        SEO:
+          F1: "49.9"
+      WebNLG:
+        Normal:
+          F1: "62.7"      
+        EPO:
+          F1: "39.5"
+        SEO:
+          F1: "36.4"
+  GraphRel2p:               
+    "Graphrel: Modeling textas relational graphs for joint entity and relation extraction":  
+      NYT:
+        Normal:
+          F1: "69.6"      
+        EPO:
+          F1: "58.2"
+        SEO:
+          F1: "51.2"
+      WebNLG:
+        Normal:
+          F1: "65.8"      
+        EPO:
+          F1: "40.6"
+        SEO:
+          F1: "38.3"
+  HBT:               
+    "A novel hierarchical binary tagging framework for joint extraction of entities and relations":  
+      NYT:
+        Normal:
+          F1: "86.3"      
+        EPO:
+          F1: "89.4"
+        SEO:
+          F1: "88.2"
+      WebNLG:
+        Normal:
+          F1: "84.1"      
+        EPO:
+          F1: "89.0"
+        SEO:
+          F1: "89.6"
+key_words:               
+citation_papers:          
+
+# 对应原论文中 abstract 内容，英文
+abstract: "Supervised relation extraction methods based on deep neural network play an important role in the recent information extraction field. However, at present, their performance still fails to reach a good level due to the existence of complicated relations. On the other hand, recently proposed pre-trained language models (PLMs) have achieved great success in multiple tasks of natural language processing through fine-tuning when combined with the model of downstream tasks. However, original standard tasks of PLM do not include the relation extraction task yet. We believe that PLMs can also be used to solve the relation extraction problem, but it is necessary to establish a specially designed downstream task model or even loss function for dealing with complicated relations. In this paper, a new network architecture with a special loss function is designed to serve as a downstream model of PLMs for supervised relation extraction. Experiments have shown that our method significantly exceeded the current optimal baseline models across multiple public datasets of relation extraction."
+
+# 对应改论文的引用格式，可从google scholar上直接获取
+citation_string: "Li C, Tian Y. Downstream model design of pre-trained language model for relation extraction task[J]. arXiv preprint arXiv:2004.03786, 2020."

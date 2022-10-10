@@ -1,0 +1,18 @@
+description: "Visual Commonsense Reasoning (VCR) is a large-scale dataset for 
+cognition-level visual understanding. Given a challenging question about an 
+image, machines need to present two sub-tasks: answer correctly and provide 
+a rationale justifying its answer. The VCR dataset contains over 212K (training), 
+26K (validation) and 25K (testing) questions, answers and rationales derived 
+from 110K movie scenes."
+download_url: https://visualcommonsense.com/
+name: Visual Commonsense Reasoning
+papers: 'From Recognition to Cognition: Visual Commonsense Reasoning'
+supporter:
+- Rowan Zellers
+- Yonatan Bisk
+- Ali Farhadi
+- Yejin Choi
+task:
+- Image Captioning
+update_time: 2019
+logo_file: "VCR.jpg"

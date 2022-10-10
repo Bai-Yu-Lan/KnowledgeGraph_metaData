@@ -1,0 +1,191 @@
+abbreviation: UNILM
+
+domain:
+
+  - NLP
+
+task:
+
+  - Language Model
+
+paper: 
+
+  title: "Unified Language Model Pre-training for Natural Language Understanding and Generation"
+
+  authors:
+
+  - Li Dong
+
+  - Nan Yang
+
+  - Wenhui Wang
+
+  - Furu Wei
+
+  - Xiaodong Liu
+
+  - Yu Wang
+
+  - Jianfeng Gao
+
+  - Ming Zhou 
+
+  - Hsiao-Wuen Hon
+
+  organization:
+
+  - Microsoft Research
+
+  - Microsoft Research
+
+  - Microsoft Research
+
+  - Microsoft Research
+
+  - Microsoft Research
+
+  - Microsoft Research
+
+  - Microsoft Research
+
+  - Microsoft Research
+
+  - Microsoft Research
+
+  publish_year: 2019
+
+  volume: 32
+
+  press: Curran Associate, Inc.
+
+  pages: 13042--13054
+
+  download_url: https://proceedings.neurips.cc/paper/2019/file/c20bb2d9a50d5ac1f713f8b34d9aac5a-Paper.pdf
+
+  doi: 
+
+  citation_number: 880
+
+code: https://github.com/microsoft/unilm
+
+performance:
+
+  dataset:
+
+    CNN/DailyMail:
+
+      ROUGE-1: 43.33
+
+      ROUGE-2: 20.21
+
+      ROUGE-L: 40.51
+
+    Gigaword:
+
+      ROUGE-1: 38.45
+
+      ROUGE-2: 19.45
+
+      ROUGE-L: 35.75
+
+    SQuAD:
+
+      EM: 80.5
+
+      F1: 83.4
+
+    CoQA:
+
+      F1: 84.9
+
+    SQuAD(Question Generation):
+
+      BLEU-4: 23.75
+
+      METEOR: 25.61
+
+      ROUGE-L: 56.04
+
+    GLUE:
+
+      Avg: 80.8
+
+      CoLA: 61.1
+
+      MNLI-m/mm: 87.0/85.9
+
+      MRPC: 90.0
+
+      QNLI: 92.7
+
+      QQP: 71.7
+
+      RTE: 70.9
+
+      SST-2: 94.5
+
+      STS-B: 87.7
+
+      WNLI: 65.1
+
+      AX: 38.4
+
+  S2S-ELMo:
+
+    "Pre-trained language model representations for language generation":
+
+      CNN/DailyMail:
+
+        ROUGE-1: 41.56
+
+        ROUGE-2: 18.94
+
+        ROUGE-L: 38.47
+
+  BERT(LARGE):
+
+    "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding":
+
+      SQuAD:
+
+        EM: 78.9
+
+        F1: 81.8
+
+      CoQA: 
+
+        F1: 82.7
+
+      GLUE:
+
+        Avg: 80.5
+
+        CoLA: 60.5
+
+        MNLI-m/mm: 86.7/85.9
+
+        MRPC: 89.3
+
+        QNLI: 92.7
+
+        QQP: 72.1
+
+        RTE: 70.9
+
+        SST-2: 94.9
+
+        STS-B: 86.5
+
+        WNLI: 65.1
+
+        AX: 39.6
+
+key_words:
+
+  - Language Model
+
+citation_papers:
+
+abstract: "This paper presents a new Unified pre-trained Language Model (UniLM) that can be fine-tuned for both natural language understanding and generation tasks. The model is pre-trained using three types of language modeling tasks: unidirectional, bidirectional, and sequence-to-sequence prediction. The unified modeling is achieved by employing a shared Transformer network and utilizing specific self-attention masks to control what context the prediction conditions on. UniLM compares favorably with BERT on the GLUE benchmark, and the SQuAD 2.0 and CoQA question answering tasks. Moreover, UniLM achieves new state-of-the-art results on five natural language generation datasets, including improving the CNN/DailyMail abstractive summarization ROUGE-L to 40.51 (2.04 absolute improvement), the Gigaword abstractive summarization ROUGE-L to 35.75 (0.86 absolute improvement), the CoQA generative question answering F1 score to 82.5 (37.1 absolute improvement), the SQuAD question generation BLEU-4 to 22.12 (3.75 absolute improvement), and the DSTC7 document-grounded dialog response generation NIST-4 to 2.67 (human performance is 2.65). The code and pre-trained models are available at this https URL."
+
+citation_string: "Dong L, Yang N, Wang W, et al. Unified language model pre-training for natural language understanding and generation[J]. Advances in Neural Information Processing Systems, 2019, 32."

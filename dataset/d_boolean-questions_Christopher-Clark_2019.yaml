@@ -1,0 +1,14 @@
+description: "The dataset collected 16,000 naturally-occurring 
+yes-no questions, each paired with a passage from Wikipedia, which 
+independent annotators marked as containing an answer."
+
+download_url: https://github.com/google-research-datasets/boolean-questions
+name: boolean-questions
+papers: 'BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Questions'
+supporter:
+- Christopher Clark
+- Google AI Language
+task:
+- Natural language inference
+update_time: 2019
+logo_file: "boolean-questions.png"

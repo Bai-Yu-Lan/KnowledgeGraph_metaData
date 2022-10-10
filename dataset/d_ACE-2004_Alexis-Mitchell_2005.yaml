@@ -1,0 +1,18 @@
+name: ACE 2004
+download_url: https://catalog.ldc.upenn.edu/LDC2005T09
+supporter:
+  - Alexis Mitchell
+  - Stephanie Strassel
+  - Shudong Huang
+  - Ramez Zakhary
+update_time: 2005
+papers: The Automatic Content Extraction (ACE) Program Tasks, Data, and Evaluation
+task:
+  - Automatic content extraction
+
+description: The ACE 2004 Multilingual Training Corpus contains the complete English, Arabic and Chinese training data for the 2004 Automated Content Extraction (ACE) assessment. The corpus consists of data annotated with various types of entities and relationships and was created by the Language Data Consortium with the support of the ACE project, with additional assistance from the DARPA Tides project. This data was previously distributed to participants in the 2004 ACE evaluation as an electronic corpus (LDC2004E17).
+
+
+
+
+

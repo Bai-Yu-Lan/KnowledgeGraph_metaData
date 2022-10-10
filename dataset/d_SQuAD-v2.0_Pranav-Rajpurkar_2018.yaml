@@ -1,0 +1,15 @@
+description: "SQuAD v2.0 combines existing SQuAD v1.1 data with 
+over 50,000 unanswerable questions, which are intentionally written 
+in answerable form. So the model must not only answer the questions 
+as best they can, but also identify which questions have no supporting 
+answers or cannot be answered."
+download_url: https://rajpurkar.github.io/SQuAD-explorer/
+name: 'SQuAD v2.0'
+papers: 'Know What You Don’t Know: Unanswerable Questions for SQuAD'
+supporter:
+  - Pranav Rajpurkar
+  - Robin Jia
+  - Percy Liang
+task:
+  - Natural Language Inference
+update_time: 2018

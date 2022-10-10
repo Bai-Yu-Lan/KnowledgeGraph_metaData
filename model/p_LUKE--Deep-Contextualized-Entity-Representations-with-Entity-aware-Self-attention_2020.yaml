@@ -1,0 +1,76 @@
+abbreviation: LUKE
+domain:
+  - NLP
+task:
+  - Named Entity Recognition
+paper:
+  title: "LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention"
+  authors:
+  - Ikuya Yamada
+  - Akari Asai
+  - Hiroyuki Shindo
+  - Hideaki Takeda
+  - Yuji Matsumoto
+  organization:
+  - Studio Ousia
+  - RIKEN AIP
+  - University of Washington
+  - Nara Institute of Science and Technology
+  - National Institute of Informatics
+  publish_year: 2020
+  volume:
+  press: Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)
+  pages: 6442--6454
+  download_url: https://www.aclweb.org/anthology/2020.emnlp-main.523.pdf
+  doi: 
+  citation_number: 274
+code: https://github.com/studio-ousia/luke
+performance:
+  dataset:
+    CoNLL 2003:
+      F1: 94.3
+    Open Entity:
+      F1: 78.2
+      Prec.: 79.9
+      Rec.: 76.6
+    ReCoRD:
+      Dev EM: 90.8
+      Dev F1: 91.4
+      Test EM: 90.6
+      Test F1: 91.2
+    SQuAD v1.1:
+      Dev EM: 89.8
+      Dev F1: 95.0
+      Test EM: 90.2
+      Test F1: 95.4
+    TACRED:
+      F1: 72.7
+      Prec.: 70.4
+      Rec.: 75.1
+  baseline:
+    "RoBERTa: A Robustly Optimized BERT Pretraining Approach":
+      Open Entity:
+        F1: 76.2
+        Prec.: 77.6
+        Rec.: 75.0
+      TACRED:
+        F1: 71.3
+        Prec.: 70.2
+        Rec.: 72.4
+      CoNLL 2003:
+        F1: 92.4
+      ReCoRD:
+        Dev EM: 89.0
+        Dev F1: 89.5
+        Test EM: 90.0
+        Test F1: 90.6
+      SQuAD v1.1:
+        Dev EM: 88.9
+        Dev F1: 94.6
+keywords: 
+citation_papers: 
+abstract: "Entity representations are useful in natural language tasks involving entities. In this paper, we propose new pretrained contextualized representations of words and entities based on the bidirectional transformer (Vaswani et al., 2017). The proposed model treats words and entities in a given text as independent tokens, and outputs contextualized representations of them. Our model is trained using a new pretraining task based on the masked language model of BERT (Devlin et al., 2019). The task involves predicting randomly masked words and entities in a large entity-annotated corpus retrieved from Wikipedia. We also propose an entity-aware self-attention mechanism that is an extension of the self-attention mechanism of the transformer, and considers the types of tokens (words or entities) when computing attention scores. The proposed model achieves impressive empirical performance on a wide range of entity-related tasks. In particular, it obtains state-of-the-art results on five well-known datasets: Open Entity (entity typing), TACRED (relation classification), CoNLL-2003 (named entity recognition), ReCoRD (cloze-style question answering), and SQuAD 1.1 (extractive question answering). Our source code and pretrained representations are available at https: //github.com/studio-ousia/luke.
+"
+citation_string: "Yamada I, Asai A, Shindo H, et al. LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention[C]//Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP). 2020: 6442-6454."
+
+

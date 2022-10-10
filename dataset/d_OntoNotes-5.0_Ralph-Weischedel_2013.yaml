@@ -1,0 +1,24 @@
+name: OntoNotes 5.0
+download_url: https://catalog.ldc.upenn.edu/LDC2013T19
+supporter:
+  - Ralph Weischedel
+  - Martha Palmer
+  - Mitchell Marcus
+  - Eduard Hovy
+  - Sameer Pradhan
+  - Lance Ramshaw
+  - Lance Ramshaw
+  - Ann Taylor
+  - Jeff Kaufman
+  - Michelle Franchini
+  - Mohammed El-Bachouti
+  - Robert Belvin
+  - Ann Houston
+update_time: 2013
+papers: Towards Robust Linguistic Analysis Using OntoNotes
+task:
+  - Named Entity Recognition
+
+description: OntoNotes Release 5.0 is the final release of the OntoNotes project. The goal of the project was to annotate a large corpus comprising various genres of text (news, conversational telephone speech, weblogs, usenet newsgroups, broadcast, talk shows) in three languages (English, Chinese, and Arabic) with structural information (syntax and predicate argument structure) and shallow semantics (word sense linked to an ontology and coreference). OntoNotes Release 5.0 contains the content of earlier releases, and adds source data from and/or additional annotations for, newswire (News), broadcast news (BN), broadcast conversation (BC), telephone conversation (Tele) and web data (Web) in English and Chinese and newswire data in Arabic. Also contained is English pivot text (Old Testament and New Testament text). 
+
+logo_file: "OntoNotes5.0.png"

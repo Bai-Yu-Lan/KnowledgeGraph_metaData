@@ -1,0 +1,33 @@
+description: "LogiQA is a challenging logical reasoning question answering dataset, which includes 8678 
+multi-choice questions. This dataset is sourced from publically available logical examination papers for reading comprehension, 
+which are designed by domain experts for evaluating the logical reasoning ability and test participants. It also contains
+a Chinese version."
+
+download_url: https://github.com/lgw863/LogiQA-dataset
+
+name: LogiQA
+
+papers: 'LogiQA: A Challenge Dataset for Machine Reading Comprehension with Logical Reasoning'
+
+supporter:
+
+- Jian Liu
+
+- Leyang Cui
+
+- Hanmeng Liu
+
+- Dandan Huang
+
+- Yile Wang
+
+- Yue Zhang
+
+task:
+
+- Multi-choice Question Answering
+
+update_time: 2020
+
+logo_file: 
+

@@ -1,0 +1,13 @@
+description: TriviaQA is a reading comprehension dataset containing over 650K question-answer-evidence triples. TriviaQA includes 95K question-answer pairs authored by trivia enthusiasts and independently gathered evidence documents, six per question on average, that provide high quality distant supervision for answering the questions.
+download_url: https://nlp.cs.washington.edu/triviaqa/
+name: TriviaQA
+papers: 'TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension'
+supporter:
+- Mandar Joshi
+- Eunsol Choi
+- Daniel S. Weld
+- Luke Zettlemoyer
+task:
+- Question Answering
+update_time: 2017
+logo_file:  "TriviaQA.png"

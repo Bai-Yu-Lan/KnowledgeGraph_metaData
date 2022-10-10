@@ -1,0 +1,225 @@
+abbreviation: CharNet
+citation_papers:
+  - Edit probability for scene text recognition
+  - "Deeptextspotter: An end-to-end trainable scene text localization and recognition framework"
+  - "Deeplab: Semantic image segmentation with deep convolutionalnets, atrous convolution, and fully connected crfs"
+  - "Focusing attention: Towards accurate text recognition in natural images"
+  - "Total-text: A comprehensive dataset for scene text detection and recognition"
+  - "Connectionist temporal classification: labelling unsegmented sequence data with recurrent neural networks"
+  - Synthetic data for text localisation in natural images
+  - Deep residual learning for image recognition
+  - Single shot text detector with regional attention
+  - Reading scene text in deep convolutional sequences
+  - An end-to-end textspotter with explicit alignment and attention
+  - Long short-term memory
+  - "Wordsup: Exploiting word annotations for character based text detection"
+  - Text localization in natural images using stroke feature transform and text covariance descriptors
+  - Robustscene text detection with convolution neural networkinduced mser tree
+  - "R2cnn: rotational region cnn for orienta-tion robust scene text detection"
+  - Icdar 2015 competition on robust reading
+  - "Pvanet: Light weight deep neural networks for real-time object detection"
+  - "Cornernet: Detecting objects as paired keypoints"
+  - Towards end-to-end text spotting with convolutional recurrent neural networks
+  - "Textboxes: A fast text detec-tor with a single deep neural network"
+  - "Ssd: Single shot multibox detector"
+  - "Char-net: A character-aware neural network for distorted scene text recognition"
+  - "Fots: Fast oriented text spotting with a unified network"
+  - "Mask textspotter: An end-to-end train-able neural network for spotting text with arbitrary shapes"
+  - Arbitrary-oriented scene text detection via rotation proposals
+  - Icdar2017 robust reading challenge on multi-lingual scene text detection and script identification-rrc-mlt
+  - Real-time lexicon-free scene text localization and recognition
+  - "Faster r-cnn: Towards real-time object detection with region proposal networks"
+  - Detecting oriented text in natural images by linking segments
+  - An end-to-end trainable neural network for image-based sequence recognition and its application to scene text recognition
+  - "Aster: Anattentional scene text recognizer with flexible rectification"
+  - Training region-based object detectors with online hard example mining
+  - "Textnet: Irregular text reading from images with an end-to-end trainable network"
+  - Detecting text in natural image with connectionist text proposal network
+  - "Textfield: Learning a deep direction field for irregular scene text detection"
+  - "Unitbox: An advanced object detection network"
+  - Symmetry-based text line detection in natural scenes
+  - "East: an efficient and accurate scene text detector"
+code: https://github.com/msight-tech/research-charnet
+domain:
+  - CV
+keywords:
+paper:
+  authors:
+    - Linjie Xing
+    - Zhi Tian
+    - Weilin Huang
+    - Matthew R. Scott
+  citation_number: 106
+  doi: 
+  download_url: https://openaccess.thecvf.com/content_ICCV_2019/html/Xing_Convolutional_Character_Networks_ICCV_2019_paper.html
+  organization:
+    - Shenzhen Malong Artificial Intelligence Research Center
+    - University of Adelaide
+    - Shenzhen Malong Artificial Intelligence Research Center
+    - Shenzhen Malong Artificial Intelligence Research Center
+  pages: 9126--9136
+  press: ICCV
+  publish_year: 2019
+  title: Convolutional Character Networks
+  volume: ICCV-2019
+performance:
+  dataset:
+    ICDAR 2015:
+      Text Detection:
+        Single Scale:
+          Recall: "0.8999"
+          Precision: "0.9198"
+          F-measure: "0.9097"
+        Multi Scale:
+          Recall: "0.9047"
+          Precision: "0.9265"
+          F-measure: "0.9155"
+      End-to-End Text Recognition:
+        Single Scale:
+          Strong lexicon F-measure: "0.8310"
+          Weak lexicon F-measure: "0.7915"
+          Generic lexicon F-measure: "0.6914"
+          None lexicon F-measure: "0.6573"
+        Multi Scale:
+          Strong lexicon F-measure: "0.8505"
+          Weak lexicon F-measure: "0.8125"
+          Generic lexicon F-measure: "0.7108"
+          None lexicon F-measure: "0.6724"
+    ICDAR 2017:
+      Text Detection:
+        F-measure: "0.7577"
+        Precision: "0.8127"
+        Recall: "0.7097"
+    Total-Text:
+      End-to-End Text Recognition:
+        None lexicon F-measure: "0.692"
+      Text Detection:
+        F-measure: "0.865"
+        Precision: "0.88"
+        Recall: "0.85"
+  baseline:
+    "Wordsup: Exploit-ing word annotations for character based text detection":
+      ICDAR 2015:
+        Text Detection:
+          Single Scale:
+            Recall: "0.7703"
+            Precision: "0.7933"
+            F-measure: "0.7816"
+    "East: an efficient and accurate scene text detector":
+      ICDAR 2015:
+        Text Detection:
+          Single Scale:
+            Recall: "0.7833"
+            Precision: "0.8327"
+            F-measure: "0.8072"
+    "R2cnn: rotational region cnn for orienta-tion robust scene text detection":
+      ICDAR 2015:
+        Text Detection:
+          Single Scale:
+            Recall: "0.7968"
+            Precision: "0.8562"
+            F-measure: "0.8254"
+    "Mask textspotter: An end-to-end train-able neural network for spotting text with arbitrary shapes":
+      ICDAR 2015:
+        Text Detection:
+          Single Scale:
+            Recall: "0.8100"
+            Precision: "0.9160"
+            F-measure: "0.8600"
+        End-to-End Text Recognition:
+          Single Scale:
+            Strong lexicon F-measure: "0.7930"
+            Weak lexicon F-measure: "0.7300"
+            Generic lexicon F-measure: "0.6240"
+      Total-Text:
+        End-to-End Text Recognition:
+          None lexicon F-measure: "0.529"
+        Text Detection:
+          F-measure: "0.55"
+          Precision: "0.69"
+          Recall: "0.613"
+    Real-time lexicon-free scene text localization and recognition:
+      ICDAR 2015:
+        End-to-End Text Recognition:
+          Single Scale:
+            Strong lexicon F-measure: "0.35"
+            Weak lexicon F-measure: "0.20"
+            Generic lexicon F-measure: "0.16"
+    "Deeptextspotter: An end-to-end trainable scene text local-ization and recognition framework":
+      ICDAR 2015:
+        End-to-End Text Recognition:
+          Single Scale:
+            Strong lexicon F-measure: "0.54"
+            Weak lexicon F-measure: "0.51"
+            Generic lexicon F-measure: "0.47"
+    An end-to-end textspotter with explicit alignment and attention:
+      ICDAR 2015:
+        Text Detection:
+          Multi Scale:
+            Recall: "0.8600"
+            Precision: "0.8700"
+            F-measure: "0.8700"
+        End-to-End Text Recognition:
+          Multi Scale:
+            Strong lexicon F-measure: "0.8200"
+            Weak lexicon F-measure: "0.7700"
+            Generic lexicon F-measure: "0.6300"
+    "Textboxes: A fast text detec-tor with a single deep neural network":
+      Total-Text:
+        End-to-End Text Recognition:
+          None lexicon F-measure: "0.363"
+        Text Detection:
+          F-measure: "0.455"
+          Precision: "0.621"
+          Recall: "0.525"
+    "Textnet: Ir-regular text reading from images with an end-to-endtrainable network":
+      Total-Text:
+        End-to-End Text Recognition:
+          None lexicon F-measure: "0.540"
+        Text Detection:
+          F-measure: "0.595"
+          Precision: "0.682"
+          Recall: "0.635"
+    "Textfield: Learning a deep direction field for irregular scene text detection":
+      Total-Text:
+        Text Detection:
+          F-measure: "0.799"
+          Precision: "0.812"
+          Recall: "0.806"
+    Arbitrary-oriented scene text detection via rotation proposals:
+      ICDAR 2017:
+        Text Detection:
+          F-measure: "0.555"
+          Precision: "0.7117"
+          Recall: "0.6237"
+    "Fots: Fast oriented text spottingwith a unified network":
+      ICDAR 2015:
+        Text Detection:
+          Single Scale:
+            Recall: "0.8517"
+            Precision: "0.9100"
+            F-measure: "0.8799"
+          Multi Scale:
+            Recall: "0.8792"
+            Precision: "0.9185"
+            F-measure: "0.8984"
+        End-to-End Text Recognition:
+          Single Scale:
+            Strong lexicon F-measure: "0.8109"
+            Weak lexicon F-measure: "0.7590"
+            Generic lexicon F-measure: "0.6080"
+          Multi Scale:
+            Strong lexicon F-measure: "0.8355"
+            Weak lexicon F-measure: "0.7911"
+            Generic lexicon F-measure: "0.6533"
+      ICDAR 2017:
+        Text Detection:
+          F-measure: "0.6230"
+          Precision: "0.8186"
+          Recall: "0.7075"
+       
+task:
+  - Text Detection
+  - End-to-End Text Recognition
+abstract: "Recent progress has been made on developing a unified framework for joint text detection and recognition in natural images, but existing joint models were mostly built on two-stage framework by involving ROI pooling, which can degrade the performance on recognition task. In this work, we propose convolutional character networks, referred as CharNet, which is an one-stage model that can process two tasks simultaneously in one pass. CharNet directly outputs bounding boxes of words and characters, with corresponding character labels. We utilize character as basic element, allowing us to overcome the main difficulty of existing approaches that attempted to optimize text detection jointly with a RNN-based recognition branch. In addition, we develop an iterative character detection approach able to transform the ability of character detection learned from synthetic data to real-world images. These technical improvements result in a simple, compact, yet powerful one-stage model that works reliably on multi-orientation and curved text. We evaluate CharNet on three standard benchmarks, where it consistently outperforms the state-of-the-art approaches [25, 24] by a large margin, e.g., with improvements of 65.33%->71.08% (with generic lexicon) on ICDAR 2015, and 54.0%->69.23% on Total-Text, on end-to-end text recognition. Code is available at: https://github.com/MalongTech/research-charnet."
+citation_string: "Xing L, Tian Z, Huang W, et al. Convolutional character networks[C]//Proceedings of the IEEE/CVF international conference on computer vision. 2019: 9126-9136."

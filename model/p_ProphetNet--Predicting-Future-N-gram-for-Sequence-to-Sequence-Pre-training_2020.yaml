@@ -1,0 +1,52 @@
+abbreviation: ProphetNet
+citation_papers: null
+code: https://github.com/neulab/guided_summarization
+domain:
+  - NLP
+introduction: 本文提出了一种新的大规模预训练Seq2Seq模型Prephetnet。相较传统语言模型的一步预测，Prephet实现了自监督的多步预测。
+introduction_url: None
+keywords: null
+paper:
+  authors:
+  - Weizhen Qi
+  - Yu Yan
+  - Yeyun Gong
+  - Dayiheng Liu
+  - Nan Duan
+  - Jiusheng Chen
+  - Ruofei Zhang
+  - Ming Zhou
+  citation_number: 34
+  doi: 10.18653/v1/2020.findings-emnlp.217
+  download_url: https://www.aclweb.org/anthology/2020.findings-emnlp.217.pdf
+  organization:
+  - University of Science and Technology of China
+  - Microsoft
+  - Microsoft Research Asia
+  - Sichuan University
+  pages: 2401--2410
+  press: ACL
+  publish_year: 2020
+  title: 'ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training'
+  volume: EMNLP-2020
+performance:
+  dataset:
+    CNN / Daily Mail:
+      ROUGE-1: 44.2
+      ROUGE-2: 21.17
+      ROUGE-L: 41.3
+    Gigaword:
+      ROUGE-1: 39.51
+      ROUGE-2: 20.42
+      ROUGE-L: 36.69
+    SQuAD v1.1:
+      B4: 25.8
+      MTR: 27.54
+      ROUGE-L: 53.65
+task:
+  - abstractive summarization
+  - question generation
+
+abstract: "This paper presents a new sequence-to-sequence pre-training model called ProphetNet, which introduces a novel self-supervised objective named future n-gram prediction and the proposed n-stream self-attention mechanism. Instead of optimizing one-step-ahead prediction in the traditional sequence-to-sequence model, the ProphetNet is optimized by n-step ahead prediction that predicts the next n tokens simultaneously based on previous context tokens at each time step. The future n-gram prediction explicitly encourages the model to plan for the future tokens and prevent overfitting on strong local correlations. We pre-train ProphetNet using a base scale dataset (16GB) and a large-scale dataset (160GB), respectively. Then we conduct experiments on CNN/DailyMail, Gigaword, and SQuAD 1.1 benchmarks for abstractive summarization and question generation tasks. Experimental results show that ProphetNet achieves new state-of-the-art results on all these datasets compared to the models using the same scale pre-training corpus."
+
+citation_string: "Qi W, Yan Y, Gong Y, et al. Prophetnet: Predicting future n-gram for sequence-to-sequence pre-training[J]. arXiv preprint arXiv:2001.04063, 2020."

@@ -1,0 +1,10 @@
+description: The dataset includes a set of manually annotated Chinese word segmentation data for training and testing Chinese word segmentation systems for research purposes.
+download_url: https://www.microsoft.com/en-us/download/details.aspx?id=52531
+name: MSRA
+papers: The Third International Chinese Language Processing Bakeoff:Word Segmentation and Named Entity Recognition
+supporter:
+- Gina-Anne Levow
+task:
+- Named Entity Recognition
+update_time: 2006
+log_file: "MSRA.png"

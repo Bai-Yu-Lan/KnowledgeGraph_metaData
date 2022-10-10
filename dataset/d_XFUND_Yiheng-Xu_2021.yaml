@@ -1,0 +1,13 @@
+description: "XFUND is a multilingual form understanding benchmark dataset 
+that includes human-labeled forms with key-value pairs in 7 languages 
+(Chinese, Japanese, Spanish, French, Italian, German, Portuguese)."
+
+name: "XFUND"      # 名称中出现特殊符号如 / \ # @ ! 在前后各留一个空格
+download_url: https://github.com/doc-analysis/XFUND/releases/tag/v1.0 # 下载该数据集的链接
+supporter:
+  - Yiheng Xu     # 注意人名前的 - 符号与人名之间必须有一个空格
+update_time: 2021           # 4位阿拉伯数字记录年份信息
+papers: "LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding" # 所对应的论文名称，以PDF格式论文中的标题为准
+task: 
+  - Form Understanding              # 由上传者自己定义，注意 - 后必须有一个空格
+logo_file: 

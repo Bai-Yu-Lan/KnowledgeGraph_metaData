@@ -1,0 +1,80 @@
+# 论文作者上传该论文有关的数据时所需要的信息以及格式要求
+# 所有内容最好用英文
+
+abbreviation: LayoutXLM            # 论文中提出模型的缩写，全大写字母表示，若没有则空过
+domain:                   # 对应领域，全大写， - 后必须有一个空格
+  - Document AI
+task: 
+  -  semantic entity recognition               # 由上传者自己定义，注意 - 后必须有一个空格
+  -  relation extraction
+paper:
+  title: "LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding"   # 所对应的论文名称，以PDF格式论文中的标题为准
+  authors:                # 论文作者，以论文中作者名称为准 注意- 符号后有一个空格
+  - Yiheng Xu
+  - Tengchao Lv
+  - Lei Cui
+  - Guoxin Wang
+  - Yijuan Lu
+  - Dinei Florencio
+  - Cha Zhang
+  - Furu Wei
+  organization:           # 作者所属机构，需要与作者数量对应 注意- 符号后有一个空格
+  - Microsoft Research Asia
+  - Microsoft Research Asia
+  - Microsoft Research Asia
+  - Microsoft Azure AI
+  - Microsoft Azure AI
+  - Microsoft Azure AI
+  - Microsoft Azure AI
+  - Microsoft Research Asia
+  publish_year: 2021      # 论文发表时间，四位数阿拉伯数字表示年份
+  volume: 
+  press: arXiv             # 会议/期刊缩写，全大写
+  pages:         # 对应页码，若不存在则记为None，若存在使用 [start_page]--[end_page]表示，如5602--5609
+  download_url: https://arxiv.org/pdf/2104.08836.pdf
+  doi: https://doi.org/10.48550/arXiv.2104.08836
+  citation_number: 18     # 截至上传该信息的时候改论文的引用数量
+code: https://aka.ms/layoutxlm        # 下载作者公开的该论文对应开源代码的链接，若不存在则使用None代替
+performance:              # 记录改论文中模型的表现
+  # 记录模型表现时，若存在多级metric记录，请参照ReadMe中2.2.1部分的格式进行记录
+  dataset:                # 该论文在不同数据集上的表现
+    XFUND:     # 数据集名称，与数据集yaml文件命名格式相同
+      SER:
+        F1 (Language-specific fine-tuning setting): 0.8282      # 该模型在不同metric上的表现
+        F1 (Zero-shot transfer setting):  0.6115
+        F1 (Multitask fine-tuning setting):  0.8429
+      RE:  
+        F1 (Language-specific fine-tuning setting):  0.7206      # 该模型在不同metric上的表现
+        F1 (Zero-shot transfer setting):  0.5487
+        F1 (Multitask fine-tuning setting):  0.8458
+  XLM-RoBERTa:               # 论文中所对比的不同Baseline模型以及他们的表现
+    "Unsupervised Cross-lingual Representation Learning at Scale":  # 该 Baseline 模型对应的论文title，论文title格式与上文做相同规定
+      XFUND:           # 在该baseline模型上使用的数据集
+        SER:
+          F1 (Language-specific fine-tuning setting): 0.7374       # 该baseline模型在不同metric上的表现
+          F1 (Zero-shot transfer setting): 0.4637
+          F1 (Multitask fine-tuning setting):  0.7502
+        RE:
+          F1 (Language-specific fine-tuning setting): 0.5910       # 该baseline模型在不同metric上的表现
+          F1 (Zero-shot transfer setting): 0.2765
+          F1 (Multitask fine-tuning setting):  0.6896
+  InfoXLM:   # 另一个baseline对应的论文title
+    "Infoxlm: An information-theoretic framework for cross-lingual language model pre-training.":
+      XFUND:
+        SER:           # 在该baseline模型上使用的数据集
+          F1 (Language-specific fine-tuning setting): 0.7471       # 该baseline模型在不同metric上的表现
+          F1 (Zero-shot transfer setting): 0.4835
+          F1 (Multitask fine-tuning setting):  0.7534
+        RE:
+          F1 (Language-specific fine-tuning setting): 0.6002       # 该baseline模型在不同metric上的表现
+          F1 (Zero-shot transfer setting): 0.3100
+          F1 (Multitask fine-tuning setting):  0.7037
+key_words:                # 关键字，参照Abstract后的key words，没有则不填写内容
+  - 
+citation_papers:          # TODO 改论文所引用的文献列表，暂时不需要这部分信息
+  - paper1                # 论文标题，与上文中论文题目格式相同
+  - paper2
+
+abstract: "Multimodal pre-training with text, layout, and image has achieved SOTA performance for visually-rich document understanding tasks recently, which demonstrates the great potential for joint learning across different modalities. In this paper, we present LayoutXLM, a multimodal pre-trained model for multilingual document understanding, which aims to bridge the language barriers for visually-rich document understanding. To accurately evaluate LayoutXLM, we also introduce a multilingual form understanding benchmark dataset named XFUND, which includes form understanding samples in 7 languages (Chinese, Japanese, Spanish, French, Italian, German, Portuguese), and key-value pairs are manually labeled for each language. Experiment results show that the LayoutXLM model has significantly outperformed the existing SOTA crosslingual pre-trained models on the XFUND dataset. The pre-trained LayoutXLM model and the XFUND dataset are publicly available at https://aka.ms/layoutxlm."
+
+citation_string: "Xu Y, Lv T, Cui L, et al. Layoutxlm: Multimodal pre-training for multilingual visually-rich document understanding[J]. arXiv preprint arXiv:2104.08836, 2021."

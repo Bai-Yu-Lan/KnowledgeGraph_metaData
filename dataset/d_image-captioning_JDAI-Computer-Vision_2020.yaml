@@ -1,0 +1,10 @@
+description: The X-Linear attention model uses bilinear fusion technology to mine second-order or even higher-order feature interaction information between different modalities to enhance cross-modal content understanding.
+download_url: https://github.com/JDAI-CV/image-captioning
+name: image-captioning
+papers: X-Linear Attention Networks for Image Captioning
+supporter:
+- JDAI Computer Vision
+task:
+- image captioning
+update_time: 2020
+logo_file: "image_captioning.png"

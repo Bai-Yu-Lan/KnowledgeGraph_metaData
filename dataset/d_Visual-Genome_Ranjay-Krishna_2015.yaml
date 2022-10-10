@@ -1,0 +1,24 @@
+description: "Visual Genome contains Visual Question Answering data in a 
+multi-choice setting. It consists of 101,174 images from MSCOCO with 
+1.7 million QA pairs, 17 questions per image on average. Compared to 
+the Visual Question Answering dataset, Visual Genome represents a 
+more balanced distribution over 6 question types: What, Where, When, 
+Who, Why and How. The Visual Genome dataset also presents 108K images 
+with densely annotated objects, attributes and relationships."
+download_url: https://visualgenome.org/
+name: Visual Genome
+papers: "Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations"
+supporter:
+  - Ranjay Krishna
+  - Yuke Zhu
+  - Oliver Groth
+  - Kenji Hata
+  - Yannis Kalantidis
+  - Jia Li
+  - D. Ayman Shamma
+  - Michael Bernstein
+  - Fei-Fei Li
+task:
+  - Image Captioning
+update_time: 2015
+logo_file: "Visual-Genome.png"

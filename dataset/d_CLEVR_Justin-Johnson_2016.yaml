@@ -1,0 +1,22 @@
+description: "A comprehensive visual question answering dataset. It 
+contains 3D rendered images, each with a number of highly combinatorial 
+questions grouped into different categories: existence, counting, 
+comparing integers, querying properties, and comparing properties. 
+The CLEVR dataset consists of: a training set with 70k images and 
+700k questions, a validation set with 15k images and 150k questions, 
+and a test set with 15k images and 150k questions."
+download_url: https://cs.stanford.edu/people/jcjohns/clevr/
+name: CLEVR
+papers: 'CLEVR: A Diagnostic Dataset for Compositional Language and Elementary Visual
+  Reasoning'
+supporter:
+- Justin Johnson
+- Bharath Hariharan
+- Laurens van der Maaten
+- Li Fei-Fei
+- C. Lawrence Zitnick
+- Ross Girshick
+task:
+- Question Answering
+update_time: 2016
+logo_file: "CLEVR.png"

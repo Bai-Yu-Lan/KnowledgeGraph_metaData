@@ -1,0 +1,13 @@
+# description: 数据集是一个由433k个句子对组成的、带有文本蕴涵信息的众包语料库。语料库是建立在SNLI语料库的基础上的，但不同之处在于它涵盖了口语和书面语等系列体裁，并支持一种独特的跨体裁综合评价。
+description: The Multi-Genre Natural Language Inference (MultiNLI) corpus is a crowd-sourced collection of 433k sentence pairs annotated with textual entailment information. The corpus is modeled on the SNLI corpus, but differs in that covers a range of genres of spoken and written text, and supports a distinctive cross-genre generalization evaluation.
+download_url: https://cims.nyu.edu/~sbowman/multinli/
+name: MNLI
+papers: A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference
+supporter:
+ - Adina Williams
+ - Nikita Nangia
+ - Samuel R. Bowman
+task:
+ - Information Extraction
+update_time: 2018
+logo_file: 

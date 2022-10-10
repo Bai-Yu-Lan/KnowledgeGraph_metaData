@@ -1,0 +1,12 @@
+name: GENIA
+download_url: http://www.geniaproject.org/genia-corpus
+supporter:
+  - Arzoo Katiyar
+  - Claire Cardie
+update_time: 2018
+papers: Nested Named Entity Recognition Revisited
+task:
+  - Named Entity Recognition
+
+description: The GENIA Corpus is a collective corpus of biomedical literature compiled and annotated in the GENIA project. PubMed was queried for the three terms "human", "blood cell" and "transcription factor" and all 1999 Medline abstracts containing the term were selected. The corpus is annotated with different levels of linguistic and semantic information.
+logo_file:  "GENIA.png"

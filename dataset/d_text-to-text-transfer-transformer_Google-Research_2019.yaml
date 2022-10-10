@@ -1,0 +1,13 @@
+name: text-to-text-transfer-transformer
+download_url: https://github.com/google-research/text-to-text-transfer-transformer
+supporter:
+  - Google Research
+update_time: 2019
+papers: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
+task:
+  - 探索迁移学习
+
+description: The original intention of the dataset was to explore the impact of scale (including model scale and data scale) in NLP.
+
+logo_file:
+

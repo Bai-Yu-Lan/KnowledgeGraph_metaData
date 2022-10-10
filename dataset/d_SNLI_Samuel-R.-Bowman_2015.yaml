@@ -1,0 +1,13 @@
+description: The dataset consists of 570k sentence pairs that are manually labeled as entailment, contradiction, or neutral. The predecessor of the dataset is image captions from Flickr30k. The annotators create sentences whose relations are entailment, contradiction or neutral after receiving a premise sentence. Other annotators judge the relationship between pairs of sentences that describe the same event, and manually label them.
+download_url: https://nlp.stanford.edu/projects/snli/
+name: SNLI
+papers: A large annotated corpus for learning natural language inference
+supporter:
+  - Samuel R. Bowman
+  - Gabor Angeli
+  - Christopher Potts
+  - Christopher D. Manning
+task:
+  - Natural language inference
+update_time: 2015
+logo_file: "SNLI.png"

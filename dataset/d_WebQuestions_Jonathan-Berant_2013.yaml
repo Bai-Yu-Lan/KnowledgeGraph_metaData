@@ -1,0 +1,17 @@
+description: "The dataset is a Freebase Q&A dataset with 6642 Q&A pairs. 
+It was created by crawling questions through the Google Suggest API and then 
+using Amazon Mechanical Turk to get the answers. The initial split was 
+trained using 3778 examples and 2032 were used for testing."
+
+download_url: https://worksheets.codalab.org/worksheets/0xba659fe363cb46e7a505c5b6a774dc8a
+name: WebQuestions
+papers: Semantic Parsing on Freebase from Question-Answer Pairs
+supporter:
+- Jonathan Berant
+- Andrew Chou
+- Roy Frostig
+- Percy Liang
+task:
+- Question Answering
+update_time: 2013
+logo_file: 

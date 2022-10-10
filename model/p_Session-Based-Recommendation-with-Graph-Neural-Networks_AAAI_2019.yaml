@@ -1,0 +1,147 @@
+# 论文作者上传该论文有关的数据时所需要的信息以及格式要求
+
+abbreviation: SR-GNN             # 论文中提出模型的缩写，全大写字母表示，若没有则空过
+domain: 
+  - GNN               # 论文对应领域，全大写
+task: 
+  - Recommendation Systems               # 由上传者自己定义，注意 - 后必须有一个空格
+paper:
+  title: "Session-Based Recommendation with Graph Neural Networks"   # 所对应的论文名称，以PDF格式论文中的标题为准
+  authors:                # 论文作者，以论文中作者名称为准 注意- 符号后有一个空格
+  - Shu Wu
+  - Yuyuan Tang
+  - Yanqiao Zhu
+  - Liang Wang
+  - Xing Xie
+  - Tieniu Tan
+  organization:           # 作者所属机构，需要与作者数量对应 注意- 符号后有一个空格
+  - Center for Research on Intelligent Perception and Computing National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences; University of Chinese Academy of Sciences
+  - School of Computer and Communication Engineering, University of Science and Technology Beijing
+  - School of Software Engineering, Tongji University
+  - Center for Research on Intelligent Perception and Computing National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences; University of Chinese Academy of Sciences
+  - Microsoft Research Asia
+  - Center for Research on Intelligent Perception and Computing National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences; University of Chinese Academy of Sciences
+  publish_year: 2019      # 论文发表时间，四位数阿拉伯数字表示年份
+  volume: AAAI-19
+  press: AAAI             # 会议/期刊缩写，全大写
+  pages: 346--353        # 对应页码，若不存在则记为None，若存在使用 [start_page]--[end_page]表示，如5602--5609
+  download_url: https://ojs.aaai.org/index.php/AAAI/article/view/3804/3682
+  doi: https://doi.org/10.1609/aaai.v33i01.3301346
+  citation_number: 521     # 截至上传该信息的时候改论文的引用数量
+code: https://github.com/CRIPAC-DIG/SR-GNN                    # 下载作者公开的该论文对应开源代码的链接，若不存在则使用None代替
+performance:              # 记录改论文中模型的表现
+  # 记录模型表现时，若存在多级metric记录，请参照ReadMe中2.2.1部分的格式进行记录
+  dataset:                # 该论文在不同数据集上的表现
+    Yoochoose 1/64:     # 数据集名称，与数据集yaml文件命名格式相同
+      P@20: 70.57      # 该模型在不同metric上的表现
+      MRR@20: 30.94
+    Yoochoose 1/4:
+      P@20: 71.36
+      MRR@20: 31.89
+    Diginetica:     
+      P@20: 50.73
+      MRR@20: 17.59
+  baseline:               # 论文中所对比的不同Baseline模型以及他们的表现
+    POP:  # 该 Baseline 模型对应的论文title，论文title格式与上文做相同规定
+      Yoochoose 1/64:
+        P@20: 6.71
+        MRR@20: 1.65
+      Yoochoose 1/4:
+        P@20: 1.33
+        MRR@20: 0.30
+      Diginetica:     
+        P@20: 0.89
+        MRR@20: 0.20
+    S-POP:
+      Yoochoose 1/64:
+        P@20: 30.44
+        MRR@20: 18.35
+      Yoochoose 1/4:
+        P@20: 27.08
+        MRR@20: 17.75
+      Diginetica:     
+        P@20: 21.06
+        MRR@20: 13.68
+    "Item-Based Collaborative Filtering Recommendation Algorithms":
+      Yoochoose 1/64:
+        P@20: 51.60
+        MRR@20: 21.81
+      Yoochoose 1/4:
+        P@20: 52.31
+        MRR@20: 21.70
+      Diginetica:     
+        P@20: 35.75
+        MRR@20: 11.57
+    "BPR: Bayesian Personalized Ranking from Implicit Feedback":
+      Yoochoose 1/64:
+        P@20: 31.31
+        MRR@20: 12.08
+      Yoochoose 1/4:
+        P@20: 3.40
+        MRR@20: 1.57
+      Diginetica:     
+        P@20: 5.24
+        MRR@20: 1.98
+    "Factorizing Personalized Markov Chains for Next-Basket Recommendation":
+      Yoochoose 1/64:
+        P@20: 45.62
+        MRR@20: 15.01
+      Yoochoose 1/4:
+        P@20: 
+        MRR@20: 
+      Diginetica:     
+        P@20: 26.53
+        MRR@20: 6.95
+    "Session-based Recommendations with Recurrent Neural Networks":
+      Yoochoose 1/64:
+        P@20: 60.64
+        MRR@20: 22.89
+      Yoochoose 1/4:
+        P@20: 59.53
+        MRR@20: 22.60
+      Diginetica:     
+        P@20: 29.45
+        MRR@20: 8.33
+    "Neural Attentive Session-based Recommendation":
+      Yoochoose 1/64:
+        P@20: 68.32
+        MRR@20: 28.63
+      Yoochoose 1/4:
+        P@20: 69.73
+        MRR@20: 29.23
+      Diginetica:     
+        P@20: 49.70
+        MRR@20: 16.17
+    "STAMP: Short-Term Attention/Memory Priority Model for Session-based Recommendation":
+      Yoochoose 1/64:
+        P@20: 68.74
+        MRR@20: 29.67
+      Yoochoose 1/4:
+        P@20: 70.44
+        MRR@20: 30.00
+      Diginetica:     
+        P@20: 45.64
+        MRR@20: 14.32
+key_words:                # 关键字，参照Abstract后的key words，没有则不填写内容
+# introduction 以及 introduction_url 由上传者自己定义
+introduction: 
+introduction_url: 
+citation_papers:          # TODO 改论文所引用的文献列表，暂时不需要这部分信息
+
+abstract: "The problem of session-based recommendation aims to predict users’ actions based on anonymous sessions. Previous
+methods on the session-based recommendation most model a
+session as a sequence and capture users’ preference to make
+recommendations. Though achieved promising results, they
+fail to consider the complex items transitions among all session sequences, and are insufficient to obtain accurate users’
+preference in the session. To better capture the structure of
+the user-click sessions and take complex transitions of items
+into account, we propose a novel method, i.e. Session-based
+Recommendation with Graph Neural Networks, SR-GNN for
+brevity. In the proposed method, session sequences are aggregated together and modeled as graph-structure data. Based
+on this graph, GNN can capture complex transitions of items,
+which are difficult to be revealed by the conventional sequential methods. Each session is then represented as the composition of the global preference and current interests of the session using an attention network. Extensive experiments conducted on two real datasets show that SR-GNN evidently outperforms the state-of-the-art session-based recommendation
+methods and always obtain stable performance with different connection schemes, session representations, and session
+lengths."
+
+
+citation_string: "Wu S, Tang Y, Zhu Y, et al. Session-based recommendation with graph neural networks[C]//Proceedings of the AAAI conference on artificial intelligence. 2019, 33(01): 346-353."

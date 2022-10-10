@@ -1,0 +1,14 @@
+name: CNN / Daily Mail
+download_url: http://cs.nyu.edu/~kcho/DMQA/
+supporter:
+- Karl Moritz Hermann
+update_time: 2015
+papers: Teaching Machines to Read and Comprehend
+task:
+- Text Summary
+description: "The dataset contains online news articles (an average of 
+781 words) and multi-sentence summaries (an average of 3.75 sentences 
+or 56 words), which are processed to form a 287226 pair training set, 
+13368 pairs of validation sets, and 11490 pairs of test sets."
+
+logo_file:  

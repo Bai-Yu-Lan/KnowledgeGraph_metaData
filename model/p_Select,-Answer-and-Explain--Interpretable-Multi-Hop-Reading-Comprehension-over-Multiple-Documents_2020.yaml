@@ -1,0 +1,79 @@
+abbreviation: SAE
+domain:
+- NLP
+task:
+- NLI
+paper:
+  title: "Select, Answer and Explain: Interpretable Multi-Hop Reading Comprehensionover Multiple Documents"
+  authors:
+  - Ming Tu
+  - Kevin Huang
+  - GuangtaoWang
+  - Xiaodong He
+  - Bowen Zhou
+  organization:
+  - JD AI Research
+  - JD AI Research
+  - JD AI Research
+  - JD AI Research
+  - JD AI Research
+  publish_year: 2020
+  volume: AAAI-2020
+  press: AAAI
+  pages: 9073--9080
+  download_url: https://arxiv.org/abs/1911.00484
+  doi: 
+  citation_number: 22
+code: https://github.com/JD-AI-Research-Silicon-Valley/SAE
+performance:
+  dataset:
+    HotpotQA:
+      Dev:
+        Ans:
+          EM: 67.7
+          F1: 80.75
+        Joint:
+          EM: 46.81
+          F1: 72.75
+        Supp:
+          EM: 63.3
+          F1: 87.38
+      Test:
+        Ans:
+          EM: 66.92
+          F1: 79.62
+        Joint:
+          EM: 45.36
+          F1: 71.45
+        Supp:
+          EM: 61.53
+          F1: 86.86
+  DFGN:
+    "Dynamically fused graph network for multi-hop reasoning":
+      HotpotQA:
+        Dev:
+          Ans:
+            EM: 55.66
+            F1: 69.34
+          Joint:
+            EM: 33.68
+            F1: 59.86
+          Supp:
+            EM: 53.1
+            F1: 82.24
+        Test:
+          Ans:
+            EM: 56.31
+            F1: 69.69
+          Joint:
+            EM: 33.62
+            F1: 59.82
+          Supp:
+            EM: 51.5
+            F1: 81.62
+key_words:
+citation_papers:
+abstract: "Interpretable multi-hop reading comprehension (RC) over multiple documents is a challenging problem because it demands reasoning over multiple information sources and explaining the answer prediction by providing supporting evidences. In this paper, we propose an effective and interpretable Select, Answer and Explain (SAE) system to solve the multi-document RC problem. Our system first filters out answer-unrelated documents and thus reduce the amount of distraction information. This is achieved by a document classifier trained with a novel pairwise learning-to-rank loss. The selected answer-related documents are then input to a model to jointly predict the answer and supporting sentences. The model is optimized with a multi-task learning objective on both token level for answer prediction and sentence level for supporting sentences prediction, together with an attentionbased interaction between these two tasks. Evaluated on HotpotQA, a challenging multi-hop RC data set, the proposed SAE system achieves top competitive performance in distractor setting compared to other existing systems on the leaderboard."
+citation_string: "Tu M, Huang K, Wang G, et al. Select, answer and explain: Interpretable multi-hop reading comprehension over multiple documents[C]//Proceedings of the AAAI conference on artificial intelligence. 2020, 34(05): 9073-9080."
+
+

@@ -1,0 +1,23 @@
+description: "It originates from a natural visual question answering 
+setting where blind people each took an image and recorded a spoken 
+question about it, together with 10 crowdsourced answers per visual 
+question. The proposed challenge addresses the following two tasks 
+for this dataset: predict the answer to a visual question and (2) 
+predict whether a visual question cannot be answered."
+
+download_url: https://vizwiz.org/tasks-and-datasets/vqa/
+name: VizWiz
+papers: "VizWiz Grand Challenge: Answering Visual Questions from Blind People"
+supporter:
+  - Danna Gurari
+  - Qing Li
+  - Abigale J. Stangl
+  - Anhong Guo
+  - Chi Lin
+  - Kristen Grauman
+  - Jiebo Luo
+  - Jeffrey P. Bigham
+task:
+  - Image Captioning and Visual Question Answering
+update_time: 2018
+logo_file: "VizWiz.jpg"

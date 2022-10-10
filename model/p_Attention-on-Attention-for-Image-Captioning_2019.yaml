@@ -1,0 +1,42 @@
+abbreviation: AOA
+citation_papers:
+code: https://github.com/husthuaan/AoANet
+domain:
+  - CV
+#introduction: 在本论文中，作者提出了一个“Attention on Attention”(AoA)模块，该模块扩展了常规的注意力机制，以确定注意力结果和查询结果的相关性。AoA首先使用注意力结果和当前的上下文生成一个“信息向量”和一个“注意力门”，然后通过对它们进行逐元素乘法来增加另外一个注意力，最终获得“关注信息”，即预期的有用知识。我们将AoA应用于描述模型的编码器和解码器中，将其命名为AoA
+  #Network（AoANet）。实验表明，AoANet的性能优于以前发布的所有方法。
+#introduction_url: https://blog.csdn.net/xiasli123/article/details/103112133
+keywords:
+paper:
+  authors:
+  - Lun Huang
+  - Wenmin Wang
+  - Jie Chen
+  - Xiao-Yong Wei
+  citation_number: 99
+  doi:
+  download_url: https://openaccess.thecvf.com/content_ICCV_2019/html/Huang_Attention_on_Attention_for_Image_Captioning_ICCV_2019_paper.html
+  organization:
+  - School of Electronic and Computer Engineering, Peking University
+  - Peng Cheng Laboratory
+  - Macau University of Science and Technology
+  pages: 4634--4643
+  press: IEEE
+  publish_year: 2019
+  title: Attention on Attention for Image Captioning
+  volume:
+performance:
+  dataset:
+    Microsoft COCO:
+      Bleu_1: "0.8054903453672397"
+      Bleu_2: "0.6523038976984842"
+      Bleu_3: "0.5096621263772566"
+      Bleu_4: "0.39140307771618477"
+      CIDEr: "1.2892294296245852"
+      METEOR: "0.29011216375635934"
+      ROUGE_L: "0.5890369750273199"
+      SPICE: "0.22680092759866174"
+task:
+  - Image Captioning
+abstract: "Attention mechanisms are widely used in current encoder/decoder frameworks of image captioning, where a weighted average on encoded vectors is generated at each time step to guide the caption decoding process. However, the decoder has little idea of whether or how well the attended vector and the given attention query are related, which could make the decoder give misled results. In this paper, we propose an Attention on Attention (AoA) module, which extends the conventional attention mechanisms to determine the relevance between attention results and queries. AoA first generates an information vector and an attention gate using the attention result and the current context, then adds another attention by applying element-wise multiplication to them and finally obtains the attended information, the expected useful knowledge. We apply AoA to both the encoder and the decoder of our image captioning model, which we name as AoA Network (AoANet). Experiments show that AoANet outperforms all previously published methods and achieves a new state-of-the-art performance of 129.8 CIDEr-D score on MS COCO Karpathy offline test split and 129.6 CIDEr-D (C40) score on the official online testing server. Code is available at https://github.com/husthuaan/AoANet."
+citation_string: "Huang, Lun, et al. Attention on attention for image captioning. Proceedings of the IEEE/CVF international conference on computer vision. 2019."

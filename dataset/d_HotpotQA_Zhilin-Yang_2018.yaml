@@ -1,0 +1,25 @@
+name: HotpotQA
+download_url: https://github.com/hotpotqa/hotpot
+description: "The dataset contains 113k Wikipedia-based question-answer pairs, 
+questions that require searching and reasoning across multiple documents to 
+answer, and questions that are diverse in content and not constrained by 
+any existing knowledge base or knowledge model. The dataset provides the 
+sentence-level facts needed for inference, enabling the QA system to 
+reason and interpret predictions under strong supervision, providing 
+a novel factor to test the QA system's ability to extract relevant facts 
+and make necessary comparisons."
+
+supporter:
+ - Zhilin Yang
+ - Peng Qi
+ - Saizheng Zhang
+ - Yoshua Bengio
+ - William W. Cohen
+ - Ruslan Salakhutdinov
+ - Christopher D. Manning
+update_time: 2018
+papers: "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering"
+task:
+ - NLI
+log_file: "HotpotQA.png"
+

@@ -1,0 +1,149 @@
+abbreviation: 
+domain:
+  - NLP
+task:
+  - Event Extraction
+paper:
+  title: "One for All: Neural Joint Modeling of Entities and Events"
+  authors:
+    - Trung Minh Nguyen
+    - Thien Huu Nguyen
+  organization:
+    - Alt Inc.
+    - Department of Computer and Information Science University of Oregon
+  pages: 6851--6858
+  press: AAAI
+  publish_year: 2019
+  volume: 33
+  download_url: https://ojs.aaai.org//index.php/AAAI/article/view/4661
+  doi: aaai.v33i01.33016851
+  citation_number: 78
+code:
+performance:
+  dataset:
+    ACE-2005:
+      Event Trigger Identification: 
+        Precisions: 70.5
+        Recalls: 74.5
+        F1: 72.5
+      Event Trigger Classification: 
+        Precisions: 68.0
+        Recalls: 71.8
+        F1: 69.8
+      Event Argument Identification: 
+        Precisions: 59.9
+        Recalls: 59.8
+        F1: 59.9
+      Argument Role Classification: 
+        Precisions: 52.1
+        Recalls: 52.1
+        F1: 52.1
+  StagedMaxent:
+    "Joint Extraction of Events and Entities within a Document Context": 
+      ACE-2005:
+        Event Trigger Identification: 
+          Precisions: 73.9
+          Recalls: 66.5
+          F1: 70.0
+        Event Trigger Classification: 
+          Precisions: 70.4
+          Recalls: 63.3
+          F1: 66.7
+        Event Argument Identification: 
+          Precisions: 75.7
+          Recalls: 20.2
+          F1: 31.9
+        Argument Role Classification: 
+          Precisions: 71.2
+          Recalls: 19.0
+          F1: 30.0
+  Pipelined-Feature: 
+    "Joint Event Extraction via Structured Prediction with Global Features": 
+      ACE-2005:
+        Event Trigger Identification: 
+          Precisions: 76.6
+          Recalls: 58.7
+          F1: 66.5
+        Event Trigger Classification: 
+          Precisions: 74.0
+          Recalls: 56.7
+          F1: 64.2
+        Event Argument Identification: 
+          Precisions: 74.6
+          Recalls: 25.5
+          F1: 38.0
+        Argument Role Classification: 
+          Precisions: 68.8
+          Recalls: 23.5
+          F1: 35.0
+  Pipelined-Deep-Learning: 
+    "Joint Event Extraction via Recurrent Neural Networks": 
+      ACE-2005:
+        Event Trigger Identification: 
+          Precisions: 72.7
+          Recalls: 65.9
+          F1: 69.1
+        Event Trigger Classification: 
+          Precisions: 70.4
+          Recalls: 63.9
+          F1: 67.0
+        Event Argument Identification: 
+          Precisions: 61.7
+          Recalls: 42.1
+          F1: 50.1
+        Argument Role Classification: 
+          Precisions: 46.0
+          Recalls: 31.4
+          F1: 37.4
+  Joint-Feature-Sentence: 
+    "Joint Extraction of Events and Entities within a Document Context": 
+      ACE-2005:
+        Event Trigger Identification: 
+          Precisions: 76.9
+          Recalls: 63.8
+          F1: 69.7
+        Event Trigger Classification: 
+          Precisions: 74.7
+          Recalls: 62.0
+          F1: 67.7
+        Event Argument Identification: 
+          Precisions: 72.4
+          Recalls: 37.2
+          F1: 49.2
+        Argument Role Classification: 
+          Precisions: 69.9
+          Recalls: 35.9
+          F1: 47.4
+  Joint-Feature-Document†: 
+    "Joint Extraction of Events and Entities within a Document Context": 
+      ACE-2005:
+        Event Trigger Identification: 
+          Precisions: 77.6
+          Recalls: 65.4
+          F1: 71.0
+        Event Trigger Classification: 
+          Precisions: 75.1
+          Recalls: 63.3
+          F1: 68.7
+        Event Argument Identification: 
+          Precisions: 73.7
+          Recalls: 38.5
+          F1: 50.6
+        Argument Role Classification: 
+          Precisions: 70.6
+          Recalls: 36.9
+          F1: 48.4
+  NP-Candidate-Deep-Learning: 
+    "Jointly Extracting Event Triggers and Arguments by Dependency-Bridge RNN and Tensor-Based Argument Interaction": 
+      ACE-2005:
+        Event Trigger Classification: 
+          F1: 69.6
+        Event Argument Identification: 
+          F1: 57.2
+        Argument Role Classification: 
+          F1: 50.1
+key_words: 
+citation_papers:          
+abstract: "The previous work for event extraction has mainly focused on the predictions for event triggers and argument roles, treating entity mentions as being provided by human annotators. This is unrealistic as entity mentions are usually predicted by some existing toolkits whose errors might be propagated to the event trigger and argument role recognition. Few of the recent work has addressed this problem by jointly predicting entity mentions, event triggers and arguments. However, such work is limited to using discrete engineering features to represent contextual information for the individual tasks and their interactions. In this work, we propose a novel model to jointly perform predictions for entity mentions, event triggers and arguments based on the shared hidden representations from deep learning. The experiments demonstrate the benefits of the proposed method, leading to the state-of-the-art performance for event extraction."
+citation_string: "Nguyen T M, Nguyen T H. One for all: Neural joint modeling of entities and events[C]//Proceedings of the AAAI conference on artificial intelligence. 2019, 33(01): 6851-6858."
+

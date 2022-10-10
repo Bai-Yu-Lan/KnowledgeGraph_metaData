@@ -1,0 +1,12 @@
+name: DUC 2004 Task 1
+description: "A dataset used in 2004 by the National Institute of Standards 
+and Technology under the U.S. Department of Commerce contained 500 documents 
+with an average of 35.6 words and a summary of 10.4 words."
+download_url: https://duc.nist.gov/duc2004/
+papers: 
+supporter: 
+  - National Institute of Standards and Technology
+task:
+  - Text Summary
+update_time: 2004
+logo_file:

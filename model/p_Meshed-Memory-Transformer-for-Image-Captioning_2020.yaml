@@ -1,0 +1,51 @@
+abbreviation: Meshed-Memory Transformer
+domain:
+  - CV
+task:
+  - Image Captioning
+paper:
+  title: "Meshed-Memory Transformer for Image Captioning"
+  authors:
+  - Marcella Cornia
+  - Matteo Stefanini
+  - Lorenzo Baraldi
+  - Rita Cucchiara
+  organization:
+  - University of Modena and Reggio Emilia
+  - University of Modena and Reggio Emilia
+  - University of Modena and Reggio Emilia
+  - University of Modena and Reggio Emilia
+  publish_year: 2020
+  volume: 
+  press: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  pages: 10578--10587
+  download_url: https://openaccess.thecvf.com/content_CVPR_2020/html/Cornia_Meshed-Memory_Transformer_for_Image_Captioning_CVPR_2020_paper.html
+  doi: 
+  citation_number: 447
+code: https://github.com/aimagelab/meshed-memory-transformer
+performance:
+  dataset:
+    Microsoft COCO:
+      BLEU-1: 96.0
+      BLEU-2: 90.8
+      BLEU-3: 82.7
+      BLEU-4: 72.8
+      CIDEr: 132.1
+      METEOR: 39.0
+      ROUGE: 74.8
+  baseline:
+    "Attention on Attention for Image Captioning":
+      BLEU-1: 95.0
+      BLEU-2: 89.6
+      BLEU-3: 81.3
+      BLEU-4: 71.2
+      CIDEr: 129.6
+      METEOR: 38.5
+      ROUGE: 74.5
+keywords: 
+citation_papers: 
+abstract: "Transformer-based architectures represent the state of the art in sequence modeling tasks like machine translation and language understanding. Their applicability to multi-modal contexts like image captioning, however, is still largely under-explored. With the aim of filling this gap, we present M2 - a Meshed Transformer with Memory for Image Captioning. The architecture improves both the image encoding and the language generation steps: it learns a multi-level representation of the relationships between image regions integrating learned a priori knowledge, and uses a mesh-like connectivity at decoding stage to exploit low- and high-level features. Experimentally, we investigate the performance of the M2 Transformer and different fully-attentive models in comparison with recurrent ones. When tested on COCO, our proposal achieves a new state of the art in single-model and ensemble configurations on the Karpathy test split and on the online test server. We also assess its performances when describing objects unseen in the training set. Trained models and code for reproducing the experiments are publicly available at: https://github.com/aimagelab/meshed-memory-transformer."
+citation_string: "Cornia M, Stefanini M, Baraldi L, et al. Meshed-memory transformer for image captioning[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020: 10578-10587."
+
+
+

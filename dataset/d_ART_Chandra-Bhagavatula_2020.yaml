@@ -1,0 +1,18 @@
+description: The data set includes more than 20000 common sense narratives and 200000 explanations. The dataset is divided into two parts, NLI-Select the most likely explanation in the multiple choice question and answer task; NLG-The task of generating natural language interpretation for a given observation target.
+download_url: http://abductivecommonsense.xyz/
+name: ART
+papers: Abductive Commonsense Reasoning
+supporter:
+  - Chandra Bhagavatula
+  - Ronan Le Bras
+  - Chaitanya Malaviya
+  - Keisuke Sakaguchi
+  - Ari Holtzman
+  - Hannah Rashkin
+  - Doug Downey
+  - Scott Wen-tau Yih
+  - Yejin Choi
+task:
+  - Natural Language Reasoning
+update_time: 2020
+logo_file:  "ART.png"

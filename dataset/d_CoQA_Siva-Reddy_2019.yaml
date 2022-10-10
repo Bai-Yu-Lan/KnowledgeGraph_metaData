@@ -1,0 +1,12 @@
+description: This dataset includes 127k questions with answers. These questions come from 8k text sub in seven different domains. These questions are Q&A, so answers are free style and context related are labeled highlightly.
+download_url: https://stanfordnlp.github.io/coqa/
+name: CoQA
+papers: 'CoQA: A Conversational Question Answering Challenge'
+supporter:
+- Siva Reddy
+- Danqi Chen
+- Christopher D. Manning
+task:
+- natural language inference
+update_time: 2019
+load_file: "CoQA_Siva_Reddy_2011.png"

@@ -1,0 +1,15 @@
+name: ACE 2005
+download_url: https://catalog.ldc.upenn.edu/LDC2006T06
+supporter:
+  - Christopher Walker
+  - Stephanie Strassel
+  - Julie Medero
+  - Kazuaki Maeda
+update_time: 2006
+papers: ACE 2005 Multilingual Training Corpus
+task:
+  - Automatic content extraction
+
+description: The ACE 2005 Multilingual Training Corpus was developed by the Language Data Consortium (LDC) and contains approximately 1800 text files in mixed genres of English, Arabic and Chinese, annotated with entities, relationships and events. Genres include newswire, broadcast news, radio talk, blog, forum and cover phone speech. The data was annotated by LDC with support from the ACE project and additional assistance from LDC.
+
+

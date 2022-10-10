@@ -1,0 +1,16 @@
+description: "The model first uses weakly supervised multi-instance learning to 
+construct a title-guided visual diagram, introducing beneficial inductive bias. 
+Then, use adjacent and contextual nodes with text and visual features to 
+enhance the representation. During the build process, the model further 
+uses multi-task learning to merge visual relationships to jointly 
+predict words and object/predicate tag sequences."
+
+download_url: https://github.com/Gitsamshi/WeakVRD-Captioning
+name: WeakVRD-Captioning
+papers: Improving Image Captioning with Better Use of Captions
+supporter:
+- Gitsamshi
+task:
+- Image Caption
+update_time: 2020
+logo_file: 

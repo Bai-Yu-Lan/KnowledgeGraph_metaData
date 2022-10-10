@@ -1,0 +1,11 @@
+description: A dataset for conducting visual scene understanding challenges. A fast R-CNN target detection model trained on the visual genome dataset is used to extract bottom-up features from the MSCOCO dataset.
+download_url: https://github.com/poojahira/image-captioning-bottom-up-top-down
+name: image-captioning-bottom-up-top-down
+papers: Bottom-Up and Top-Down Attention for Image Captioning and Visual Question
+  Answering
+supporter:
+ - Pooja Hiranandani
+task:
+ - Visual Scene Understanding
+update_time: 2019
+log_file: "MSCOCO.png"

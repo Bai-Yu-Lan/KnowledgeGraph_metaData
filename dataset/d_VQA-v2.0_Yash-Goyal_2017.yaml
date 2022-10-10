@@ -1,0 +1,21 @@
+description: "This dataset contains open-ended questions about images. 
+These questions require a model's understanding of vision, language, 
+and common sense to answer. This dataset contains 265016 images, 
+at least 3 questions per picture (average 5.4 questions), 10 
+basic factual answers to each question, 3 reasonable (but 
+possibly incorrect) answers to each question, and provides 
+automated evaluation metrics."
+
+download_url: https://visualqa.org/
+name: VQA v2.0
+papers: 'Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering'
+supporter:
+- Yash Goyal
+- Tejas Khot
+- Douglas Summers-Stay
+- Dhruv Batra
+- Devi Parikh
+task:
+- Image Captioning
+update_time: 2017
+logo_file: "VQA-v2.0.png"

@@ -1,0 +1,16 @@
+description: "The dataset consists of more than 10000 newly created multimodal content samples. The way of expression package selection makes it difficult for strict unimodal classifier to classify correctly. The author also specially designed a dataset, requiring the model to overcome common challenges in AI research, such as false positives caused by lack of examples."
+download_url: https://ai.facebook.com/blog/hateful-memes-challenge-and-data-set/
+name: Hateful-Memes
+papers: The Hateful Memes Challenge:Detecting Hate Speech in Multimodal Memes
+supporter:
+- Douwe Kiela
+- Hamed Firooz
+- Aravind Mohan
+- Vedanuj Goswami
+- Amanpreet Singh
+- Pratik Ringshia
+- Davide Testuggine
+task:
+- Image Captioning
+update_time: 2020
+logo_file: "hateful-memes.jpg"

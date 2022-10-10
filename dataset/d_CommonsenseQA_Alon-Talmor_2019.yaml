@@ -1,0 +1,13 @@
+description: "CommonsenseQA is a new dataset focusing on commonsense question answering, based on knowledge encoded in CONCEPTNET. It contains 12,247 examples."
+download_url: https://www.tau-nlp.org/commonsenseqa
+name: CommonsenseQA
+papers: 'CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge'
+supporter:
+- Alon Talmor
+- Jonathan Herzig
+- Nicholas Lourie
+- Jonathan Berant
+task:
+- Question Answering
+update_time: 2019
+logo_file: "CommonsenseQA.png"

@@ -1,0 +1,11 @@
+description: Microsoft Research Paraphrase Corpus (MRPC) is a corpus consists of 5,801 sentence pairs collected from newswire articles. Each pair is labelled if it is a paraphrase or not by human annotators. The whole set is divided into a training subset (4,076 sentence pairs of which 2,753 are paraphrases) and a test subset (1,725 pairs of which 1,147 are paraphrases).
+download_url: https://www.microsoft.com/en-us/download/details.aspx?id=52398
+name: MRPC
+papers: Automatically Constructing a Corpus of Sentential Paraphrases
+supporter:
+  - William B. Dolan
+  - Chris Brockett
+task:
+  - text generation
+  - natural lauguage inference
+update_time: 2016

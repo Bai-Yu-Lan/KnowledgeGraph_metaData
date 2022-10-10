@@ -1,0 +1,80 @@
+abbreviation:             # 论文中提出模型的缩写，全大写字母表示，若没有则空过
+domain:                   # 对应领域，全大写， - 后必须有一个空格
+  - NLP
+task:
+- Named Entity Recognition
+- Relation Extraction             # 由上传者自己定义，注意 - 后必须有一个空格
+paper:
+  title: "Two are Better than One: Joint Entity and Relation Extraction with Table-Sequence Encoders"   # 所对应的论文名称，以PDF格式论文中的标题为准
+  authors:                # 论文作者，以论文中作者名称为准 注意- 符号后有一个空格
+  - Jue Wang
+  - Lu Wei
+  organization:           # 作者所属机构，需要与作者数量对应 注意- 符号后有一个空格
+  - College of Computer Science and Technology, Zhejiang University
+  - StatNLP Research Group, Singapore University of Technology and Design
+  publish_year: 2020      # 论文发表时间，四位数阿拉伯数字表示年份
+  volume: EMNLP-20
+  press: EMNLP             # 会议/期刊缩写，全大写
+  pages: 1706--1721       # 对应页码，若不存在则记为None，若存在使用 [start_page]--[end_page]表示，如5602--5609
+  download_url: https://aclanthology.org/2020.emnlp-main.133.pdf
+  doi: 10.18653/v1/2020.emnlp-main.133 # 论文的DOI号，可为空
+  citation_number: 74     # 截至上传该信息的时候改论文的引用数量
+code: https://github.com/LorrinWWW/two-are-better-than-one                    # 下载作者公开的该论文对应开源代码的链接，若不存在则使用None代替
+performance:              # 记录改论文中模型的表现
+  # 记录模型表现时，若存在多级metric记录，请参照ReadMe中2.2.1部分的格式进行记录
+  dataset:                # 该论文在不同数据集上的表现
+    ACE04:     # 数据集名称，与数据集yaml文件命名格式相同
+      micro-averaged F1:
+        NER: 88.6      # 该模型在不同metric上的表现
+        RE: 63.3
+        RE+: 59.6
+    ACE05:                 # 数据集名称，与数据集yaml文件命名格式相同
+      micro-averaged F1:
+        NER: 89.5      # 该模型在不同metric上的表现
+        RE: 67.6
+        RE+: 64.3
+    CoNLL04:     # 数据集名称，与数据集yaml文件命名格式相同
+      micro-averaged F1:
+        NER: 90.1      # 该模型在不同metric上的表现
+        RE: 73.8
+        RE+: 73.6
+      macro-averaged F1:
+        NER: 86.9      # 该模型在不同metric上的表现
+        RE: 75.8
+        RE+: 75.4
+    ADE:                 # 数据集名称，与数据集yaml文件命名格式相同
+      macro-averaged F1:
+        NER: 41.25      # 该模型在不同metric上的表现
+        RE: 18.87
+        RE+: 37.75
+  baseline:               # 论文中所对比的不同Baseline模型以及他们的表现
+    "A general framework for information extraction using dynamic span graphs":
+      ACE04:           # 在该baseline模型上使用的数据集
+        micro-averaged F1:
+          NER: 87.4      # 该模型在不同metric上的表现
+          RE: 59.7
+    "Entity, relation, and event extraction with contextualized span representations":
+      ACE05:
+        micro-averaged F1:
+          NER: 88.6      # 该模型在不同metric上的表现
+          RE: 63.4
+    "Span-based joint entity and relation extraction with transformer pre-training":
+      CoNLL04:     # 数据集名称，与数据集yaml文件命名格式相同
+        micro-averaged F1:
+          NER: 88.9      # 该模型在不同metric上的表现
+          RE+: 71.5
+        macro-averaged F1:
+          NER: 86.3      # 该模型在不同metric上的表现
+          RE+: 72.9
+      ADE:     # 数据集名称，与数据集yaml文件命名格式相同
+        macro-averaged F1:
+          NER: 89.3      # 该模型在不同metric上的表现
+          RE+: 79.2
+
+key_words:                # 关键字，参照Abstract后的key words，没有则不填写内容
+
+# 对应原论文中 abstract 内容，英文
+abstract: "Named entity recognition and relation extraction are two important fundamental problems. Joint learning algorithms have been proposed to solve both tasks simultaneously, and many of them cast the joint task as a table-filling problem. However, they typically focused on learning a single encoder (usually learning representation in the form of a table) to capture information required for both tasks within the same space. We argue that it can be beneficial to design two distinct encoders to capture such two different types of information in the learning process. In this work, we propose the novel table-sequence encoders where two different encoders – a table encoder and a sequence encoder are designed to help each other in the representation learning process. Our experiments confirm the advantages of having two encoders over one encoder. On several standard datasets, our model shows significant improvements over existing approaches."
+
+# 对应改论文的引用格式，可从google scholar上直接获取
+citation_string: "Wang J, Lu W. Two are Better than One: Joint Entity and Relation Extraction with Table-Sequence Encoders[C]//Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP). 2020: 1706-1721."

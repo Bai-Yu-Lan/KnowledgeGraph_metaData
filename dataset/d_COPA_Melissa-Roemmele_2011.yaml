@@ -1,0 +1,12 @@
+description: COPA inclues 1000 questions, randomly devided into develop groupand test group with 500 questions for each group. Any question includes one prerequest and two plan, the task is choosing one plan with more causal relationship. True choice is random, so prediction with random guess means 50% accuracy.
+download_url: https://people.ict.usc.edu/~gordon/copa.html
+name: COPA
+papers: Choice of Plausible Alternatives:An Evaluation of Commonsense Causal Reasoning
+supporter:
+- Melissa Roemmele
+- Cosmin Adrian Bejan
+- Andrew S. Gordon
+task:
+- Question Answering
+update_time: 2011
+load_file: "COPA_Melissa_Roemmele_2011.png"

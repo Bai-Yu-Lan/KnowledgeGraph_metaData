@@ -1,0 +1,17 @@
+description: "This dataset was obtained by collecting online articles from the 
+BBC. The dataset contains 204045 training set samples, 11332 validation set 
+samples, and 11334 test set samples. The average length of an article is 431 
+words (about 20 sentences) and the average length of a abstract is 23 words."
+
+download_url: https://github.com/EdinburghNLP/XSum
+name: X-Sum
+papers: Don't Give Me the Details, Just the Summary! Topic-Aware Convolutional Neural
+  Networks for Extreme Summarization
+supporter:
+- Shashi Narayan
+- Shay B. Cohen
+- Mirella Lapata
+task:
+- Text Summary
+update_time: 2018
+logo_file: 

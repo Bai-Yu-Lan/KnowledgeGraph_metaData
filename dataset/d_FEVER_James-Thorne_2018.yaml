@@ -1,0 +1,14 @@
+name: FEVER
+download_url: https://github.com/awslabs/fever
+supporter:
+  - James Thorne
+  - Andreas Vlachos
+  - Christos Christodoulopoulos
+  - Arpit Mittal
+update_time: 2018
+papers: 'FEVER: a Large-scale Dataset for Fact Extraction and VERification'
+task:
+  - Natural language inference
+
+description: The dataset consists of 185,445 sentences produced by modifying sentences extracted from Wikipedia and subsequently validated without knowing which sentence they came from. All data were classified as supporting, rebuttal, or annotated information, and for the first two categories, sentences that constituted necessary evidence for their judgments were also recorded in the dataset.
+logo_file: "FEVER.png"

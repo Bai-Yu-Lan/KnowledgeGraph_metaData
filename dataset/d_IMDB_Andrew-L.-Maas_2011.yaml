@@ -1,0 +1,15 @@
+description: This is a dataset for binary sentiment classification, providing 25,000 movie reviews for training and 25,000 for testing. There are other unlabeled data available. Both raw and processed text are included in the dataset.
+download_url: https://www.imdb.com/interfaces/
+name: IMDB
+papers: Learning Word Vectors for Sentiment Analysis
+supporter:
+- Andrew L. Maas
+- Raymond E. Daly
+- Peter T. Pham
+- Dan Huang
+- Andrew Y. Ng
+- Christopher Potts
+task:
+- Binary sentiment classification
+update_time: 2011
+logo_file: "IMBD.png"

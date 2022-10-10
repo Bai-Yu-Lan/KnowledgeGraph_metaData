@@ -1,0 +1,66 @@
+abbreviation: 
+domain:
+- NLP
+task:
+- Text Summary
+paper:
+  title: Controlling the Amount of Verbatim Copying in Abstractive Summarization
+  authors:
+  - Kaiqiang Song
+  - Bingqing Wang
+  - Zhe Feng
+  - Liu Ren
+  - Fei Liu
+  organization:
+  - University of Central Florida
+  - Robert Bosch LLC
+  publish_year: 2020
+  volume: AAAI-20
+  press: AAAI
+  pages: 8902--8909
+  download_url: https://ojs.aaai.org/index.php/AAAI/article/view/6420
+  doi: 
+  citation_number: 28
+code: https://github.com/ucfnlp/control-over-copying
+performance:
+  dataset:
+    Gigaword:
+      ROUGE-1: 39.08
+      ROUGE-2: 20.47
+      ROUGE-L: 36.69
+    Newsroom:
+      ROUGE-1: 45.93
+      ROUGE-2: 24.14
+      ROUGE-L: 42.51
+  baseline:
+    "PG Networks: Get to the point_ Summarization with pointer-generator networks":
+      Gigaword:
+        ROUGE-1: 34.19
+        ROUGE-2: 16.92
+        ROUGE-L: 31.81
+      Newsroom:
+        ROUGE-1: 39.86
+        ROUGE-2: 19.51
+        ROUGE-L: 36.61
+keywords: 
+citation_papers: 
+abstract: "An abstract must not change the meaning of the original text. 
+A single most effective way to achieve that is to increase the amount of 
+copying while still allowing for text abstraction. Human editors can usually 
+exercise control over copying, resulting in summaries that are more extractive 
+than abstractive, or vice versa. However, it remains poorly understood 
+whether modern neural abstractive summarizers can provide the same 
+flexibility, i.e., learning from single reference summaries to generate 
+multiple summary hypotheses with varying degrees of copying. In this paper,
+ we present a neural summarization model that, by learning from single 
+ human abstracts, can produce a broad spectrum of summaries ranging from 
+ purely extractive to highly generative ones. We frame the task of summarization 
+ as language modeling and exploit alternative mechanisms to generate summary 
+ hypotheses. Our method allows for control over copying during both training 
+ and decoding stages of a neural summarization model. Through extensive 
+ experiments we illustrate the significance of our proposed method on controlling 
+ the amount of verbatim copying and achieve competitive results over strong 
+ baselines. Our analysis further reveals interesting and unobvious facts."
+
+citation_string: "Song K, Wang B, Feng Z, et al. Controlling the amount of verbatim copying in abstractive summarization[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2020, 34(05): 8902-8909."
+

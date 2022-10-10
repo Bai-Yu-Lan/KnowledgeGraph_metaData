@@ -1,0 +1,55 @@
+abbreviation: Longformer
+citation_papers: 
+code: https://github.com/allenai/longformer
+domain:
+- NLP
+keywords: 
+paper:
+  authors:
+  - Iz Beltagy
+  - Matthew E. Peters
+  - Arman Cohan
+  citation_number: 1229
+  doi: 
+  download_url: https://arxiv.org/pdf/2004.05150.pdf
+  organization:
+  - Allen Institute for Artificial Intelligence
+  - Allen Institute for Artificial Intelligence
+  - Allen Institute for Artificial Intelligence
+  pages: 
+  press: 
+  publish_year: 2020
+  title: "Longformer: The Long-Document Transformer"
+  volume: 
+performance:
+  dataset:
+    HotpotQA:
+      F1: 64.4
+    Hyperpartisan:
+      F1: 94.8
+    IMDB:
+      acc: 95.7
+    OntoNotes:
+      F1: 78.6
+    TriviaQA:
+      F1: 75.2
+    WikiHop:
+      acc: 75.0
+  baseline:
+    "RoBERTa: A Robustly Optimized BERT Pretraining Approach":
+      HotpotQA:
+        F1: 63.5
+      Hyperpartisian:
+        F1: 87.4
+      IMDB:
+        acc: 95.3
+      OntoNotes:
+        F1: 78.4
+      TriviaQA:
+        F1: 74.3
+      WikiHop:
+        acc: 72.4
+task:
+- Language Model
+abstract: "Transformer-based models are unable to process long sequences due to their self-attention operation, which scales quadratically with the sequence length. To address this limitation, we introduce the Longformer with an attention mechanism that scales linearly with sequence length, making it easy to process documents of thousands of tokens or longer. Longformer's attention mechanism is a drop-in replacement for the standard self-attention and combines a local windowed attention with a task motivated global attention. Following prior work on long-sequence transformers, we evaluate Longformer on character-level language modeling and achieve state-of-the-art results on text8 and enwik8. In contrast to most prior work, we also pretrain Longformer and finetune it on a variety of downstream tasks. Our pretrained Longformer consistently outperforms RoBERTa on long document tasks and sets new state-of-the-art results on WikiHop and TriviaQA. We finally introduce the Longformer-Encoder-Decoder (LED), a Longformer variant for supporting long document generative sequence-to-sequence tasks, and demonstrate its effectiveness on the arXiv summarization dataset."
+citation_string: "Beltagy I, Peters M E, Cohan A. Longformer: The long-document transformer[J]. arXiv preprint arXiv:2004.05150, 2020."

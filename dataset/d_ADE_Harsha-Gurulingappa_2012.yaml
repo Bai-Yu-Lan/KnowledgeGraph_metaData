@@ -1,0 +1,14 @@
+description: "A systematically annotated corpus to support the development and validation of methods for the automatic extraction of drug-related adverse reactions from medical case reports. Documents were systematically double-annotated in each round to ensure consistency of annotation. Finally, the annotated documents are reconciled to generate representative consensus annotations."
+download_url: https://groups.csail.mit.edu/vision/datasets/ADE20K/
+name: ADE
+papers: Development of a Benchmark Corpus to Support the Automatic Extraction of Drug‐related
+  Adverse Effects from Medical Case Reports
+supporter:
+- Harsha Gurulingappa
+- Abdul Mateen
+- Angus Roberts
+- Juliane Fluck
+task:
+- Named Entity Recognition
+update_time: 2012
+logo_file:

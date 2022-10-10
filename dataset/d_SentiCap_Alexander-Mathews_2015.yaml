@@ -1,0 +1,12 @@
+description: SentiCap dataset contains several thousand pictures with positive and negative emotions. The emotional captions are constructed by the author by rewriting factual descriptions. In total, there are more than 2000 emotional captions.
+download_url: http://users.cecs.anu.edu.au/~u4534172/senticap.html
+name: SentiCap
+papers: "SentiCap: Generating Image Descriptions with Sentiments"
+supporter:
+  - Alexander Mathews
+  - Lexing Xie
+  - Xuming He
+task:
+  - Image Captioning
+update_time: 2015
+logo_file: "SentiCap.png"

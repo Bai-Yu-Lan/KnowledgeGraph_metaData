@@ -1,0 +1,39 @@
+description: "WMT2016 is a collection of datasets used in the Open Tasks 
+of the 1st Machine Translation Conference. There are mainly ten open 
+tasks: news translation task, IT domain translation task, biomedical 
+translation task, automatic post-editing task, measurement task 
+(assessing the quality of machine translation given a reference 
+translation), quality assessment task (assessing the quality of 
+machine translation without any reference), tuning task (optimizing 
+a given machine translation system), pronoun translation task, bilingual 
+document alignment task, multimodal translation task."
+
+download_url: http://www.statmt.org/wmt16/index.html
+name: WMT2016
+papers: Findings of the 2016 Conference on Machine Translation (WMT16)
+supporter:
+- Ondrej Bojar
+- Rajen Chatterjee
+- Christian Federmann
+- Yvette Graham
+- Barry Haddow
+- Matthias Huck
+- Antonio Jimeno Yepes
+- Philipp Koehn
+- Varvara Logacheva
+- Christof Monz
+- Matteo Negri
+- Aurelie Neveol
+- Mariana Neves
+- Martin Popel
+- Matt Post
+- Raphael Rubino
+- Carolina Scarton
+- Lucia Specia
+- Marco Turchi
+- Karin Verspoor
+- Marcos Zampieri
+task:
+- Statistical machine translation
+update_time: 2016
+logo_file: 

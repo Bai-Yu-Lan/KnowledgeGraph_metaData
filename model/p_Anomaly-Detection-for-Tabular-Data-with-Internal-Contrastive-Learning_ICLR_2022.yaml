@@ -1,0 +1,120 @@
+abbreviation: # 论文中提出模型的缩写，全大写字母表示，若没有则空过
+domain: 
+  - ANOMALY DETECTION               # 论文对应领域，全大写
+task: 
+  - ANOMALY DETECTION              # 由上传者自己定义，注意 - 后必须有一个空格
+paper:
+  title: "Anomaly Detection for Tabular Data with Internal Contrastive Learning"   # 所对应的论文名称，以PDF格式论文中的标题为准
+  authors:                # 论文作者，以论文中作者名称为准 注意- 符号后有一个空格
+  - Tom Shenkar
+  - Lior Wolf
+  organization:           # 作者所属机构，需要与作者数量对应 注意- 符号后有一个空格
+  - Blavatnik School of Computer Science, Tel Aviv University
+  - Blavatnik School of Computer Science, Tel Aviv University
+  publish_year: 2022      # 论文发表时间，四位数阿拉伯数字表示年份
+  volume: None
+  press: ICLR             # 会议/期刊缩写，全大写
+  pages: None       # 对应页码，若不存在则记为None，若存在使用 [start_page]--[end_page]表示，如5602--5609
+  download_url: https://openreview.net/pdf?id=_hszZbt46bT
+  doi: 
+  citation_number: 6     # 截至上传该信息的时候改论文的引用数量
+code:  https://openreview.net/forum?id=_hszZbt46bT                   # 下载作者公开的该论文对应开源代码的链接，若不存在则使用None代替
+performance:              # 记录改论文中模型的表现
+  # 记录模型表现时，若存在多级metric记录，请参照ReadMe中2.2.1部分的格式进行记录
+  dataset:                # 该论文在不同数据集上的表现
+    Arrhyhmia:     # 数据集名称，与数据集yaml文件命名格式相同
+      F1 Score: 61.8      # 该模型在不同metric上的表现
+      SD: 1.8
+    Thyroid:                
+      F1 Score: 76.8      
+      SD: 1.2
+    KDD:
+      F1 Score: 99.4
+      SD: 0.1
+    KDDRev:
+      F1 Score: 99.2
+      SD: 0.3
+  baseline:              
+    "Support vector method for novelty detection":  
+      Arrhyhmia:
+        F1 Score: 45.8
+      Thyroid:                
+        F1 Score: 38.9      
+      KDD:
+        F1 Score: 79.5
+      KDDRev:
+        F1 Score: 83.2
+    "Lof:identifying density-based local outliers": # 另一个baseline对应的论文title
+      Arrhyhmia:
+        F1 Score: 50.0
+        SD: 0.0
+      Thyroid:                
+        F1 Score: 52.7    
+        SD: 0.0
+      KDD:
+        F1 Score: 83.8
+        SD: 5.2
+      KDDRev:
+        F1 Score: 81.6
+        SD: 3.6
+    "Deep autoencoding gaussian mixture model for unsupervised anomaly detection":
+      Arrhyhmia:
+        F1 Score: 49.8
+      Thyroid:                
+        F1 Score: 47.8   
+      KDD:
+        F1 Score: 93.7
+      KDDRev:
+        F1 Score: 93.8
+    "Outlier detection with autoencoder ensembles":    # 另一个baseline对应的论文title
+      Arrhyhmia:
+        F1 Score: 51.5
+        SD: 1.6
+      Thyroid:                
+        F1 Score: 75.0    
+        SD: 0.8
+      KDD:
+        F1 Score: 92.7
+        SD: 0.3
+      KDDRev:
+        F1 Score: 95.9
+        SD: 0.4
+    "DROCC: Deep robust one-class classification":    # 另一个baseline对应的论文title
+      Arrhyhmia:
+        F1 Score: 38.8
+        SD: 6.2
+      Thyroid:                
+        F1 Score: 72.7    
+        SD: 3.1
+    "Classification-based anomaly detection for general data(Method GOAD)":    # 另一个baseline对应的论文title
+      Arrhyhmia:
+        F1 Score: 52.0
+        SD: 2.3
+      Thyroid:                
+        F1 Score: 74.5    
+        SD: 1.1
+      KDD:
+        F1 Score: 98.4
+        SD: 0.2
+      KDDRev:
+        F1 Score: 98.9
+        SD: 0.3
+    "Classification-based anomaly detection for general data(Method COPOD)":    # 另一个baseline对应的论文title
+      Arrhyhmia:
+        F1 Score: 58.2
+        SD: 1.4
+      Thyroid:                
+        F1 Score: 30.8   
+        SD: 0.5
+      KDD:
+        F1 Score: 44.5
+        SD: 0.1
+      KDDRev:
+        F1 Score: 30.9
+        SD: 0.4
+
+
+key_words:                # 关键字，参照Abstract后的key words，没有则不填写内容
+citation_papers:
+abstract: "We consider the task of finding out-of-class samples in tabular data, where little can be assumed on the structure of the data. In order to capture the structure of the samples of the single training class, we learn mappings that maximize the mutual information between each sample and the part that is masked out. The mappings are learned by employing a contrastive loss, which considers only one sample at a time. Once learned, we can score a test sample by measuring whether the learned mappings lead to a small contrastive loss using the masked parts of this sample. Our experiments show that our method leads by a sizable accuracy gap in comparison to the literature and that the same default rule of hyperparameters selection provides state-of-the-art results across benchmarks."
+citation_string: "Shenkar T, Wolf L. Anomaly detection for tabular data with internal contrastive learning[C]//International Conference on Learning Representations. 2021."

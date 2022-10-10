@@ -1,0 +1,337 @@
+abbreviation: HGN
+citation_papers: 
+  - Learning to retrieve reasoning paths over wikipedia graphfor question answering
+  - "Longformer: The long-document transformer"
+  - Reading Wikipedia to answer open-domain question
+  - Understandingdataset design choices for multi-hop reasoning
+  - Multi-hop question answering via reasoning chains
+  - Coarse-to-fine question answering for long document
+  - Question answering by reasoning across documentswith graph convolutional networks
+  - "Bert: Pretraining of deepbidirectional transformers for language understanding"
+  - Neural models for reasoning over multiple mentions using coreference
+  - Cognitive graph for multi-hop reading comprehension at scale
+  - Multi-hop paragraph retrieval for open-domain question answering
+  - Span selection pretraining for question answering
+  - Multi-step entity-centric information retrieval for multi-hop question answering
+  - Latent question reformulation and information accumulation for multi-hop machine reading
+  - "Avoiding reasoning shortcuts: Adversarial evaluation, training, and model development for multi-hop qa"
+  - Self-assembling modular networks for interpretable multi-hop reasoning
+  - Semi-supervised classification with graph convolutional networks
+  - "Race: Large-scale reading comprehension dataset from examinations"
+  - "Albert: A lite bert for self-supervised learning of language representations"
+  - Stochastic answer networks for machinereading comprehension
+  - "Roberta: A robustly optimized bert pretraining approach"
+  - Compositional questions do not necessitate multi-hop reasoning
+  - Efficient and robust question answering from minimal context over documents
+  - Multi-hop reading comprehension through question decomposition and rescoring
+  - "Answering while summarizing: Multi-task learning for multi-hop qa with evidence extraction"
+  - Answering complex open-domain questions through iterative query generation
+  - "Squad: 100,000+ questions formachine comprehension of text"
+  - Bidirectional attentionflow for machine comprehension
+  - Is graph structure necessary for multi-hop reasoningt
+  - Exploring graph-structured passage representation for multi-hop reading comprehension with graph neural networks
+  - Multi-mention learning for reading comprehension with neural cascades
+  - The web as a knowledge-base for answering complex questions
+  - "Newsqa: A machine compre-hension dataset"
+  - "Select, answer  and  explain:  Interpretable  multi-hop  readingcomprehension over multiple document"
+  - Multi-hop reading comprehension across multiple documents by reasoning over heterogeneous graph
+  - Graph attention networks
+  - Machine comprehension using match-lstm and answer pointer
+  - "Cluster-former:  Clustering-based sparse transformer for long-range dependency encoding"
+  - Constructing datasets for multi-hopreading comprehension across documents
+  - "Transformers: State-of-the-art natural language processing"
+  - Dynamically fused graph network for multi-hop reasoning
+  - Simple yet effective bridge reasoning for open-domain multi-hop question answering
+  - "Hotpotqa: A dataset for diverse, explainable multi-hop question answering"
+  - Revealing the importance of semantic retrieval for machinereading at scale
+  - "Big bird:  Transformers for longer sequences"
+  - "Transformer-xh:  Multi-evidence reasoning with extra hop attention"
+  - Coarse-grain fine-grain coattention network for multi-evidence question answering
+code: https://github.com/yuwfan/HGN
+domain:
+  - NLP
+task:
+  - Machine Reading Comprehension
+
+paper:
+  authors:
+  - Yuwei Fang
+  - Siqi Sun
+  - Zhe Gan
+  - Rohit Pillai
+  - Shuohang Wang
+  - Jingjing Liu
+  citation_number: 108
+  doi: 10.48550/arXiv.1911.03631
+  download_url: https://arxiv.org/abs/1911.03631
+  organization:
+  - Microsoft Dynamics 365 AI Research
+  - Microsoft Dynamics 365 AI Research
+  - Microsoft Dynamics 365 AI Research
+  - Microsoft Dynamics 365 AI Research
+  - Microsoft Dynamics 365 AI Research
+  - Microsoft Dynamics 365 AI Research
+  pages: 
+  press: EMNLP
+  publish_year: 2019
+  title: Hierarchical Graph Network for Multi-hop Question Answering
+  volume: 
+performance:
+  dataset:
+    HotpotQA:
+      Distractor:
+        Ans:
+          EM: 69.22
+          F1: 82.19
+        Joint:
+          EM: 47.11
+          F1: 74.21
+        Sup:
+          EM: 62.76
+          F1: 88.47
+      Fullwiki:
+        Ans:
+          EM: 59.74
+          F1: 71.41
+        Sup:
+          EM: 51.03
+          F1: 77.37
+        Joint:
+          EM: 37.92
+          F1: 62.26
+  baseline:
+    Multi-hop reading comprehension through question decomposition and rescoring:
+      HotpotQA:
+        Distractor:
+          Ans:
+            EM: 55.20
+            F1: 69.63
+    Multi-hop question answering via reasoning chains:
+      HotpotQA:
+        Distractor:
+          Ans: 
+            EM: 61.20
+            F1: 74.11
+    "Hotpotqa: A dataset for diverse, explainable multi-hop question answering" :
+      HotpotQA:
+        Distractor:
+          Ans:
+            EM: 45.60
+            F1: 59.02
+          Sup:
+            EM: 20.32
+            F1: 64.49
+          Joint:
+            EM: 10.83
+            F1: 40.16
+        Fullwiki:
+          Ans:
+            EM: 23.95
+            F1: 32.89
+          Sup:
+            EM: 3.86
+            F1: 37.71
+          Joint:
+            EM: 1.85
+            F1: 16.15
+    "Answering while summarizing: Multi-task learning for multi-hop qa with evidence extraction":
+      HotpotQA:
+        Distractor:
+          Ans:
+            EM: 53.86
+            F1: 68.06
+          Sup:
+            EM: 57.75
+            F1: 84.49
+          Joint:
+            EM: 34.63
+            F1: 59.61
+        Fullwiki:
+          Ans:
+            EM: 28.66
+            F1: 38.06
+          Sup:
+            EM: 14.20
+            F1: 44.35
+          Joint:
+            EM: 8.69
+            F1: 23.10
+    Dynamically fused graph network for multi-hop reasoning:
+      HotpotQA:
+        Distractor:
+          Ans:
+            EM: 56.31
+            F1: 69.69
+          Sup:
+            EM: 51.50
+            F1: 81.62
+          Joint:
+            EM: 33.62
+            F1: 59.82
+    Latent question reformulation and information accumulation for multi-hop machine reading:
+      HotpotQA:
+        Distractor:
+          Ans:
+            EM: 60.20
+            F1: 73.78
+          Sup:
+            EM: 56.21
+            F1: 84.09
+          Joint:
+            EM: 36.56
+            F1: 63.68
+    Span selection pre-training for question answering:
+      HotpotQA:
+        Distractor:
+          Ans:
+            EM: 64.99
+            F1: 78.59
+          Sup:
+            EM: 55.47
+            F1: 85.57
+          Joint:
+            EM: 39.77
+            F1: 69.12
+    "Select, answer and explain: Interpretable multi-hop reading comprehension over multiple document" :
+      HotpotQA:
+        Distractor:
+          Ans:
+            EM: 66.92
+            F1: 79.62
+          Sup:
+            EM: 61.53
+            F1: 86.86
+          Joint:
+            EM: 45.36
+            F1: 71.45
+    Is graph structure necessary for multi-hop reasoningt:
+      HotpotQA:
+        Distractor:
+          Ans:
+            EM: 67.98
+            F1: 81.24
+          Sup:
+            EM: 60.81
+            F1: 87.63
+          Joint:
+            EM: 44.67
+            F1: 72.73
+    The long-document transformer:
+      HotpotQA:
+        Distractor:
+          Ans:
+            EM: 68.00
+            F1: 81.25
+          Sup:
+            EM: 63.09
+            F1: 88.34
+          Joint:
+            EM: 45.91
+            F1: 73.16
+    "Big bird: Transformers for longer sequences":
+      HotpotQA:
+        Distractor:
+          Ans:
+            EM: 68.12
+            F1: 81.18
+          Sup:
+            EM: 63.25
+            F1: 89.09
+          Joint:
+            EM: 46.40
+            F1: 73.62
+    Simple yet effective bridge reasoning for open-domain multi-hop question answering:
+      HotpotQA:
+        Fullwiki:
+          Ans:
+            EM: 36.04
+            F1: 47.43
+    Multi-hop paragraph retrieval for open-domain question answering:
+      HotpotQA:
+        Fullwiki:
+          Ans:
+            EM: 30.61
+            F1: 40.26
+          Sup:
+            EM: 16.65
+            F1: 47.33
+          Joint:
+            EM: 10.85
+            F1: 27.01
+    Cognitive graph for multi-hop reading comprehension at scale:
+      HotpotQA:
+        Fullwiki:
+          Ans:
+            EM: 37.12
+            F1: 48.87
+          Sup:
+            EM: 22.82
+            F1: 57.69
+          Joint:
+            EM: 12.42
+            F1: 34.92
+    Answering complex open-domain questions through iterative query generation:
+      HotpotQA:
+        Fullwiki:
+          Ans:
+            EM: 37.92
+            F1: 48.58
+          Sup:
+            EM: 30.69
+            F1: 64.24
+          Joint:
+            EM: 18.04
+            F1: 39.13
+    Multi-step entity-centric information retrieval for multi-hop question answering:
+      HotpotQA:
+        Fullwiki:
+          Ans:
+            EM: 41.82
+            F1: 53.09
+          Sup:
+            EM: 26.26
+            F1: 57.29
+          Joint:
+            EM: 17.01
+            F1: 39.18
+    Revealing the importance of semantic retrieval for machine reading at scale:
+      HotpotQA:
+        Fullwiki:
+          Ans:
+            EM: 45.32
+            F1: 57.34
+          Sup:
+            EM: 38.67
+            F1: 70.83
+          Joint:
+            EM: 25.14
+            F1: 47.60
+    "Transformer-xh: Multi-evidence reasoning with extra hop attention" :
+      HotpotQA:
+        Fullwiki:
+          Ans: 
+            EM: 48.95
+            F1: 60.75
+          Sup:
+            EM: 41.66
+            F1: 70.01
+          Joint:
+            EM: 27.13
+            F1: 49.57
+    Learning to retrieve reasoning paths over wikipedia graphfor question answering:
+      HotpotQA:
+        Fullwiki:
+          Ans:
+            EM: 60.04
+            F1: 72.96
+          Sup:
+            EM: 49.08
+            F1: 76.41
+          Joint:
+            EM: 35.35
+            F1: 61.18
+
+ 
+keywords:
+abstract: "In this paper, we present Hierarchical Graph Network (HGN) for multi-hop question answering. To aggregate clues from scattered texts across multiple paragraphs, a hierarchical graph is created by constructing nodes on different levels of granularity (questions, paragraphs, sentences, entities), the representations of which are initialized with pre-trained contextual encoders. Given this hierarchical graph, the initial node representations are updated through graph propagation, and multi-hop reasoning is performed via traversing through the graph edges for each subsequent sub-task (e.g., paragraph selection, supporting facts extraction, answer prediction). By weaving heterogeneous nodes into an integral unified graph, this hierarchical differentiation of node granularity enables HGN to support different question answering sub-tasks simultaneously. Experiments on the HotpotQA benchmark demonstrate that the proposed model achieves new state of the art, outperforming existing multi-hop QA approaches."
+citation_string: "Fang Y, Sun S, Gan Z, et al. Hierarchical graph network for multi-hop question answering[J]. arXiv preprint arXiv:1911.03631, 2019."

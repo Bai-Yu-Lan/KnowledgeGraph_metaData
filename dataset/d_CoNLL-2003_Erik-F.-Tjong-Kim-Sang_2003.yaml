@@ -1,0 +1,21 @@
+name: CoNLL-2003      # 名称中出现特殊符号如 / \ # @ ! 在前后各留一个空格
+download_url: http://lcg-www.uia.ac.be/conll2003/ner/ # 下载该数据集的链接
+supporter:
+  - Erik F. Tjong Kim Sang     # 注意人名前的 - 符号与人名之间必须有一个空格
+update_time: 2003           # 4位阿拉伯数字记录年份信息
+papers: "Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition" # 所对应的论文名称，以PDF格式论文中的标题为准
+task: 
+  - Named Entity Recognition                 # 由上传者自己定义，注意 - 后必须有一个空格
+  
+# description 描述信息由上传者自己定义，不可换行
+description: "The CoNLL-2003 named entity dataset is used for the CoNLL-2003 
+shared task and consists of eight files covering two languages: English 
+and German.Each language contains: training set, development set, test set, 
+unlabeled data. 1. Training set: used for model learning and training; 2. 
+Development set: used for parameter tuning during model learning; 3. Test 
+Set: Tests for Results. Note: The unlabeled data is large, the unlabeled 
+data contains 17 million tokens (English) and 14 million tokens (German), 
+and other data sets are relatively small. English data taken from Reuters 
+Corpus, a dataset consisting of Reuters news stories from August 1996 to August 1997."
+
+logo_file:  "CoNLL-2003.png" # 记录数据集对应logo文件的名称，不存在对应的logo图片则内容为空 

@@ -1,0 +1,41 @@
+abbreviation: SWAP-NET
+domain:
+  - NLP
+task:
+  - Text Summary
+paper: 
+  title: "Extractive Summarization with SWAP-NET:Sentences and Words from Alternating Pointer Networks"
+  authors:
+   - Aishwarya Jadhav
+   - Vaibhav Rajan
+  organization:
+  - Indian Institute of Science
+  - School of Computing National University of Singapore
+  publish_year: 2018
+  volume: ACL-2018
+  press: Association for Computational Linguistics
+  pages: 142--151
+  download_url:  https://www.aclweb.org/anthology/P18-1014.pdf
+  doi: 
+  citation_number: 39
+code: 
+performance:
+  dataset:
+    CNN / Daily Mail:
+      ROUGE-1: 41.6
+      ROUGE-2: 18.3
+      ROUGE-L: 37.7
+key_words:
+citation_papers:
+abstract: "We present a new neural sequence-tosequence model for extractive 
+summarization called SWAP-NET (Sentences and Words from Alternating Pointer 
+Networks). Extractive summaries comprising a salient subset of input sentences, 
+often also contain important key words. Guided by this principle, we design 
+SWAP-NET that models the interaction of key words and salient sentences using 
+a new twolevel pointer network based architecture. SWAP-NET identifies both 
+salient sentences and key words in an input document, and then combines them 
+to form the extractive summary. Experiments on large scale benchmark corpora 
+demonstrate the efficacy of SWAP-NET that outperforms state-of-the-art 
+extractive summarizers."
+citation_string: "Jadhav A, Rajan V. Extractive summarization with swap-net: Sentences and words from alternating pointer networks[C]//Proceedings of the 56th annual meeting of the association for computational linguistics (volume 1: Long papers). 2018: 142-151."
+

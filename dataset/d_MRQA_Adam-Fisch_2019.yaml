@@ -1,0 +1,15 @@
+description: The dataset is a collection of subsets of 18 existing QA datasets and converted into a unified format. Of these 18 datasets, 6 datasets are available for training, 6 datasets are available for development, and the last 6 datasets are available for testing.
+download_url: https://github.com/mrqa/MRQA-Shared-Task-2019
+name: MRQA
+papers: MRQA 2019 Shared Task:Evaluating Generalization in Reading Comprehension
+supporter:
+- Adam Fisch
+- Alon Talmor
+- Robin Jia
+- Minjoon Seo
+- Eunsol Choi
+- Danqi Chen
+task:
+- Question Answering
+update_time: 2019
+log_file: "MRQA-Shared-Task-2019.png"

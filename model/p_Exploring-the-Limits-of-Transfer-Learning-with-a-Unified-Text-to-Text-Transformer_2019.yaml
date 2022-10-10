@@ -1,0 +1,102 @@
+abbreviation: Exploring the Limits of Transfer Learning
+domain:
+  - NLP
+task:
+  - Natural Language Inference
+paper:
+  title: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
+  authors:
+  - Colin Raffel
+  - Noam Shazeer
+  - Adam Roberts
+  - Katherine Lee
+  - Sharan Narang
+  - Michael Matena
+  - Yanqi Zhou
+  - Wei Li
+  - Peter J. Liu
+  organization:
+  - Google, Mountain View, CA 94043, USA
+  publish_year: 2019
+  volume: None
+  press: arXiv
+  pages: None
+  download_url: https://arxiv.org/abs/1910.10683
+  doi: 
+  citation_number: 4464
+code: https://github.com/google-research/text-to-text-transfer-transformer
+performance:
+  dataset:
+    BoolQ:
+      Average: 91.2
+    CB:
+      Accuracy: 96.8
+      F1: 93.9
+    CNN/DM:
+      ROUGE-1: 43.52
+      ROUGE-2: 21.55
+      ROUGE-L: 40.69
+    COPA:
+      Accuracy: 94.8
+    CoLA:
+      Matthew’s: 71.6
+    GLUE:
+      Average: 90.3
+    MNLI-m:
+      Accuracy: 92.2
+    MNLI-mm:
+      Accuracy: 91.9
+    MRPC:
+      Accuracy: 90.4
+      F1: 92.8
+    MultiRC:
+      EM: 63.3
+      F1a: 88.1
+    QNLI:
+      Accuracy: 96.9
+    QQP:
+      Accuracy: 90.6
+      F1: 75.1
+    RTE:
+      Accuracy: 92.5
+    ReCoRD:
+      Accuracy: 93.4
+      F1: 94.1
+    SQuAD:
+      EM: 91.26
+      F1: 96.22
+    SST-2:
+      Accuracy: 97.5
+    STS-B:
+      Pearson: 93.1
+      Spearman: 92.8
+    SuperGLUE:
+      Average: 88.9
+    WMT EnDe:
+      BLEU: 32.1
+    WMT EnFr:
+      BLEU: 43.4
+    WMT EnRo:
+      BLEU: 28.1
+    WNLI:
+      Accuracy: 94.5
+    WSC:
+      Accuracy: 93.8
+    WiC:
+      Accuracy: 76.9
+keywords:
+  - transfer learning
+  - natural language processing
+  - multi-task learning
+  - attentionbased models
+  - deep learning
+citation_papers:
+abstract: "Transfer learning, where a model is first pre-trained on a data-rich task before being finetuned on a downstream task, has emerged as a powerful technique in natural language processing (NLP). The effectiveness of transfer learning has given rise to a diversity of approaches, methodology, and practice. In this paper, we explore the landscape of transfer learning techniques for NLP by introducing a unified framework that converts all text-based language problems into a text-to-text format. Our systematic study compares pre-training objectives, architectures, unlabeled data sets, transfer approaches, and other factors on dozens of language understanding tasks. By combining the insights from our exploration with scale and our new “Colossal Clean Crawled Corpus”, we achieve state-of-the-art results on many benchmarks covering summarization, question answering, text classification, and more. To facilitate future work on transfer learning for NLP, we release our data set, pre-trained models, and code."
+citation_string: "Raffel C, Shazeer N, Roberts A, et al. Exploring the limits of transfer learning with a unified text-to-text transformer[J]. J. Mach. Learn. Res., 2020, 21(140): 1-67."
+
+
+
+
+
+
+    

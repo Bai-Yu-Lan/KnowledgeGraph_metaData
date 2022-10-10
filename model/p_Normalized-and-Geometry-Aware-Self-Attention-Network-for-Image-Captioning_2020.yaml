@@ -1,0 +1,96 @@
+abbreviation: GSA
+domain:
+  - CV
+task:
+  - Image Captioning
+paper:
+  title: Normalized and Geometry-Aware Self-Attention Network for Image Captioning
+  authors:
+      - Longteng Guo
+      - Jing Liu
+      - Xinxin Zhu
+      - Peng Yao
+      - Shichen Lu
+      - Hanqing Lu
+  organization:
+    - National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences
+    - National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences
+    - National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences
+    - University of Science and Technology Beijing
+    - National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences
+    - Wuhan University
+  publish_year: 2020
+  volume: 
+  press: IEEE/CVF
+  pages: 10327--10336
+  download_url: https://openaccess.thecvf.com/content_CVPR_2020/html/Guo_Normalized_and_Geometry-Aware_Self-Attention_Network_for_Image_Captioning_CVPR_2020_paper.html
+  doi: arXiv.2003.08897
+  citation_number: 118
+code: 
+performance:
+  dataset:
+    Microsoft-COCO:
+      BLEU-4: 39.9 
+      METEOR: 29.3
+      ROUGEL: 59.2
+      CIDEr: 132.1
+      SPICE: 23.3
+  Up-Down:
+    "Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering":
+      Microsoft-COCO:
+        BLEU-4: 36.3
+        METEOR: 27.7
+        ROUGEL: 56.9
+        CIDEr: 120.1
+        SPICE: 21.4   
+  CAVP:
+    "Context-Aware Visual Policy Network for Sequence-Level Image Captioning": 
+      Microsoft-COCO:
+        BLEU-4: 38.6
+        METEOR: 28.3 
+        ROUGEL: 58.5 
+        CIDEr: 126.3
+        SPICE: 21.6  
+  SGAE:
+    "Auto-Encoding Scene Graphs for Image Captioning": 
+      Microsoft-COCO:
+        BLEU-4: 39.0
+        METEOR: 28.4
+        ROUGEL: 58.9
+        CIDEr: 129.1
+        SPICE: 22.2
+  VSUA: 
+    "Aligning Linguistic Words and Visual Semantic Units for Image Captioning": 
+      Microsoft-COCO:
+        BLEU-4: 38.4
+        METEOR: 28.5
+        ROUGEL: 58.4
+        CIDEr: 128.6
+        SPICE: 22.0
+  ORT: 
+    "Image Captioning: Transforming Objects into Words": 
+      Microsoft-COCO:
+        BLEU-4: 38.6
+        METEOR: 28.7
+        ROUGEL: 58.4 
+        CIDEr: 128.3 
+        SPICE: 22.6 
+  AoANet: 
+    "Attention on Attention for Image Captioning": 
+      Microsoft-COCO:
+        BLEU-4: 38.9
+        METEOR: 29.2 
+        ROUGEL: 58.8 
+        CIDEr: 129.8
+        SPICE: 22.4             
+  MT: 
+    "Multimodal Transformer with Multi-View Visual Representation for Image Captioning": 
+      Microsoft-COCO:
+        BLEU-4: 39.8
+        METEOR: 29.1 
+        ROUGEL: 59.1
+        CIDEr: 130.9
+key_words: 
+citation_papers:        
+abstract: "Self-attention (SA) network has shown profound value in image captioning. In this paper , we improve SA from two aspects to promote the performance of image captioning. First, we propose Normalized Self-Attention (NSA), a reparameterization of SA that brings the benefits of normalization inside SA. While normalization is previously only applied outside SA, we introduce a novel normalization method and demonstrate that it is both possible and beneficial to perform it on the hidden activations inside SA. Second, to compensate for the major limit of Transformer that it fails to model the geometry structure of the input objects, we propose a class of Geometry-aware Self-Attention (GSA) that extends SA to explicitly and efficiently consider the relative geometry relations between the objects in the image. To construct our image captioning model, we combine the two modules and apply it to the vanilla self-attention network. We extensively evaluate our proposals on MS-COCO image captioning dataset and superior results are achieved when comparing to state-of-the-art approaches. Further experiments on three challenging tasks, i.e. video captioning, machine translation, and visual question answering, show the generality of our methods."
+citation_string: "Guo L, Liu J, Zhu X, et al. Normalized and geometry-aware self-attention network for image captioning[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020: 10327-10336."

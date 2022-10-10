@@ -1,0 +1,47 @@
+abbreviation: Improving IC
+citation_papers: null
+code: https://github.com/Gitsamshi/WeakVRD-Captioning
+domain:
+- CV
+keywords: null
+paper:
+  authors:
+  - Zhan Shi
+  - Xu Zhou
+  - Xipeng Qiu
+  - Xiaodan Zhu
+  citation_number: 1
+  doi: null
+  download_url: https://www.aclweb.org/anthology/2020.acl-main.664/
+  organization:
+  - Ingenuity Labs Research Institute, Queen’s University
+  - Department of Electrical and Computer Engineering, Queen’s University
+  - School of Computer Science, Fudan University
+  pages: 7454--7464
+  press: Proceedings of the 58th Annual Meeting of the Association for Computational
+    Linguistics
+  publish_year: 2020
+  title: Improving Image Captioning with Better Use of Captions
+  volume: None
+performance:
+  dataset:
+    Microsoft COCO:
+      BLEU-1: 80.8
+      BLEU-4: 38.9
+      CIDEr-D: 129.6
+      METEOR: 28.8
+      ROUGE: 58.7
+      SPICE: 22.4
+  Bottom-up and top-down attention for image captioning and visual question answering:
+    Microsoft COCO:
+      BLEU-1: 77.2
+      BLEU-4: 36.2
+      CIDEr-D: 113.5
+      METEOR: 27.0
+      ROUGE: 56.4
+      SPICE: 20.3
+
+task:
+- Image Captioning
+abstract: Image captioning is a multimodal problem that has drawn extensive attention in both the natural language processing and computer vision community. In this paper, we present a novel image captioning architecture to better explore semantics available in captions and leverage that to enhance both image representation and caption generation. Our models first construct caption-guided visual relationship graphs that introduce beneficial inductive bias using weakly supervised multi-instance learning. The representation is then enhanced with neighbouring and contextual nodes with their textual and visual features. During generation, the model further incorporates visual relationships using multi-task learning for jointly predicting word and object/predicate tag sequences. We perform extensive experiments on the MSCOCO dataset, showing that the proposed framework significantly outperforms the baselines, resulting in the state-of-the-art performance under a wide range of evaluation metrics. The code of our paper has been made publicly available.
+citation_string: "Shi Z ,  Zhou X ,  Qiu X , et al. Improving Image Captioning with Better Use of Caption[C]// Meeting of the Association for Computational Linguistics. Association for Computational Linguistics, 2020."

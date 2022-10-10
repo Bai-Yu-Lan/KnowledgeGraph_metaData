@@ -1,0 +1,12 @@
+description: "The dataset contains very short input documents (31.4 words on average) and summaries (8.3 words on average) for text summary tasks. It includes 3.8M training set, 189k development examples and 1951 test examples."
+download_url: https://drive.google.com/file/d/0B6N7tANPyVeBNmlSX19Ld2xDU1E/view
+name: Gigaword
+papers: A Neural Attention Model for Abstractive Sentence Summarization
+supporter:
+  - Rush Alexander M.
+  - Chopra Sumit
+  - Weston Jason
+task:
+  - Text Summarization
+update_time: 2015
+logo_file:

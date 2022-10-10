@@ -1,0 +1,12 @@
+name: mrc-for-flat-nested-ner
+download_url: https://github.com/ShannonAI/mrc-for-flat-nested-ner/blob/master/ner2mrc/download.md
+supporter:
+  - Yuxian Meng
+update_time: 2021
+papers: A Unified MRC Framework for Named Entity Recognition
+task:
+  - Nested NER
+description: "Compared with the traditional sequence labeling method, 
+the advantage of using the MRC method for NER lies in the introduction 
+of the prior knowledge of query."
+logo_file:

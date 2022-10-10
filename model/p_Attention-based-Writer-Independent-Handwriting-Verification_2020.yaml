@@ -1,0 +1,54 @@
+abbreviation: SIAMESE
+domain:
+  - CV
+task:
+  - Handwriting Verification
+paper:
+  title: Attention based Writer Independent Handwriting Verification
+  authors:
+  - Mohammad Abuzar Shaikh
+  - Tiehang Duan
+  - Mihir Chauhan
+  - Sargur N. Srihari
+  citation_number: 2
+  doi:
+  download_url: https://arxiv.org/abs/2009.04532
+  organization:
+  - State University of New York
+  pages: 373--379
+  press: IEEE
+  publish_year: 2020
+  volume: ICFHR-2020
+citation_papers:
+code: https://github.com/mshaikh2/AttentionHandwritingVerification
+#introduction: 本文实现并整合了交叉注意和软注意机制，以捕捉二维输入的特征空间中高度相关和突出的点。注意机制还允许网络更多地关注输入的相关区域，从而提高分类性能。
+introduction_url:
+key_words:
+performance:
+  dataset:
+    AND Dataset:
+      Acc: "96.39"
+      F-1: "0.81"
+      FAR: "1.73"
+      FRR: "24.03"
+      P: "0.86"
+      R: "0.76"
+    CEDAR Signature:
+      Acc: "92.37"
+      FAR: "5.7"
+      FRR: "6.3"
+abstract: "The task of writer verification is to provide a likelihood score 
+for whether the queried and known handwritten image samples belong to the 
+same writer or not. Such a task calls for the neural network to make 
+it's outcome interpretable, i.e. provide a view into the network's decision 
+making process. We implement and integrate cross-attention and soft-attention 
+mechanisms to capture the highly correlated and salient points in feature 
+space of 2D inputs. The attention maps serve as an explanation premise for 
+the network's output likelihood score. The attention mechanism also allows 
+the network to focus more on relevant areas of the input, thus improving 
+the classification performance. Our proposed approach achieves a precision 
+of 86% for detecting intra-writer cases in CEDAR cursive 'AND' dataset. 
+Furthermore, we generate meaningful explanations for the provided decision 
+by extracting attention maps from multiple levels of the network."
+
+citation_string: "Shaikh, Mohammad Abuzar, et al. Attention based Writer Independent Handwriting Verification. arXiv preprint arXiv:2009.04532 (2020)."

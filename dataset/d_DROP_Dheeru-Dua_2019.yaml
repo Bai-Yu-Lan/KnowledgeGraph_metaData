@@ -1,0 +1,19 @@
+name: DROP
+description: "This dataset is a crowdsourced test, created against 
+hostilities, containing a baseline set of 96k questions. When the 
+model solves the problem in it, it may need to refer to the input 
+in multiple locations and handle the different inputs separately."
+
+download_url: https://allennlp.org/drop
+update_time: 2019
+papers: 'DROP: A Reading Comprehension Benchmark Requiring Discrete Reasoning Over Paragraphs'
+supporter:
+- Dheeru Dua
+- Yizhong Wang
+- Pradeep Dasigi
+- Gabriel Stanovsky
+- Sameer Singh
+- Matt Gardner
+task:
+  - Natural Language Inference
+logo_file:

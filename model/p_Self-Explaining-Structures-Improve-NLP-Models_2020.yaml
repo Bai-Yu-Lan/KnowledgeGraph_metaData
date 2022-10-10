@@ -1,0 +1,68 @@
+abbreviation: Self-Explaining Structures
+citation_papers: null
+code: https://github.com/ShannonAI/Self_Explaining_Structures_Improve_NLP_Models
+domain:
+  - NLP
+introduction: None
+introduction_url: None
+keywords: null
+paper:
+  authors:
+  - Zijun Sun
+  - Chun Fan
+  - Qinghong Han
+  - Xiaofei Sun
+  - Yuxian Meng
+  - Fei Wu
+  - Jiwei Li
+  citation_number: None
+  doi: null
+  download_url: https://arxiv.org/abs/2012.01786
+  organization:
+  - Zhejiang University
+  - Computer Center of Peking University
+  - Peng Cheng Laboratory
+  - Shannon.AI
+  pages: arXiv--2012
+  press: arXiv e-prints
+  publish_year: 2020
+  title: Self-Explaining Structures Improve NLP Models
+  volume: None
+performance:
+  dataset:
+    IWSLT 2014 En!De:
+      BLEU: 28.9
+    Movie Review:
+      IOU F1: 0.152
+      Token F1: 0.314
+    SNLI:
+      Accuracy: 92.3
+      F-S: 74.5
+      IOU F1: 0.454
+      S-F: 88.5
+      S-S: 79.2
+      Token F1: 0.571
+    SST-5:
+      Accuracy: 59.1
+      F-S: 38.4
+      S-F: 54.9
+      S-S: 42.9
+task:
+- Natural Language Inference
+
+abstract: "Existing approaches to explaining deep learning models in NLP usually suffer from two major drawbacks: (1) the main model and the explaining model are decoupled: an additional
+probing or surrogate model is used to interpret an existing model, and thus existing explaining tools are not self-explainable; (2) the probing model is only able to explain a model’s
+predictions by operating on low-level features by computing saliency scores for individual words but are clumsy at high-level text units such as phrases, sentences, or paragraphs.
+To deal with these two issues, in this paper, we propose a simple yet general and effective self-explaining framework for deep learning models in NLP. The key point of the proposed framework is to put an additional layer,
+as is called by the interpretation layer, on top of any existing NLP model. This layer aggregates the information for each text span, which
+is then associated with a specific weight, and their weighted combination is fed to the softmax function for the final prediction.
+The proposed model comes with the following merits: (1) span weights make the model selfexplainable and do not require an additional
+probing model for interpretation; (2) the proposed model is general and can be adapted to
+any existing deep learning structures in NLP; (3) the weight associated with each text span
+provides direct importance scores for higherlevel text units such as phrases and sentences.
+We for the first time show that interpretability does not come at the cost of performance:
+a neural model of self-explaining features obtains better performances than its counterpart
+without the self-explaining nature, achieving a new SOTA performance of 59.1 on SST-5 and a new SOTA performance of 92.3 on SNLI.."
+
+
+citation_string: "Sun Z, Fan C, Han Q, et al. Self-explaining structures improve nlp models[J]. arXiv preprint arXiv:2012.01786, 2020."

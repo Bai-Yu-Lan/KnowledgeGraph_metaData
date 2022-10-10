@@ -1,0 +1,21 @@
+name: Nocaps
+download_url: https://nocaps.org/
+supporter:
+  - Harsh Agrawal
+  - Karan Desai
+  - Yufei Wang
+  - Xinlei Chen
+  - Rishabh Jain
+  - Mark Johnson
+  - Dhruv Batra
+  - Devi Parikh
+  - Stefan Lee
+  - Peter Anderson
+update_time: 2019
+papers: "nocaps: novel object captioning at scale"
+task:
+  - Image Captioning
+
+description: Nocaps dataset consists of 166,100 human-generated captions describing 15,100 images from the Open Images validation and test sets. The associated training data consists of COCO image-caption pairs, plus Open Images image-level labels and object bounding boxes. Since Open Images contains many more classes than COCO, nearly 400 object classes seen in test images have no or very few associated training captions.
+
+logo_file: "Nocaps.png"

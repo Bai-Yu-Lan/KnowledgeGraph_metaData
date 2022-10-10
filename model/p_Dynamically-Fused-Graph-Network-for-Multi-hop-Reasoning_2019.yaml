@@ -1,0 +1,84 @@
+abbreviation: DFGN
+citation_papers: null
+code: https://github.com/woshiyyya/DFGN-pytorch
+domain:
+- NLP
+introduction: 'In this paper, we propose Dynamically Fused Graph Network (DFGN), a novel method to answer those questions requiring multiple scattered evidence and reasoning over them. Inspired by humans step-by-step reasoning behavior, DFGN includes a dynamic fusion layer that starts from the entities mentioned in the given query, explores along the entity graph dynamically built from the text, and gradually finds relevant supporting entities from the given documents.'
+introduction_url: https://blog.csdn.net/a609640147/article/details/90813397
+keywords: null
+paper:
+  authors:
+  - Lin Qiu
+  - Yunxuan Xiao
+  - Yanru Qu
+  - Hao Zhou
+  - Lei Li
+  - Weinan Zhang
+  - Yong Yu
+  citation_number: 35
+  doi: null
+  download_url: https://www.aclweb.org/anthology/P19-1617/
+  organization:
+  - Shanghai Jiao Tong University
+  - Shanghai Jiao Tong University
+  - Shanghai Jiao Tong University
+  - ByteDance AI Lab, China
+  - ByteDance AI Lab, China
+  - Shanghai Jiao Tong University
+  - Shanghai Jiao Tong University
+  pages: 6140--6150
+  press: Association for Computational Linguistics
+  publish_year: 2019
+  title: Dynamically Fused Graph Network for Multi-hop Reasoning
+  volume: ACL-2019
+performance:
+  dataset:
+    HotpotQA:
+      Test:
+        Ans:
+          EM: 56.31
+          F1: 69.69
+        Joint:
+          EM: 33.62
+          F1: 59.82
+        Supp:
+          EM: 51.5
+          F1: 81.62
+  baseline:
+    Hotpotqa A dataset for diverse, explainable multi-hop question answering:
+      HotpotQA:
+        Test:
+          Ans:
+            EM: 45.60
+            F1: 59.20
+          Joint:
+            EM: 10.83
+            F1: 40.16
+          Supp:
+            EM: 20.32
+            F1: 64.49
+
+abstract: "Text-based question answering (TBQA) has
+been studied extensively in recent years. Most
+existing approaches focus on finding the answer to a question within a single paragraph.
+However, many difficult questions require
+multiple supporting evidence from scattered
+text across two or more documents. In this paper, we propose the Dynamically Fused Graph
+Network (DFGN), a novel method to answer
+those questions requiring multiple scattered
+evidence and reasoning over them. Inspired
+by human’s step-by-step reasoning behavior,
+DFGN includes a dynamic fusion layer that
+starts from the entities mentioned in the given
+query, explores along the entity graph dynamically built from the text, and gradually finds
+relevant supporting entities from the given
+documents. We evaluate DFGN on HotpotQA,
+a public TBQA dataset requiring multi-hop
+reasoning. DFGN achieves competitive results
+on the public board. Furthermore, our analysis shows DFGN could produce interpretable
+reasoning chains."
+
+citation_string: "Qiu L, Xiao Y, Qu Y, et al. Dynamically fused graph network for multi-hop reasoning[C]//Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics. 2019: 6140-6150."
+    
+task:
+- natural language inference

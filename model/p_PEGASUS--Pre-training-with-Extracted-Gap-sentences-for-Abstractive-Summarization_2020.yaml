@@ -1,0 +1,89 @@
+abbreviation: PEGASUS
+domain:
+  - NLP
+task: 
+  - Text Summarization
+paper:
+  title: 'PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization'
+  authors:
+  - Jingqing Zhang
+  - Yao Zhao
+  - Mohammad Saleh
+  - Peter J. Liu
+  organization:
+  - Imperial College London
+  - Google Research
+  - Google Research
+  - Google Research
+  publish_year: 2020
+  volume: ICML-2020
+  press: Proceedings of Machine Learning Research
+  pages: 11328--11339
+  download_url: https://arxiv.org/pdf/1912.08777.pdf
+  doi: null
+  citation_number: 744
+code: https://github.com/google-research/pegasus
+performance:
+  dataset:
+    AESLC:
+      ROUGE-1: 37.40
+      ROUGE-2: 21.22
+      ROUGE-L: 36.45
+    BIGPATENT:
+      ROUGE-1: 53.41
+      ROUGE-2: 32.89
+      ROUGE-L: 42.07
+    BillSum:
+      ROUGE-1: 57.31
+      ROUGE-2: 40.19
+      ROUGE-L: 45.82
+    CNN / Daily Mail:
+      ROUGE-1: 44.17
+      ROUGE-2: 21.47
+      ROUGE-L: 41.11
+    Gigaword:
+      ROUGE-1: 39.12
+      ROUGE-2: 19.86
+      ROUGE-L: 36.24
+    Multi-News:
+      ROUGE-1: 47.52
+      ROUGE-2: 18.72
+      ROUGE-L: 24.91
+    Newsroom:
+      ROUGE-1: 45.15
+      ROUGE-2: 33.51
+      ROUGE-L: 41.33
+    PubMed:
+      ROUGE-1: 45.09
+      ROUGE-2: 19.56
+      ROUGE-L: 27.42
+    Reddit TIFU:
+      ROUGE-1: 26.63
+      ROUGE-2: 9.01
+      ROUGE-L: 21.60
+    WikiHow:
+      ROUGE-1: 41.35
+      ROUGE-2: 18.51
+      ROUGE-L: 33.42
+    XSum:
+      ROUGE-1: 47.21
+      ROUGE-2: 24.56
+      ROUGE-L: 39.25
+    arXiv:
+      ROUGE-1: 44.67
+      ROUGE-2: 17.18
+      ROUGE-L: 25.73
+  baseline:
+    "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension":
+      CNN / Daily Mail:
+        ROUGE-1: 44.16
+        ROUGE-2: 21.28
+        ROUGE-L: 40.90
+      XSum:
+        ROUGE-1: 45.14
+        ROUGE-2: 22.27
+        ROUGE-L: 37.25
+keywords: null
+citation_papers: null
+abstract: "Recent work pre-training Transformers with self-supervised objectives on large text corpora has shown great success when fine-tuned on downstream NLP tasks including text summarization. However, pre-training objectives tailored for abstractive text summarization have not been explored. Furthermore there is a lack of systematic evaluation across diverse domains. In this work, we propose pre-training large Transformer-based encoder-decoder models on massive text corpora with a new self-supervised objective. In PEGASUS, important sentences are removed/masked from an input document and are generated together as one output sequence from the remaining sentences, similar to an extractive summary. We evaluated our best PEGASUS model on 12 downstream summarization tasks spanning news, science, stories, instructions, emails, patents, and legislative bills. Experiments demonstrate it achieves state-of-the-art performance on all 12 downstream datasets measured by ROUGE scores. Our model also shows surprising performance on low-resource summarization, surpassing previous state-of-the-art results on 6 datasets with only 1000 examples. Finally we validated our results using human evaluation and show that our model summaries achieve human performance on multiple datasets."
+citation_string: "Zhang J, Zhao Y, Saleh M, et al. Pegasus: Pre-training with extracted gap-sentences for abstractive summarization[C]//International Conference on Machine Learning. PMLR, 2020: 11328-11339."

@@ -1,0 +1,10 @@
+description: This project aims to build a visual commonsense representation learning framework based on the current object detection codebase with un-/self-supervised learning.
+download_url: https://github.com/Wangt-CN/VC-R-CNN
+name: VC-R-CNN
+papers: "Visual Commonsense R-CNN"
+supporter:
+- Tan Wang
+task:
+- 视觉推理
+update_time: 2020
+logo_file:

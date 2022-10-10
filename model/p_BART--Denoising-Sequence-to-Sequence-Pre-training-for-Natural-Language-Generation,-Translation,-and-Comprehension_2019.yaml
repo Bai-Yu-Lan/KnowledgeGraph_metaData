@@ -1,0 +1,167 @@
+abbreviation: BART
+citation_papers: 
+code: https://github.com/pytorch/fairseq/tree/master/examples/bart
+domain:
+  - NLP
+keywords: 
+paper:
+  authors:
+  - Mike Lewis
+  - Yinhan Liu
+  - Naman Goyal
+  - Marjan Ghazvininejad
+  - Abdelrahman Mohamed
+  - Omer Levy
+  - Ves Stoyanov
+  - Luke Zettlemoyer
+  citation_number: 3155
+  doi: 
+  download_url: https://arxiv.org/abs/1910.13461
+  organization:
+  - Facebook AI
+  - Facebook AI
+  - Facebook AI
+  - Facebook AI
+  - Facebook AI
+  - Facebook AI
+  - Facebook AI
+  - Facebook AI
+  pages: None
+  press: 'arXiv preprint'
+  publish_year: 2019
+  title: 'BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation,Translation,and Comprehension'
+  volume: arXiv:1910.13461
+performance:
+  dataset:
+    CNN / Daily Mail:
+      ROUGE-1: 44.16
+      ROUGE-2: 21.28
+      ROUGE-L: 40.9
+    GLUE:
+      CoLA: 62.8
+      MNLI-m/mm: 89.9/90.1
+      MRPC: 90.4
+      QNLI: 94.9
+      QQP: 92.5
+      RTE: 87.0
+      SST-2: 96.6
+      STS-B: 91.2
+    SQuAD v1.1:
+      EM: 88.8
+      F1: 94.6
+    SQuAD v2.0:
+      EM: 86.1
+      F1: 89.2
+    X-Sum:
+      ROUGE-1: 45.14
+      ROUGE-2: 22.27
+      ROUGE-L: 37.25
+  baseline:
+    'Get to the point: Summarization with pointer-generator networks.':
+      CNN / Daily Mail:
+        ROUGE-1: 36.44
+        ROUGE-2: 15.66
+        ROUGE-L: 33.42
+      X-Sum:
+        ROUGE-1: 29.70
+        ROUGE-2: 9.21
+        ROUGE-L: 23.24
+    'Get to the point: Summarization with pointer-generator networks.':
+      CNN / Daily Mail:
+        ROUGE-1: 39.53
+        ROUGE-2: 17.28
+        ROUGE-L: 36.38
+      X-Sum:
+        ROUGE-1: 28.10
+        ROUGE-2: 8.02
+        ROUGE-L: 21.72
+    'Unified language model pretraining for natural language understanding and generation.':
+      CNN / Daily Mail:
+        ROUGE-1: 43.33
+        ROUGE-2: 20.21
+        ROUGE-L: 40.51
+      GLUE:
+        CoLA: 61.1
+        MNLI-m/mm: 87.0/85.9
+        MRPC:
+        QNLI: 92.7
+        QQP:
+        RTE: 70.9
+        SST-2: 94.5
+        STS-B:
+      SQuAD v1.1:
+        EM:
+        F1:
+      SQuAD v2.0:
+        EM: 80.5
+        F1: 83.4
+    'Text summarization with pretrained encoders.':
+      CNN / Daily Mail:
+        ROUGE-1: 41.72
+        ROUGE-2: 19.39
+        ROUGE-L: 38.76
+      X-Sum:
+        ROUGE-1: 38.76
+        ROUGE-2: 16.33
+        ROUGE-L: 31.15
+    'Text summarization with pretrained encoders.':
+      CNN / Daily Mail:
+        ROUGE-1: 42.13
+        ROUGE-2: 19.60
+        ROUGE-L: 39.18
+      X-Sum:
+        ROUGE-1: 38.81
+        ROUGE-2: 16.50
+        ROUGE-L: 31.27
+    'BERT: Pre-training of deep bidirectional transformers for language understanding':
+      GLUE:
+        CoLA: 60.6
+        MNLI-m/mm: 86.6/-
+        MRPC: 88.0
+        QNLI: 92.3
+        QQP: 91.3
+        RTE: 70.4
+        SST-2: 93.2
+        STS-B: 90.0
+      SQuAD v1.1:
+        EM: 84.1
+        F1: 90.9
+      SQuAD v2.0:
+        EM: 79.0
+        F1: 81.8
+    'Xlnet: Generalized autoregressive pretraining for language understanding':
+      GLUE:
+        CoLA: 63.6
+        MNLI-m/mm: 89.8/-
+        MRPC: 89.2
+        QNLI: 93.9
+        QQP: 91.8
+        RTE: 83.8
+        SST-2: 95.6
+        STS-B: 91.8
+      SQuAD v1.1:
+        EM: 89.0
+        F1: 94.5
+      SQuAD v2.0:
+        EM: 86.1
+        F1: 88.8
+    'Roberta:A robustly optimized bert pretraining approach':
+      GLUE:
+        CoLA: 68.0
+        MNLI-m/mm: 90.2/90.2
+        MRPC: 90.9
+        QNLI: 94.7
+        QQP: 92.2
+        RTE: 86.6
+        SST-2: 96.4
+        STS-B: 92.4
+      SQuAD v1.1:
+        EM: 88.9
+        F1: 94.6
+      SQuAD v2.0:
+        EM: 86.5
+        F1: 89.4
+task:
+  - Text Summary
+abstract: "We present BART, a denoising autoencoder for pretraining sequence-to-sequence models.BART is trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text. It uses a standard Tranformer-based neural machine translation architecture which, despite its simplicity, can be seen as generalizing BERT (due to the bidirectional encoder), GPT (with the left-to-right decoder), and many other more recent pretraining schemes. We evaluate a number of noising approaches, finding the best performance by both randomly shuffling the order of the original sentences and using a novel in-filling scheme, where spans of text are replaced with a single mask token. BART is particularly effective when fine tuned for text generation but also works well for comprehension tasks. It matches the performance of RoBERTa with comparable training resources on GLUE and SQuAD, achieves new state-of-the-art results on a range of abstractive dialogue, question answering, and summarization tasks, with gains of up to 6 ROUGE. BART also provides a 1.1 BLEU increase over a back-translation system for machine translation, with only target language pretraining. We also report ablation experiments that replicate other pretraining schemes within the BART framework, to better measure which factors most influence end-task performance."
+citation_string: "Lewis M, Liu Y, Goyal N, et al. Bart: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension[J]. arXiv preprint arXiv:1910.13461, 2019."

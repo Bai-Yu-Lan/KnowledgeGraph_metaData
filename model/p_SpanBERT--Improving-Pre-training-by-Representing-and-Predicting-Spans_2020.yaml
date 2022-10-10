@@ -1,0 +1,207 @@
+abbreviation: SpanBERT
+
+domain:
+
+  - NLP
+
+task:
+
+  - Language Model
+
+paper: 
+
+  title: "SpanBERT: Improving Pre-training by Representing and Predicting Spans"
+
+  authors:
+
+  - Mandar Joshi
+
+  - Danqi Chen
+
+  - Yinhan Liu
+
+  - Daniel S. Weld
+
+  - Luke Zettlemoyer†
+
+  - Omer Levy
+
+  organization:
+
+  - University of Washington
+
+  - Princeton University & Facebook AI Research
+
+  - Facebook AI Research
+
+  - University of Washington & Allen Institute of Artificial Intelligence
+
+  - University of Washington & Facebook AI Research
+
+  - Facebook AI Research
+
+  publish_year: 2020
+
+  volume: 8
+
+  press: ACL
+
+  pages: 64--77
+
+  download_url: https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00300/43539/SpanBERT-Improving-Pre-training-by-Representing
+
+  doi: https://doi.org/10.1162/tacl_a_00300
+
+  citation_number: 1085
+
+code: https://github.com/facebookresearch/SpanBERT
+
+performance:
+
+  dataset:
+
+    SQuAD v1.1:
+
+      EM: 88.8
+
+      F1: 94.6
+
+    SQuAD v2.0:
+
+      EM: 85.7
+
+      F1: 88.7
+
+    NewsQA:
+
+      F1: 73.6
+
+    TriviaQA:
+
+      F1: 83.6
+
+    SearchQA:
+
+      F1: 84.8
+
+    HotpotQA:
+
+      F1: 83.0
+
+    Natural Questions:
+
+      F1: 82.5
+
+    OntoNote:
+
+      MUC: 85.3
+
+      B3: 78.1
+
+      CEAF: 75.3
+
+      Avg: 79.6
+
+    TACRED: 
+
+      F1: 70.8
+
+    GLUE:
+
+      Avg: 82.8
+
+      CoLA: 64.3
+
+      MNLI: 88.1/87.7
+
+      MRPC: 90.9/87.9
+
+      QNLI: 94.3
+
+      QQP: 71.9/89.5
+
+      RTE: 79.0
+
+      SST-2: 94.8
+
+      STS-B: 89.9/89.1
+
+  BERT(LARGE):
+
+    "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding":
+
+      SQuAD v1.1:
+
+        EM: 87.5
+
+        F1: 93.3
+
+      SQuAD v2.0:
+
+        EM: 83.3
+
+        F1: 86.6
+
+      NewsQA:
+
+        F1: 71.9
+
+      TriviaQA:
+
+        F1: 80.4
+
+      SearchQA:
+
+        F1: 84.0
+
+      HotpotQA:
+
+        F1: 80.3
+
+      Natural Questions:
+
+        F1: 81.8
+
+      OntoNote:
+
+        MUC: 84.8
+
+        B3: 77.2
+
+        CEAF: 74.4
+
+        Avg: 78.8
+
+      TACRED: 
+
+        F1: 70.1
+
+      GLUE:
+
+        Avg: 81.7
+
+        CoLA: 63.5
+
+        MNLI: 88.0/87.4
+
+        MRPC: 91.2/87.8
+
+        QNLI: 93.0
+
+        QQP: 72.1/89.5
+
+        RTE: 72.1
+
+        SST-2: 94.8
+
+        STS-B: 89.0/88.4
+
+key_words:
+
+  - Language Model
+
+citation_papers:
+
+abstract: "We present SpanBERT, a pre-training method that is designed to better represent and predict spans of text. Our approach extends BERT by (1) masking contiguous random spans, rather than random tokens, and (2) training the span boundary representations to predict the entire content of the masked span, without relying on the individual token representations within it. SpanBERT consistently outperforms BERT and our better-tuned baselines, with substantial gains on span selection tasks such as question answering and coreference resolution. In particular, with the same training data and model size as BERTlarge, our single model obtains 94.6% and 88.7% F1 on SQuAD 1.1 and 2.0 respectively. We also achieve a new state of the art on the OntoNotes coreference resolution task (79.6% F1), strong performance on the TACRED relation extraction benchmark, and even gains on GLUE."
+
+citation_string: "Joshi M, Chen D, Liu Y, et al. Spanbert: Improving pre-training by representing and predicting spans[J]. Transactions of the Association for Computational Linguistics, 2020, 8: 64-77."

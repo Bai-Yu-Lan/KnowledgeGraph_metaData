@@ -1,0 +1,15 @@
+# 上传新数据集时所需要的信息以及格式要求
+
+name: Degraded-IC13      # 名称中出现特殊符号如 / \ # @ ! 在前后各留一个空格
+download_url: 
+supporter:
+  - Jingye Chen     # 注意人名前的 - 符号与人名之间必须有一个空格
+update_time: 2021           # 4位阿拉伯数字记录年份信息
+papers: Text Gestalt- Stroke-Aware Scene Text Image Super-Resolution # 所对应的论文名称，以PDF格式论文中的标题为准
+task: 
+  - Scene Text Image Super-Resolution                 # 由上传者自己定义，注意 - 后必须有一个空格
+  
+# description 描述信息由上传者自己定义，不可换行
+description: "we construct the DegradedIC13 dataset in the following ways: (1) We randomly divide IC13-HCCR (Liu et al. 2013) into two subsets. Specifically, 179,535 images (80%) are chosen for training and 44,884 images (20%) for testing. We first resize them to 64 × 64; (2)For each image, we randomly select n from 1,2,3,4,5 as the number of blurred operations; (3) We blur the original images for n times. For each time, the blurred type is randomly chosen from four choices; (4) We resize the blurred image to 32 × 32 as LR images using bicubic interpolation"
+
+logo_file:

@@ -1,0 +1,17 @@
+name: OntoNotes 4.0
+download_url: https://catalog.ldc.upenn.edu/LDC2011T03
+supporter:
+  - Sameer Pradhan
+  - Lance Ramshaw
+  - Mitchell Marcus
+  - Martha Palmer
+  - Ralph Weischedel
+  - Nianwen Xue
+update_time: 2011
+papers: CoNLL-2011 Shared Task:Modeling Unrestricted Coreference in OntoNotes
+task:
+  - Named Entity Recognition
+
+description: OntoNotes Release 4.0 was developed as part of the OntoNotes project, a collaborative effort between BBN Technologies, the University of Colorado, the University of Pennsylvania and the University of Southern Californias Information Sciences Institute. The goal of the project is to annotate a large corpus comprising various genres of text (news, conversational telephone speech, weblogs, usenet newsgroups, broadcast, talk shows) in three languages (English, Chinese, and Arabic) with structural information (syntax and predicate argument structure) and shallow semantics (word sense linked to an ontology and coreference).
+
+logo_file: "OntoNotes4.0.png"

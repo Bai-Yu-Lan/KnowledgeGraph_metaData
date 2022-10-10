@@ -1,0 +1,12 @@
+name: "IWSLT2014 En-De"
+download_url: https://sites.google.com/site/iwsltevaluation2014/ 
+supporter:
+  - IWSLT committee
+update_time: 2014
+papers:
+task:
+  - Natural language inference # 由上传者自己定义，注意 - 后必须有一个空格
+
+description: "The English to German part of the IWSLT 2014 dataset contains 160k training sentence pairs and 7k verification sentence pairs."
+
+logo_file: "IWSLT2014.PNG" # 记录数据集对应logo文件的名称，不存在对应的logo图片则内容为空 

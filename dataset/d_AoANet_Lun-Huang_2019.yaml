@@ -1,0 +1,10 @@
+description: This data set is generated for the author to apply AoA module to the encoder and decoder describing the model. This module extends the conventional attention mechanism to determine the correlation between attention results and query results.
+download_url: https://github.com/husthuaan/AoANet
+name: AoANet
+papers: Attention on Attention for Image Captioning
+supporter:
+  - Lun Huang
+task:
+  - Determine the relevance of attention results and query results
+update_time: 2019
+logo_file:  "AoANet.png"

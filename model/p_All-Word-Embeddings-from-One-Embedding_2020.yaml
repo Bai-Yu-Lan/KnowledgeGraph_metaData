@@ -1,0 +1,50 @@
+abbreviation: ALONE
+domain:
+  - NLP
+task:
+  - Word2Vec 
+paper:
+  title: "All Word Embeddings from One Embedding"
+  authors:
+  - Sho Takase
+  - Sosuke Kobayashi
+  organization:
+  - Tokyo Institute of Technology
+  - Tohoku University
+  publish_year: 2020
+  volume: NeurIPS-2020
+  press: NIPS 
+  pages: 3775-3785
+  download_url: https://arxiv.org/abs/2004.12073
+  doi: 
+  citation_number: 11
+code: https://github.com/takase/alone_seq2seq
+
+performance:
+  dataset:
+    DUC 2004 Task 1:
+      ROUGE-1: 32.57
+      ROUGE-2: 11.63
+      ROUGE-L: 28.24
+  baseline:
+    "A Neural Attention Model for Abstractive Sentence Summarization":
+      DUC 2004 Task 1:
+        ROUGE-1: 28.18
+        ROUGE-2: 8.49
+        ROUGE-L: 23.81
+    "Cutting-off redundant repeating generations for neural abstractive summarization":
+      DUC 2004 Task 1:
+        ROUGE-1: 32.28
+        ROUGE-2: 10.54
+        ROUGE-L: 27.80
+    "Positional encoding to control output sequence length":
+      DUC 2004 Task 1:
+        ROUGE-1: 32.29
+        ROUGE-2: 11.49
+        ROUGE-L: 28.03
+
+key_words:
+citation_papers: 
+abstract: "In neural network-based models for natural language processing (NLP), the largest part of the parameters often consists of word embeddings. Conventional models prepare a large embedding matrix whose size depends on the vocabulary size. Therefore, storing these models in memory and disk storage is costly. In this study, to reduce the total number of parameters, the embeddings for all words are represented by transforming a shared embedding. The proposed method, ALONE (all word embeddings from one), constructs the embedding of a word by modifying the shared embedding with a filter vector, which is word-specific but non-trainable.Then, we input the constructed embedding into a feed-forward neural network toincrease its expressiveness. Naively, the filter vectors occupy the same memory size as the conventional embedding matrix, which depends on the vocabulary size. To solve this issue, we also introduce a memory-efficient filter construction approach. We indicate our ALONE can be used as word representation sufficiently throughan experiment on the reconstruction of pre-trained word embeddings. In addition, we also conduct experiments on NLP application tasks: machine translation and summarization. We combined ALONE with the current state-of-the-art encoder decoder model, the Transformer, and achieved comparable scores on WMT 2014 English-to-German translation and DUC 2004 very short summarization with less parameters."
+citation_string: "Takase S, Kobayashi S. All word embeddings from one embedding[J]. Advances in Neural Information Processing Systems, 2020, 33: 3775-3785."
+

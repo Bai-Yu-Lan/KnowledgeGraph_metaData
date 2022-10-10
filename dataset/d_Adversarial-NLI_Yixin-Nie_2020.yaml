@@ -1,0 +1,15 @@
+description: "A large-scale NLI benchmark dataset, collected through iterative, human-model cyclical confrontation, suitable for endless learning scenarios without saturation."
+download_url: https://dl.fbaipublicfiles.com/anli/anli_v1.0.zip
+name: Adversarial NLI
+papers: 'Adversarial NLI: A New Benchmark for Natural Language Understanding'
+supporter:
+- Yixin Nie
+- Adina Williams
+- Emily Dinan
+- Mohit Bansal
+- Jason Weston
+- Douwe Kiela
+task:
+- Natural Language Inference
+update_time: 2020
+logo_file:

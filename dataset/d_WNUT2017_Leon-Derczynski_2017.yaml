@@ -1,0 +1,17 @@
+description: "The dataset annotates and provides 2295 articles from three 
+different sources (Reddit, Twitter, YouTube, and StackExchange), 
+mainly focusing on emerging entities (i.e. not present in the data 
+n years ago) and rare entities (i.e. in our data no more than k times)."
+
+download_url: https://noisy-text.github.io/2017/emerging-rare-entities.html
+name: WNUT2017
+papers: Results of the WNUT2017 Shared Task on Novel and Emerging Entity Recognition
+supporter:
+- Leon Derczynski
+- Eric Nichols
+- Marieke van Erp
+- Nut Limsopatham
+task:
+- Named Entity Recognition
+update_time: 2017
+logo_file: 

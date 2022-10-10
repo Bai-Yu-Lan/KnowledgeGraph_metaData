@@ -1,0 +1,19 @@
+name: CLUTRR
+download_url: https://github.com/facebookresearch/clutrr
+supporter:
+- Koustuv Sinha
+- Shagun Sodhani
+- Jin Dong
+- Joelle Pineau
+- William L. Hamilton
+update_time: 2019
+papers: 'CLUTRR: A Diagnostic Benchmark for Inductive Reasoning from Text'
+task:
+  - Natural Language Inference
+
+description: "The dataset contains a large number of semi-synthetic 
+stories involving hypothetical families, testing the model's ability 
+to summarize induction. The model needs to infer the relationship 
+between two family members based on the given story, and their relationship 
+is not explicitly mentioned."
+logo_file:  

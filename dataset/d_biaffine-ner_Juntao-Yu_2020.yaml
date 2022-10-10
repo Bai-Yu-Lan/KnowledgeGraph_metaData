@@ -1,0 +1,11 @@
+name: biaffine-ner
+download_url: https://github.com/juntaoy/biaffine-ner
+description: The model uses a double affine model to score each interval.
+supporter:
+  - Juntao Yu
+update_time: 2020
+papers: Named Entity Recognition as Dependency Parsing
+task:
+  - Named Entity Recognition
+logo_file:
+

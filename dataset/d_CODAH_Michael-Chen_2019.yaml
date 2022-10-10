@@ -1,0 +1,14 @@
+description: "CODAH is an adversarially-constructed evaluation dataset for testing common sense. CODAH forms a challenging extension to the recently-proposed SWAG dataset, which tests commonsense knowledge using sentence-completion questions that describe situations observed in the video."
+download_url: https://github.com/Websail-NU/CODAH
+name: CODAH
+papers: 'CODAH: An Adversarially-Authored Question Answering Dataset for Common Sense'
+supporter:
+- Michael Chen
+- Mike D’Arcy
+- Alisa Liu
+- Jared Fernandez
+- Doug Downey
+task:
+- Question Answering
+update_time: 2019
+logo_file:

@@ -1,0 +1,100 @@
+# 论文作者上传该论文有关的数据时所需要的信息以及格式要求
+# 所有内容最好用英文
+
+abbreviation: TEXT GESTALT            # 论文中提出模型的缩写，全大写字母表示，若没有则空过
+domain:                   # 对应领域，全大写， - 后必须有一个空格
+  - COMPUTER VISION AND PATTERN RECOGNITION
+task: 
+  - Scene Text Image Super Resolution               # 由上传者自己定义，注意 - 后必须有一个空格
+paper:
+  title: "Text Gestalt: Stroke-Aware Scene Text Image Super-Resolution"   # 所对应的论文名称，以PDF格式论文中的标题为准
+  authors:                # 论文作者，以论文中作者名称为准 注意- 符号后有一个空格
+  - Jingye Chen
+  - Haiyang Yu
+  - Jianqi Ma
+  - Bin Li
+  - Xiangyang Xue
+  organization:           # 作者所属机构，需要与作者数量对应 注意- 符号后有一个空格
+  - Shanghai Key Laboratory of Intelligent Information Processing School of Computer Science, Fudan University
+  - Shanghai Key Laboratory of Intelligent Information Processing School of Computer Science, Fudan University
+  - The Hong Kong Polytechnic University
+  - Shanghai Key Laboratory of Intelligent Information Processing School of Computer Science, Fudan University
+  - Shanghai Key Laboratory of Intelligent Information Processing School of Computer Science, Fudan University
+  publish_year: 2022      # 论文发表时间，四位数阿拉伯数字表示年份
+  volume: AAAI-22
+  press: AAAI             # 会议/期刊缩写，全大写
+  pages: 285-293       # 对应页码，若不存在则记为None，若存在使用 [start_page]--[end_page]表示，如5602--5609
+  download_url: https://ojs.aaai.org/index.php/AAAI/article/view/19904
+  doi: 
+  citation_number: 4     # 截至上传该信息的时候改论文的引用数量
+code: https://github.com/FudanVI/FudanOCR/tree/main/text-gestalt                    # 下载作者公开的该论文对应开源代码的链接，若不存在则使用None代替
+performance:              # 记录改论文中模型的表现
+  # 记录模型表现时，若存在多级metric记录，请参照ReadMe中2.2.1部分的格式进行记录
+  dataset:                # 该论文在不同数据集上的表现
+      TextZoom:
+        Easy: # 数据集名称，与数据集yaml文件命名格式相同
+          best average accuracy: "77.9% "     # 该模型在不同metric上的表现
+        Medium: # 数据集名称，与数据集yaml文件命名格式相同
+          best average accuracy: "60.2% "     # 该模型在不同metric上的表现
+        Hard:
+          best average accuracy: "42.4%"     # 该模型在不同metric上的表现
+        Average:
+          best average accuracy: "61.3%"
+  baseline:               # 论文中所对比的不同Baseline模型以及他们的表现
+    Learning a deep convolutional network for image super-resolution:
+      TextZoom:
+        Easy: # 数据集名称，与数据集yaml文件命名格式相同
+          best average accuracy: "70.6%"     # 该模型在不同metric上的表现
+        Medium: # 数据集名称，与数据集yaml文件命名格式相同
+          best average accuracy: "47.7%"      # 该模型在不同metric上的表现
+        Hard:
+          best average accuracy: "33.1%"     # 该模型在不同metric上的表现
+        Average:
+          best average accuracy: "51.9%"
+    Photo-realistic single image super-resolution using a generative adversarial network:  # 该 Baseline 模型对应的论文title，论文title格式与上文做相同规定
+      TextZoom:
+        Easy: # 数据集名称，与数据集yaml文件命名格式相同
+          best average accuracy: "74.7%"     # 该模型在不同metric上的表现
+        Medium: # 数据集名称，与数据集yaml文件命名格式相同
+          best average accuracy: "57.1%"      # 该模型在不同metric上的表现
+        Hard:
+          best average accuracy: "38.7%"     # 该模型在不同metric上的表现
+        Average:
+          best average accuracy: "57.6%"
+    "Scene Text Telescope: Text-Focused Scene Image Super-Resolution":   # 另一个baseline对应的论文title
+      TextZoom:
+        Easy: # 数据集名称，与数据集yaml文件命名格式相同
+          best average accuracy: "77.4%"      # 该模型在不同metric上的表现
+        Medium: # 数据集名称，与数据集yaml文件命名格式相同
+          best average accuracy: "59.9%"     # 该模型在不同metric上的表现
+        Hard:
+          best average accuracy: "41.6%"      # 该模型在不同metric上的表现
+        Average:
+          best average accuracy: "60.4%"
+key_words:                # 关键字，参照Abstract后的key words，没有则不填写内容
+citation_papers:          # TODO 改论文所引用的文献列表，暂时不需要这部分信息
+
+abstract: "In the last decade, the blossom of deep learning has witnessed the 
+rapid development of scene text recognition. However, the recognition of low-resolution 
+scene text images remains a challenge. Even though some super-resolution methods 
+have been proposed to tackle this problem, they usually treat text images as general 
+images while ignoring the fact that the visual quality of strokes (the atomic 
+unit of text) plays an essential role for text recognition. According to Gestalt 
+Psychology, humans are capable of composing parts of details into the most similar 
+objects guided by prior knowledge. Likewise, when humans observe a low-resolution 
+text image, they will inherently use partial stroke-level details to recover the 
+appearance of holistic characters. Inspired by Gestalt Psychology, we put forward 
+a Stroke-Aware Scene Text Image Super-Resolution method containing a Stroke-Focused 
+Module (SFM) to concentrate on stroke-level internal structures of characters in 
+text images. Specifically, we attempt to design rules for decomposing English 
+characters and digits at strokelevel, then pre-train a text recognizer to provide 
+stroke-level attention maps as positional clues with the purpose of controlling 
+the consistency between the generated super-resolution image and high-resolution 
+ground truth. The extensive experimental results validate that the proposed method 
+can indeed generate more distinguishable images on TextZoom and manually 
+constructed Chinese character dataset Degraded-IC13. Furthermore, since the proposed 
+SFM is only used to provide stroke-level guidance when training, it will not bring 
+any time overhead during the test phase. Code is available at https://github.com/FudanVI/FudanOCR."
+
+# 对应改论文的引用格式，可从google scholar上直接获取
+citation_string: "Chen J, Yu H, Ma J, et al. Text gestalt: Stroke-aware scene text image super-resolution[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2022, 36(1): 285-293."

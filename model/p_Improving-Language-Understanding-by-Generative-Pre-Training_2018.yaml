@@ -1,0 +1,82 @@
+abbreviation: GPT
+citation_papers: 
+code: https://github.com/openai/finetune-transformer-lm
+domain:
+- NLP
+keywords: 
+paper:
+  authors:
+  - Alec Radford
+  - Karthik Narasimhan
+  - Tim Salimans
+  - Ilya Sutskever
+  citation_number: 3923
+  doi: 
+  download_url: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+  organization:
+  - OpenAI
+  - OpenAI
+  - OpenAI
+  - OpenAI
+  pages: 
+  press: 
+  publish_year: 2018
+  title: Improving Language Understanding by Generative Pre-Training
+  volume: 
+performance:
+  dataset:
+    MNLI-m:
+      acc: 82.1
+    MNLI-mm:
+      acc: 81.4
+    SNLI:
+      acc: 89.9
+    SciTail:
+      acc: 83.3
+    QNLI:
+      acc: 88.1
+    RTE:
+      acc: 56.0
+    CoLA:
+      mc: 45.4
+    SST2:
+      acc: 91.3
+    MRPC:
+      F1: 82.3
+    STSB:
+      pc: 82.0
+    QQP:
+      F1: 70.3
+  baseline:
+    "GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding":
+      MNLI-m:
+        acc: 72.2
+      MNLI-mm:
+        acc: 72.1
+      QNLI:
+        acc: 82.1
+      RTE:
+        acc: 61.7
+      CoLA:
+        mc: 18.9
+      SST2:
+        acc: 91.6
+      MRPC:
+        F1: 82.5
+      STSB:
+        pc: 72.8
+      QQP:
+        F1: 63.3
+    "A Compare-Propagate Architecture with Alignment Factorization for Natural Language Inference":
+      MNLI-m:
+        acc: 78.7
+      MNLI-mm:
+        acc: 77.9
+      SNLI:
+        acc: 88.5
+      SciTail:
+        acc: 83.3
+task:
+- Language Model
+abstract: "Natural language understanding comprises a wide range of diverse tasks such as textual entailment, question answering, semantic similarity assessment, and document classification. Although large unlabeled text corpora are abundant, labeled data for learning these specific tasks is scarce, making it challenging for discriminatively trained models to perform adequately. We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text, followed by discriminative fine-tuning on each specific task. In contrast to previous approaches, we make use of task-aware input transformations during fine-tuning to achieve effective transfer while requiring minimal changes to the model architecture. We demonstrate the effectiveness of our approach on a wide range of benchmarks for natural language understanding. Our general task-agnostic model outperforms discriminatively trained models that use architectures specifically crafted for each task, significantly improving upon the state of the art in 9 out of the 12 tasks studied. For instance, we achieve absolute improvements of 8.9% on commonsense reasoning (Stories Cloze Test), 5.7% on question answering (RACE), and 1.5% on textual entailment (MultiNLI)."
+citation_string: "Radford A, Narasimhan K, Salimans T, et al. Improving language understanding by generative pre-training[J]. 2018."

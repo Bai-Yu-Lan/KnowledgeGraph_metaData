@@ -1,0 +1,16 @@
+description: A challenging machine comprehension dataset, containing more than 100,000 human-generated question-answer pairs, provides questions and answers based on CNN's more than 10,000 news articles, with answers spanning a wide range of articles.
+download_url: https://www.microsoft.com/en-us/research/project/newsqa-dataset/
+name: NewsQA
+papers: "NewsQA: A Machine Comprehension Dataset"
+supporter:
+- Adam Trischler
+- Tong Wang
+- Xingdi Yuan
+- Justin Harris
+- Alessandro Sordoni
+- Philip Bachman
+- Kaheer Suleman
+task:
+- Question Answering
+update_time: 2017
+log_file: "NewsQA.png"

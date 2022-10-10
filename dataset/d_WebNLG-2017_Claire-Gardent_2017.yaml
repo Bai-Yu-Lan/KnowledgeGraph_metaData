@@ -1,0 +1,18 @@
+description: "The dataset consists of 21855 data/text pairs with a 
+total of 8372 different data inputs. The input describes entities 
+that fall into 9 different categories, namely astronauts, 
+universities, monuments, buildings, comedy characters, food, 
+airports, sports teams, and written work."
+
+download_url: https://webnlg-challenge.loria.fr/challenge_2017/
+name: WebNLG 2017
+papers: Creating Training Corpora for NLG Micro-Planning
+supporter:
+- Claire Gardent
+- Anastasia Shimorina
+- Shashi Narayan
+- Laura Perez-Beltrachini
+task:
+- Relation Extraction
+update_time: 2017
+logo_file: "WebNLG-2017.png"

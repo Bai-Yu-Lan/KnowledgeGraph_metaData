@@ -1,0 +1,293 @@
+# 论文作者上传该论文有关的数据时所需要的信息以及格式要求
+# 所有内容最好用英文
+
+abbreviation: DB            # 论文中提出模型的缩写，全大写字母表示，若没有则空过
+domain:                   # 对应领域，全大写， - 后必须有一个空格
+  - COMPUTER VISION AND PATTERN RECOGNITION
+task:
+  - Scene Text Detection    # 由上传者自己定义，注意 - 后必须有一个空格
+paper:
+  title: "Real-time Scene Text Detection with Differentiable Binarization"   # 所对应的论文名称，以PDF格式论文中的标题为准
+  authors:                # 论文作者，以论文中作者名称为准 注意- 符号后有一个空格
+  - Minghui Liao
+  - Zhaoyi Wan
+  - Cong Yao
+  - Kai Chen
+  - Xiang Bai
+  organization:           # 作者所属机构，需要与作者数量对应 注意- 符号后有一个空格
+  - Huazhong University of Science and Technology
+  - Megvii
+  - Megvii
+  - Shanghai Jiao Tong University
+  - Huazhong University of Science and Technology
+  publish_year: 2020      # 论文发表时间，四位数阿拉伯数字表示年份
+  volume: AAAI-20
+  press: AAAI             # 会议/期刊缩写，全大写
+  pages: 11474--11481       # 对应页码，若不存在则记为None，若存在使用 [start_page]--[end_page]表示，如5602--5609
+  download_url: https://ojs.aaai.org/index.php/AAAI/article/view/6812/6666
+  doi: https://doi.org/10.1609/aaai.v34i07.6812
+  citation_number: 180     # 截至上传该信息的时候改论文的引用数量
+code: https://github.com/MhLiao/DB                    # 下载作者公开的该论文对应开源代码的链接，若不存在则使用None代替
+performance:              # 记录改论文中模型的表现
+  # 记录模型表现时，若存在多级metric记录，请参照ReadMe中2.2.1部分的格式进行记录
+  dataset:                # 该论文在不同数据集上的表现
+    Total-Text:     # 数据集名称，与数据集yaml文件命名格式相同
+      precision: 87.1      # 该模型在不同metric上的表现
+      recall: 82.5
+      f-measure: 84.7
+      FPS: 32
+    CTW1500:                 # 数据集名称，与数据集yaml文件命名格式相同
+      precision: 86.9      # 该模型在不同metric上的表现
+      recall: 80.2
+      f-measure: 83.4
+      FPS: 22
+    ICDAR 2015:
+      precision: 91.8    # 该模型在不同metric上的表现
+      recall: 83.2
+      f-measure: 87.3
+      FPS: 12
+    MSRA-TD500:
+      precision: 91.5 # 该模型在不同metric上的表现
+      recall: 79.2
+      f-measure: 84.9
+      FPS: 32
+    MLT-2017:
+      precision: 83.1      # 该模型在不同metric上的表现
+      recall: 67.9
+      f-measure: 74.7
+      FPS: 19
+  baseline:               # 论文中所对比的不同Baseline模型以及他们的表现
+    Textsnake- A flexible representation for detecting text of arbitrary shapes:  # 该 Baseline 模型对应的论文title，论文title格式与上文做相同规定
+      Total-Text: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 82.7     # 该模型在不同metric上的表现
+        recall: 74.5
+        f-measure: 78.4
+      CTW1500: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 67.9      # 该模型在不同metric上的表现
+        recall: 85.3
+        f-measure: 75.6
+        FPS: 1.1
+      ICDAR 2015:
+        precision: 84.9    # 该模型在不同metric上的表现
+        recall: 80.4
+        f-measure: 82.6
+        FPS: 1.1
+      MSRA-TD500:
+        precision: 83.2 # 该模型在不同metric上的表现
+        recall: 73.9
+        f-measure: 78.3
+        FPS: 1.1
+    Arbitrary shape scene text detection with adaptive text region representation:   # 另一个baseline对应的论文title
+      Total-Text: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 80.9     # 该模型在不同metric上的表现
+        recall: 76.2
+        f-measure: 78.5
+    Mask textspotter- An end-to-end trainable neural network for spotting text with arbitrary shapes:   # 另一个baseline对应的论文title
+      Total-Text: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 82.5    # 该模型在不同metric上的表现
+        recall: 75.6
+        f-measure: 78.6
+    Textfield- Learning a deep direction field for irregular scene text detection: # 另一个baseline对应的论文title
+      Total-Text: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 81.2   # 该模型在不同metric上的表现
+        recall: 79.9
+        f-measure: 80.6
+    Look more than once- An accurate detector for text of arbitrary shapes: # 另一个baseline对应的论文title
+      Total-Text: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 87.6   # 该模型在不同metric上的表现
+        recall: 79.3
+        f-measure: 83.3
+      ICDAR 2015:
+        precision: 91.3   # 该模型在不同metric上的表现
+        recall: 83.5
+        f-measure: 87.2
+    Character region awareness for text detection:
+      Total-Text: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 87.6   # 该模型在不同metric上的表现
+        recall: 79.9
+        f-measure: 83.6
+      ICDAR 2015:
+        precision: 89.8   # 该模型在不同metric上的表现
+        recall: 84.3
+        f-measure: 86.9
+      MSRA-TD500:
+        precision: 88.2 # 该模型在不同metric上的表现
+        recall: 78.2
+        f-measure: 82.9
+        FPS: 8.6
+    Towards robust curve text detection with conditional spatial expansion:
+      Total-Text: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 81.4  # 该模型在不同metric上的表现
+        recall: 79.1
+        f-measure: 80.2
+    Shape robust text detection with progressive scale expansion network:
+      Total-Text: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 84.0  # 该模型在不同metric上的表现
+        recall: 78.0
+        f-measure: 80.9
+        FPS: 3.9
+      CTW1500:
+        precision: 84.8  # 该模型在不同metric上的表现
+        recall: 79.7
+        f-measure: 82.2
+        FPS: 3.9
+      ICDAR 2015:
+        precision: 86.9   # 该模型在不同metric上的表现
+        recall: 84.5
+        f-measure: 85.7
+        FPS: 1.6
+    Curved scene text detection via transverse and longitudinal sequence connection:
+      Total-Text: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 77.4  # 该模型在不同metric上的表现
+        recall: 69.8
+        f-measure: 73.4
+        FPS: 13.3
+    Learning shape-aware embedding for scene text detection:
+      CTW1500:
+        precision: 82.7  # 该模型在不同metric上的表现
+        recall: 77.8
+        f-measure: 80.1
+        FPS: 3
+      ICDAR 2015:
+        precision: 88.3  # 该模型在不同metric上的表现
+        recall: 85.0
+        f-measure: 86.6
+      MSRA-TD500:
+        precision: 84.2 # 该模型在不同metric上的表现
+        recall: 81.7
+        f-measure: 82.9
+    Detecting text in natural image with connectionist text proposal network:
+      ICDAR 2015:
+        precision: 74.2  # 该模型在不同metric上的表现
+        recall: 51.6
+        f-measure: 60.9
+        FPS: 7.1
+      CTW1500: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 60.4      # 该模型在不同metric上的表现
+        recall: 53.8
+        f-measure: 56.9
+        FPS: 7.14
+    EAST- an efficient and accurate scene text detector:
+      ICDAR 2015:
+        precision: 83.6  # 该模型在不同metric上的表现
+        recall: 73.5
+        f-measure: 78.2
+        FPS: 13.2
+      CTW1500: # 数据集名称，与数据集yaml文件命名格式相同
+        precision: 78.7    # 该模型在不同metric上的表现
+        recall: 49.1
+        f-measure: 60.4
+        FPS: 21.2
+    Single shot text detector with regional attention:
+      ICDAR 2015:
+        precision: 80.2  # 该模型在不同metric上的表现
+        recall: 73.9
+        f-measure: 76.9
+        FPS: 7.7
+    Wordsup- Exploiting word annotations for character based text detection:
+      ICDAR 2015:
+        precision: 79.3   # 该模型在不同metric上的表现
+        recall: 77
+        f-measure: 78.2
+    Multioriented scene text detection via corner localization and region segmentation:
+      ICDAR 2015:
+        precision: 94.1    # 该模型在不同metric上的表现
+        recall: 70.7
+        f-measure: 80.7
+        FPS: 3.6
+      MSRA-TD500:
+        precision: 87.6 # 该模型在不同metric上的表现
+        recall: 76.2
+        f-measure: 81.5
+        FPS: 5.7
+      MLT-2017:
+        precision: 83.8      # 该模型在不同metric上的表现
+        recall: 55.6
+        f-measure: 66.8
+    Textboxes++- A singleshot oriented scene text detector:
+      ICDAR 2015:
+        precision: 87.2    # 该模型在不同metric上的表现
+        recall: 76.7
+        f-measure: 81.7
+        FPS: 11.6
+    Rotationsensitive regression for oriented scene text detection:
+      ICDAR 2015:
+        precision: 87.2    # 该模型在不同metric上的表现
+        recall: 76.7
+        f-measure: 81.7
+        FPS: 11.6
+      MSRA-TD500:
+        precision: 87 # 该模型在不同metric上的表现
+        recall: 73
+        f-measure: 79
+        FPS: 10
+    Learning markov clustering networks for scene text detection:
+      ICDAR 2015:
+        precision: 72   # 该模型在不同metric上的表现
+        recall: 80
+        f-measure: 76
+      MSRA-TD500:
+        precision: 88 # 该模型在不同metric上的表现
+        recall: 79
+        f-measure: 83
+    Scene text detection with supervised pyramid context network:
+      ICDAR 2015:
+        precision: 88.7   # 该模型在不同metric上的表现
+        recall: 85.8
+        f-measure: 87.2
+    Text-attentional convolutional neural network for scene text detection:
+      MSRA-TD500:
+        precision: 71 # 该模型在不同metric上的表现
+        recall: 61
+        f-measure: 69
+    Deep direct regression for multi-oriented scene text detection:
+      MSRA-TD500:
+        precision: 77 # 该模型在不同metric上的表现
+        recall: 70
+        f-measure: 74
+        FPS: 1.1
+    Arbitrary-oriented scene text detection via rotation proposal:
+      MSRA-TD500:
+        precision: 82 # 该模型在不同metric上的表现
+        recall: 68
+        f-measure: 74
+    Pixellink- Detecting scene text via instance segmentation:
+      MSRA-TD500:
+        precision: 83 # 该模型在不同metric上的表现
+        recall: 73.2
+        f-measure: 77.8
+        FPS: 3
+    Accurate scene text detection through border semantics awareness and bootstrapping:
+      MSRA-TD500:
+        precision: 83.0 # 该模型在不同metric上的表现
+        recall: 77.4
+        f-measure: 80.1
+    MSR- multi-scale shape regression for scene text detection:
+      MSRA-TD500:
+        precision: 73.8 # 该模型在不同metric上的表现
+        recall: 68.2
+        f-measure: 70.9
+key_words:                # 关键字，参照Abstract后的key words，没有则不填写内容
+citation_papers:          # TODO 改论文所引用的文献列表，暂时不需要这部分信息
+# 对应原论文中 abstract 内容，英文
+abstract: "Recently, segmentation-based methods are quite popular in scene 
+text detection, as the segmentation results can more accurately describe 
+scene text of various shapes such as curve text. However, the post-processing 
+of binarization is essential for segmentation-based detection, which converts
+ probability maps produced by a segmentation method into bounding boxes/regions 
+ of text. In this paper, we propose a module named Differentiable Binarization
+  (DB), which can perform the binarization process in a segmentation network. 
+  Optimized along with a DB module, a segmentation network can adaptively 
+  set the thresholds for binarization, which not only simplifies the 
+  post-processing but also enhances the performance of text detection. 
+  Based on a simple segmentation network, we validate the performance 
+  improvements of DB on five benchmark datasets, which consistently achieves 
+  state-of-the-art results, in terms of both detection accuracy and speed. 
+  In particular, with a light-weight backbone, the performance improvements 
+  by DB are significant so that we can look for an ideal tradeoff between 
+  detection accuracy and efficiency. Specifically, with a backbone of ResNet-18, 
+  our detector achieves an F-measure of 82.8, running at 62 FPS, on the 
+  MSRA-TD500 dataset. Code is available at: https://github.com/MhLiao/DB."
+
+# 对应改论文的引用格式，可从google scholar上直接获取
+citation_string: "Liao M, Wan Z, Yao C, et al. Real-time scene text detection with differentiable binarization[C]//Proceedings of the AAAI conference on artificial intelligence. 2020, 34(07): 11474-11481."

@@ -1,0 +1,103 @@
+abbreviation: DPR             
+domain:                   
+  - NLP
+  - QA
+task: 
+  - Multiple open-domain QA              
+paper:
+  title: Dense Passage Retrieval for Open-Domain Question Answering  
+  authors:                
+  - Vladimir Karpukhin
+  - Barlas Oguz
+  - Sewon Min
+  organization:          
+  - Facebook AI
+  - Facebook AI
+  - University of Washington
+  publish_year: 2020      
+  volume: EMNLP 2020
+  press: EMNLP            
+  pages: None       
+  download_url: https://arxiv.org/abs/2004.04906
+  doi: 
+  citation_number: 791     
+code: https://github.com/facebookresearch/DPR                   
+performance:              
+  dataset:               
+    Natural Questions:     
+      Accuracy: "41.5"      
+    TriviaQA:                 
+      Accuracy: "56.8"     
+    WebQuestions:
+      Accuracy: "42.4"
+    CuratedTREC:
+      Accuracy: "49.4"
+    SQuAD v1.1:
+      Accuracy: "24.1"
+  BM25+BERT:               
+    "Latent retrieval for weakly supervised open domain question answering":
+      Natural Questions:     
+        Accuracy: "26.5"      
+      TriviaQA:                 
+        Accuracy: "47.1"      
+      WebQuestions:
+        Accuracy: "17.7"
+      CuratedTREC:
+        Accuracy: "21.3"
+      SQuAD v1.1:
+        Accuracy: "33.2"
+  ORQA:
+    "Latent retrieval for weakly supervised open domain question answering":
+      Natural Questions:     
+        Accuracy: "33.3"      
+      TriviaQA:                 
+        Accuracy: "45.0"      
+      WebQuestions:
+        Accuracy: "36.7"
+      CuratedTREC:
+        Accuracy: "30.1"
+      SQuAD v1.1:
+        Accuracy: "20.2"
+  HardEM:
+    "A discrete hard EM approach for weakly supervised question answering":
+      Natural Questions:     
+        Accuracy: "28.1"      
+      TriviaQA:                 
+        Accuracy: "50.9"
+  GraphRetriever:        
+    "Knowledge guided text retrieval and reading for open domain question answering":
+      Natural Questions:     
+        Accuracy: "34.5"      
+      TriviaQA:               
+        Accuracy: "56.0"      
+      WebQuestions:
+        Accuracy: "36.4"
+  PathRetriever:
+    "Learning to retrieve reasoning paths over Wikipedia graph for question answering":
+      Natural Questions:     
+        Accuracy: "32.6"      
+      SQuAD v1.1:
+        Accuracy: "56.5"
+  REALMWiki:
+    "REALM: Retrieval-augmented language model pre-training":
+      Natural Questions:    
+        Accuracy: "39.2"     
+      WebQuestions:
+        Accuracy: "40.2"
+      CuratedTREC:
+        Accuracy: "44.8"
+  REALMNews:
+    "REALM: Retrieval-augmented language model pre-training":
+      Natural Questions:    
+        Accuracy: "40.4"     
+      WebQuestions:
+        Accuracy: "40.7"
+      CuratedTREC:
+        Accuracy: "42.9"
+
+key_words:                
+citation_papers:         
+
+abstract: "Open-domain question answering relies on efficient passage retrieval to select candidate contexts, where traditional sparse vector space models, such as TF-IDF or BM25, are the de facto method. In this work, we show that retrieval can be practically implemented using dense representations alone, where embeddings are learned from a small number of questions and passages by a simple dualencoder framework. When evaluated on a wide range of open-domain QA datasets, our dense retriever outperforms a strong LuceneBM25 system greatly by 9%-19% absolute in terms of top-20 passage retrieval accuracy, and helps our end-to-end QA system establish new state-of-the-art on multiple open-domain QA benchmarks."
+
+citation_string: "Karpukhin V, Oğuz B, Min S, et al. Dense passage retrieval for open-domain question answering[J]. arXiv preprint arXiv:2004.04906, 2020."

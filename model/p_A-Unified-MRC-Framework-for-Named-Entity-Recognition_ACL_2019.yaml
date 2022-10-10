@@ -1,0 +1,197 @@
+abbreviation: MRC 
+citation_papers: 
+code: https://github.com/ShannonAI/mrc-for-flat-nested-ner
+domain:
+  - NLP
+introduction: This thesis addresses the problem of nested NER. Previous work has focused on non-nested NERs (flat NER), but there are problems when nested NERs are encountered.
+introduction_url: https://blog.csdn.net/akon_wang_hkbu/article/details/106800321
+keywords: 
+paper:
+  authors:
+  - Xiaoya Li
+  - Jingrong Feng
+  - Yuxian Meng
+  - Qinghong Han
+  - Fei Wu
+  - Jiwei Li
+  organization:
+  - Shannon.AI
+  - Shannon.AI
+  - Shannon.AI
+  - Shannon.AI
+  - Department of Computer Science and Technology, Zhejiang University
+  - Shannon.AI
+  citation_number: 45
+  doi: null
+  download_url: https://arxiv.org/abs/1910.11476
+
+  pages: arXiv--1910
+  press: arXiv
+  publish_year: 2019
+  title: A Unified MRC Framework for Named Entity Recognition
+  volume: None
+performance:
+  dataset:
+    ACE 2004:
+      F1: 85.98
+      Precision: 85.05
+      Rrecall: 86.32
+    ACE 2005:
+      F1: 86.88
+      Precision: 87.16
+      Rrecall: 86.59
+    CoNLL 2003:
+      F1: 93.04
+      Precision: 92.33
+      Rrecall: 94.61
+    GENIA:
+      F1: 83.75
+      Precision: 85.18
+      Rrecall: 81.12
+    KBP 2017:
+      F1: 80.97
+      Precision: 82.33
+      Rrecall: 77.61
+    MSRA:
+      F1: 95.75
+      Precision: 96.18
+      Rrecall: 95.12
+    OntoNotes 4.0:
+      F1: 82.11
+      Precision: 82.98
+      Rrecall: 81.25
+    OntoNotes 5.0:
+      F1: 91.11
+      Precision: 92.98
+      Rrecall: 89.95
+  baseline:
+    Nested Named Entity Recognition Revisited:
+      ACE 2004:
+        F1: 72.7
+        Precision: 73.6
+        Rrecall: 71.8
+      ACE 2005:
+        F1: 70.5
+        Precision: 70.6
+        Rrecall: 70.4
+      GENIA:
+        F1: 74.6
+        Precision: 77.7
+        Rrecall: 71.8
+    Neural Segmental Hypergraphs for Overlapping Mention Recognition:
+      ACE 2004:
+        F1: 75.1
+        Precision: 78.0
+        Rrecall: 72.4
+      ACE 2005:
+        F1: 74.5
+        Precision: 76.8
+        Rrecall: 72.3
+    Neural Architectures for Nested NER through Linearization:
+      ACE 2004:
+        F1: 84.40
+      ACE 2005:
+        F1: 84.33
+      GENIA:
+        F1: 78.31
+    Nested Named Entity Recognition via Second-best Sequence Learning and Decoding:
+      ACE 2004:
+        F1: 82.81
+        Precision: 83.73
+        Rrecall: 81.91   
+      ACE 2005:
+        F1: 82.70
+        Precision: 82.98
+        Rrecall: 82.42
+      GENIA:
+        F1: 77.25
+        Precision: 78.07
+        Rrecall: 76.45     
+    A General Framework for Information Extraction using Dynamic Span Graphs:
+      ACE 2004:
+        F1: 84.7
+      ACE 2005:
+        F1: 82.9    
+      GENIA:
+        F1: 76.2
+    "Sequence-to-Nuggets: Nested Entity Mention Detection via Anchor-Region Networks":
+      ACE 2005:
+        F1: 74.9
+        Precision: 76.2
+        Rrecall: 73.6
+      GENIA:
+        F1: 74.8
+        Precision: 75.8
+        Rrecall: 73.9 
+      KBP 2017:
+        F1: 74.6
+        Precision: 77.7
+        Rrecall: 71.8
+    "Merge and Label: A novel neural network architecture for nested Networks":
+      ACE 2005:
+        F1: 82.4
+        Precision: 82.7
+        Rrecall: 82.1    
+    Overview of TAC-KBP2017 13 Languages Entity Discovery and Linking:
+      KBP 2017:
+        F1: 72.8
+        Precision: 76.2
+        Rrecall: 73.0  
+    End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF:
+      CoNLL 2003:
+        F1: 91.03
+      OntoNotes 5.0:
+        F1: 86.28
+        Precision: 86.04
+        Rrecall: 86.53
+    Deep contextualized word representations:
+      CoNLL 2003:
+        F1: 92.22    
+    Semi-supervised sequence modeling with cross-view training:
+      CoNLL 2003:
+        F1: 92.6
+      OntoNotes 5.0:
+        F1: 88.8    
+    "Bert: Pre-training of deep bidirectional transformers for language understanding":
+      CoNLL 2003:
+        F1: 92.8
+      OntoNotes 5.0:
+        F1: 89.16
+        Precision: 90.01
+        Rrecall: 88.35   
+      MSRA:
+        F1: 94.80
+        Precision: 94.97
+        Rrecall: 94.62
+      OntoNotes 4.0:
+        F1: 79.16
+        Precision: 78.01
+        Rrecall: 80.35
+    Fast and accurate entity recognition with iterated dilated convolutions:
+      OntoNotes 5.0:
+        F1: 86.84  
+    Chinese ner using lattice lstm:
+      MSRA:
+        F1: 93.18
+        Precision: 93.57
+        Rrecall: 92.79  
+      OntoNotes 4.0:
+        F1: 73.88
+        Precision: 76.35
+        Rrecall: 71.56
+    "Glyce: Glyph-vectors for chinese character representations":
+      MSRA:
+        F1: 95.54
+        Precision: 95.57
+        Rrecall: 95.51  
+      OntoNotes 4.0:
+        F1: 81.63
+        Precision: 81.87
+        Rrecall: 81.40  
+
+task:
+- Named entity identification
+
+abstract: "The task of named entity recognition (NER) is normally divided into nested NER and flat NER depending on whether named entities are nested or not. Models are usually separately developed for the two tasks, since sequence labeling models are only able to assign a single label to a particular token, which is unsuitable for nested NER where a token may be assigned several labels. In this paper, we propose a unified framework that is capable of handling both flat and nested NER tasks. Instead of treating the task of NER as a sequence labeling problem, we propose to formulate it as a machine reading comprehension (MRC) task. For example, extracting entities with the PER(PERSON) label is formalized as extracting answer spans to the question “which person is mentioned in the text”.This formulation naturally tackles the entity overlapping issue in nested NER: the extraction of two overlapping entities with different categories requires answering two independent questions. Additionally, since the query encodes informative prior knowledge, this strategy facilitates the process of entity extraction, leading to better performances for not only nested NER, but flat NER. We conduct experiments on both nested and flat NER datasets. Experiment results demonstrate the effectiveness of the proposed formulation. We are able to achieve a vast amount of performance boost over current SOTA models on nested NER datasets, i.e., +1.28, +2.55, +5.44, +6.37,respectively on ACE04, ACE05, GENIA and KBP17, as well as flat NER datasets, i.e., +0.24, +1.95, +0.21, +1.49 respectively on English CoNLL 2003, English OntoNotes 5.0, Chinese MSRA and Chinese OntoNotes 4.0. The code and datasets can be found at https://github.com/ShannonAI/ mrc-for-flat-nested-ner. "
+
+citation_string: "Li X, Feng J, Meng Y, et al. A unified MRC framework for named entity recognition[J]. arXiv preprint arXiv:1910.11476, 2019."

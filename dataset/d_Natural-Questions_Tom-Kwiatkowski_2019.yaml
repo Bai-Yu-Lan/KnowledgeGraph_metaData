@@ -1,0 +1,27 @@
+description: The dataset is derived from real, anonymous aggregated query information on the Google search engine. The dataset retrieves the Wikipedia pages in the top 5 search results for each question, and if there is a long answer (usually a paragraph) or a short answer (one or more entities) on the page, record this answer, if not, mark it is null. The dataset includes 307373 training examples with single annotation, 7830 5-annotated examples with development data, and another 7842 5-annotated examples as test data.
+download_url: https://ai.google.com/research/NaturalQuestions
+name: Natural Questions
+papers: 'Natural Questions: a Benchmark for Question Answering Research'
+supporter:
+- Tom Kwiatkowski
+- Jennimaria Palomaki
+- Olivia Redfield
+- Michael Collins
+- Ankur Parikh
+- Chris Alberti
+- Danielle Epstein
+- Illia Polosukhin
+- Jacob Devlin
+- Kenton Lee
+- Kristina Toutanova
+- Llion Jones
+- Matthew Kelcey
+- Ming-Wei Chang
+- Andrew M. Dai
+- Jakob Uszkoreit
+- Quoc Le
+- Slav Petrov
+task:
+- Question Answering
+update_time: 2019
+log_file: "NaturalQuestions.png"

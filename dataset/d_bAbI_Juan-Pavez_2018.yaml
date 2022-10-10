@@ -1,0 +1,19 @@
+name: bAbI
+download_url: https://research.fb.com/downloads/babi/
+description: "The dataset consists of 20 different tasks. Each task 
+was designed to test different reasoning skills, such as reasoning, 
+induction, and co-referential judgment. Each sample consists of a 
+question, an answer, and a set of facts. There are two versions of 
+the dataset, representing different dataset sizes: BABI-1K and BABI-10K. 
+The BABI-10K dataset consists of 10,000 training samples per task."
+
+supporter:
+  - Juan Pavez
+  - Hector Allende
+  - Hector Allende-Cid
+update_time: 2018
+papers: "Working Memory Networks: Augmenting Memory Networks with a Relational Reasoning Module"
+task:
+  - Question Answering
+logo_file:
+

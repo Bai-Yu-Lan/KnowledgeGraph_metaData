@@ -1,0 +1,16 @@
+description: "WiC is a binary classification task. Each instance in WiC has a 
+target word, which is a verb or noun, and the dataset provides two contexts 
+for each target word. The task is to determine whether the occurrence of 
+target words in both contexts corresponds to the same meaning."
+
+download_url: https://pilehvar.github.io/wic/
+name: WiC
+papers: 'WiC: the Word-in-Context Datasetfor Evaluating Context-Sensitive Meaning
+  Representations'
+supporter:
+- Mohammad Taher Pilehvar
+- Jose Camacho-Collados
+task:
+- Word embeddings
+update_time: 2019
+logo_file: "WiC.png"

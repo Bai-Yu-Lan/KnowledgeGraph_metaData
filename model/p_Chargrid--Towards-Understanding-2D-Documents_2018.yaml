@@ -1,0 +1,40 @@
+abbreviation: Chargrid
+domain:
+- NLP
+task:
+- Information Extraction
+paper:
+  title: 'Chargrid: Towards Understanding 2D Documents'
+  authors:
+  - Anoop R Katti
+  - Christian Reisswig
+  - Cordula Guder
+  - Sebastian Brarda
+  - Steffen Bickel
+  - Johannes Hohne
+  - Jean Baptiste Faddoul
+  organization:
+  - SAP SE Machine Learning R&D, Berlin Germany
+  publish_year: 2018
+  volume: EMNLP-2018
+  pages: 4459-4469
+  press: Association for Computational Linguistics
+  download_url: https://www.aclweb.org/anthology/D18-1476/
+  doi: null
+  citation_number: 61
+code: https://github.com/antoinedelplace/Chargrid
+performance:
+  dataset:
+    SROIE:
+      Invoice Amount: 80.14
+      Invoice Date: 84.28
+      Invoice Number: 82.49
+      Line-item Amount: 64.53
+      Line-item Description: 48.81
+      Line-item Quantity: 64.59
+      Vendor Address: 36.83
+      Vendor Name: 34.27
+keywords: null
+citation_papers: null
+abstract: We introduce a novel type of text representation that preserves the 2D layout of a document. This is achieved by encoding each document page as a two-dimensional grid of characters. Based on this representation, we present a generic document understanding pipeline for structured documents. This pipeline makes use of a fully convolutional encoder-decoder network that predicts a segmentation mask and bounding boxes. We demonstrate its capabilities on an information extraction task from invoices and show that it significantly outperforms approaches based on sequential text or document images.
+abstract: null

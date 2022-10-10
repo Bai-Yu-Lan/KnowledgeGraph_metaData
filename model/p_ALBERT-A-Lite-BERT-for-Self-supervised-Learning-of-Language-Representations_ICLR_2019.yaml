@@ -1,0 +1,122 @@
+abbreviation: ALBERT
+citation_papers: 
+code: https://github.com/google-research/ALBERT
+domain:
+  - NLP
+introduction: "When pre-training natural language representations, increasing the model size is generally possible to improve the performance of the model in downstream tasks. However, further increasing the model size will encounter the following difficulties: (1) insufficient GPU/TPU memory (2) training time will be longer (3) model degradation. To address these problems, this paper proposes two parameter streamlining techniques to reduce memory consumption and speed up the training of BERT. In addition, this paper introduces a self-supervised loss for modelling sentence coherence and demonstrates that this loss function can improve the performance of downstream tasks with multiple sentences as input."
+
+introduction_url: https://blog.csdn.net/ljp1919/article/details/101680220
+keywords: 
+paper:
+  authors:
+  - Zhenzhong Lan
+  - Mingda Chen
+  - Sebastian Goodman
+  - Kevin Gimpel
+  - Piyush Sharma
+  - Radu Soricut
+  citation_number: 1093
+  doi: 
+  download_url: https://openreview.net/forum?id=H1eA7AEtvS
+  organization:
+  - Google Research
+  - Toyota Technological Institute at Chicago
+  - Google Research
+  - Toyota Technological Institute at Chicago
+  - Google Research
+  - Google Research
+  pages: None
+  press: International Conference on Learning Representations
+  publish_year: 2019
+  title: 'ALBERT: A Lite BERT for Self-supervised Learning of Language Representations'
+  volume: ICLR-2020
+performance:
+  dataset:
+    GLUE:
+      CoLA: 71.4
+      MNLI: 90.8
+      MRPC: 90.9
+      QNLI: 95.3
+      QQP: 92.2
+      RTE: 89.2
+      SST-2: 96.9
+      STS-B: 93.0
+    RACE:
+      Accuracy: 89.4
+      High: 88.6
+      Middle: 91.2
+    SQuAD v1.1:
+      EM: 90.1
+      F1: 95.5
+    SQuAD v2.0:
+      EM: 89.7
+      F1: 92.2
+  baseline:
+    "BERT: Pre-training of deep bidirectional transformers for language understanding.":
+      GLUE:
+        CoLA: 60.6
+        MNLI: 86.6
+        MRPC: 88.0
+        QNLI: 92.3
+        QQP: 91.3
+        RTE: 70.4
+        SST-2: 93.2
+        STS-B: 90.0
+      RACE:
+        Accuracy: 72.0
+        High: 70.1
+        Middle: 76.6
+      SQuAD v1.1:
+        EM: 84.1
+        F1: 90.9
+      SQuAD v2.0:
+        EM: 86.3
+        F1: 89.1    
+    "XLNet: Generalized autoregressive pretraining for language understanding.":
+      GLUE:
+        CoLA: 63.6
+        MNLI: 89.8
+        MRPC: 89.2
+        QNLI: 93.9
+        QQP: 91.8
+        RTE: 83.8
+        SST-2: 95.6
+        STS-B: 91.8
+      RACE:
+        Accuracy: 81.8
+        High: 80.2
+        Middle: 85.5
+      SQuAD v1.1:
+        EM: 89.0
+        F1: 94.5
+      SQuAD v2.0:
+        EM: 86.3
+        F1: 89.1      
+    "RoBERTa: A robustly optimized BERT pretraining approach":
+      GLUE:
+        CoLA: 68.0
+        MNLI: 90.2
+        MRPC: 90.9
+        QNLI: 94.7
+        QQP: 92.2
+        RTE: 86.6
+        SST-2: 96.4
+        STS-B: 92.4
+      RACE:
+        Accuracy: 83.2
+        High: 81.3
+        Middle: 86.5
+      SQuAD v1.1:
+        EM: 88.9
+        F1: 94.6
+      SQuAD v2.0:
+        EM: 86.8
+        F1: 89.8  
+
+task:
+ - Natural language inference
+
+
+abstract: "Increasing model size when pretraining natural language representations often results in improved performance on downstream tasks. However, at some point further model increases become harder due to GPU/TPU memory limitations and longer training times. To address these problems, we present two parameterreduction techniques to lower memory consumption and increase the training speed of BERT (Devlin et al., 2019). Comprehensive empirical evidence shows that our proposed methods lead to models that scale much better compared to the original BERT. We also use a self-supervised loss that focuses on modeling inter-sentence coherence, and show it consistently helps downstream tasks with multi-sentence inputs. As a result, our best model establishes new state-of-the-art results on the GLUE, RACE, and SQuAD benchmarks while having fewer parameters compared to BERT-large. The code and the pretrained models are available at https://github.com/google-research/ALBERT."
+
+citation_string: "Lan Z, Chen M, Goodman S, et al. Albert: A lite bert for self-supervised learning of language representations[J]. arXiv preprint arXiv:1909.11942, 2019."

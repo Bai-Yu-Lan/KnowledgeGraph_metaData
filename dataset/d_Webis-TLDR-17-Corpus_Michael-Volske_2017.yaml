@@ -1,0 +1,16 @@
+description: "This dataset contains 3 million pairs of articles and 
+summaries mined from Reddit. It is the first large-scale summary 
+dataset from the social media domain."
+
+download_url: https://zenodo.org/record/1168855#.X_59YTSwNPY
+name: Webis-TLDR-17 Corpus
+papers: 'TL;DR: Mining Reddit to Learn Automatic Summarization'
+supporter:
+- Michael Volske
+- Martin Potthast
+- Shahbaz Syed
+- Benno Stein
+task:
+- Text Summary
+update_time: 2017
+logo_file: "Webis-TLDR-17-Corpus.png"
