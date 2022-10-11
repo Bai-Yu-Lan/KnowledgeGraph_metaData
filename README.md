@@ -1,4 +1,6 @@
 # KnowledgeGraph_metaData
-The yaml files of meta data in knowledge graph 
+This repository the preserves meta data in knowledge graph.
 
-Try to add auto-update function
+Now auto-update function is available. 
+
+Corresponding shell file is saved in aliyun server.
