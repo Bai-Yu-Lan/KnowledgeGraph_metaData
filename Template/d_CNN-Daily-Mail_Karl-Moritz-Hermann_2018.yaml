@@ -1,0 +1,18 @@
+# 上传新数据集时所需要的信息以及格式要求
+# 字段内容使用英文填写
+# 缺失字段直接空着
+
+name: CNN / Daily Mail      # 名称中如果出现特殊符号如 / \ # @ ! 在前后各留一个空格
+download_url: http://cs.nyu.edu/~kcho/DMQA/ # 下载该数据集的链接
+supporter:
+  - Karl Moritz Hermann     # 注意人名前的 - 符号与人名之间必须有一个空格
+update_time: 2015           # 4位阿拉伯数字记录年份信息
+papers: Teaching Machines to Read and Comprehend # 所对应的论文名称，以PDF格式论文中的标题为准
+task: 
+  - Text Summary            # 由上传者自己定义，注意 - 后必须有一个空格
+  
+# description 对应内容应是对于该数据集的英文描述信息，可以是数据集出处的描述，也可以收集者自己添加的描述内容。
+description: 数据集包含在线新闻文章（平均781个单词）和多句摘要（平均3.75句或56个单词），处理后形成287226对训练集，13368对验证集，11490对测试集。
+
+# logo_file 需要尽可能地为每个数据集增加一个 logo 图片, 并记录完整的图片存储名称
+logo_file:  "CNN-Daily-Mail.png" # 记录数据集对应logo文件的名称，不存在对应的logo图片则内容为空 

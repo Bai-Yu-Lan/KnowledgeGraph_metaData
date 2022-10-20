@@ -38,23 +38,22 @@ performance:
         F1: "94.9"
       SEO:
         F1: "96.8"
-  GraphRel1p:               
+  baseline:               
     "Graphrel: Modeling textas relational graphs for joint entity and relation extraction":
       NYT:
         Normal:
-          F1: "67.4"      
+          F1: "67.4"
         EPO:
           F1: "56.5"
         SEO:
           F1: "49.9"
       WebNLG:
         Normal:
-          F1: "62.7"      
+          F1: "62.7"
         EPO:
           F1: "39.5"
         SEO:
-          F1: "36.4"
-  GraphRel2p:               
+          F1: "36.4"           
     "Graphrel: Modeling textas relational graphs for joint entity and relation extraction":  
       NYT:
         Normal:
@@ -69,8 +68,7 @@ performance:
         EPO:
           F1: "40.6"
         SEO:
-          F1: "38.3"
-  HBT:               
+          F1: "38.3"            
     "A novel hierarchical binary tagging framework for joint extraction of entities and relations":  
       NYT:
         Normal:

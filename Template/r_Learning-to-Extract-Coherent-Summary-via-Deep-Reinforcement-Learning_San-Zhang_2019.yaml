@@ -1,0 +1,14 @@
+# 个人用户上传所复现的论文结果时所需要的信息以及格式要求
+
+user_name: San Zhang        # 上传该复现结果的用户名称，如张三记作 San Zhang，王二狗记作 Ergou Wang
+update_time: 2019           # 该复现结果上传时间，四位数阿拉伯数字表示年份
+re_model_info:              # 所复现的模型信息
+  abbreviation:             # 论文中提出模型的缩写，全大写字母表示，若没有则空过
+  title: Learning to Extract Coherent Summary via Deep Reinforcement Learning       # 所对应的论文名称，以PDF格式论文中的标题为准
+  code_url: https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16838/16118   # 复现代码的下载地址
+re_performance:             # 记录复现结果的信息，与论文信息中performance中格式保持一致
+  dataset:                  # 字段名就是 dataset
+    CNN / Daily Mail:       # 使用的数据集名称
+      ROUGE-1: xxxx
+      ROUGE-2: xxxx
+      ROUGE-L: xxxx

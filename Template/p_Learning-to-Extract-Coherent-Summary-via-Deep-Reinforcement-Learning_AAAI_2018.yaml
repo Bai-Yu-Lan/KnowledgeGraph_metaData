@@ -1,0 +1,89 @@
+# 论文作者上传该论文有关的数据时所需要的信息以及格式要求
+# 所有字段内容使用英文填写
+# 缺失值直接空过
+
+abbreviation:             # 论文中提出模型的缩写，全大写字母表示，若没有则空过
+domain:                   # 对应领域，全大写， - 后必须有一个空格
+  - domain1
+  - domain2
+task: 
+  - Text Summary          # 由上传者自己定义，注意 - 后必须有一个空格
+paper:
+  title: Learning to Extract Coherent Summary via Deep Reinforcement Learning   # 所对应的论文名称，以PDF格式论文中的标题为准
+  authors:                # 论文作者，以论文中作者名称为准 注意- 符号后有一个空格
+  - Yuxiang Wu
+  - Baotian Hu
+  organization:           # 作者所属机构，需要与作者数量对应 注意- 符号后有一个空格
+  - Hong Kong University of Science and Technology
+  - University of Massachusetts Medical School
+  publish_year: 2018      # 论文发表时间，四位数阿拉伯数字表示年份
+  volume: AAAI-18         
+  press: AAAI             # 会议/期刊缩写，全大写
+  pages: 5602--5609       # 对应页码，使用 [start_page]--[end_page]表示，如 5602--5609
+  download_url: https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16838/16118
+  doi:                    # 论文的DOI号，可为空
+  citation_number: 58     # 截至上传该信息的时候改论文的引用数量
+code: https://github.com/     # 下载作者公开的该论文对应开源代码的链接，若不存在则使用None代替
+performance:              # 记录改论文中模型的表现
+  # 记录模型表现时，若存在多级metric记录，请参照ReadMe中2.2.1部分的格式进行记录
+  dataset:                  # 字段名称就是dataset
+    CNN / Daily Mail:       # 数据集名称，与数据集yaml文件命名格式相同
+      ROUGE-1: "41.25"      # 该模型在不同metric上的表现
+      ROUGE-2: "18.87"
+      ROUGE-L: "37.75"
+    AABB:                   # 数据集名称，与数据集yaml文件命名格式相同
+      ROUGE-1: "41.25"      # 该模型在不同metric上的表现
+      ROUGE-2: "18.87"
+      ROUGE-L: "37.75"
+
+  baseline:                   # 字段名为baseline，记录论文中所对比的不同Baseline模型以及他们的表现  
+    "Graphrel: Modeling textas relational graphs for joint entity and relation extraction":  # baseline对应论文title
+      NYT:
+        Normal:               # 包含多个子实验时分级
+          F1: "69.6"      
+        EPO:
+          F1: "58.2"
+        SEO:
+          F1: "51.2"
+      WebNLG:
+        Normal:
+          F1: "65.8"      
+        EPO:
+          F1: "40.6"
+        SEO:
+          F1: "38.3"
+    baseline_paper_name2:       # 该 Baseline 模型对应的论文title，论文title格式与上文做相同规定
+      dataset1:                 # 在该baseline模型上使用的数据集名称
+        metric_name1: xx        # 该baseline模型在不同metric上的表现
+        metric_name2: xx
+        metric_name2: xx
+      dataset2:
+        metric_name1: xx
+        metric_name2: xx
+        metric_name3: xx
+key_words:                      # 关键字，参照Abstract后的key words，没有则不填写内容
+  - Deep Reinforcement Learning
+citation_papers:                # 改论文所引用的文献列表，暂时不需要这部分信息
+  - paper1                      # 论文标题，与上文中论文题目格式相同
+  - paper2
+
+# 对应原论文中 abstract 内容，英文
+abstract: "Coherence plays a critical role in producing a high-quality summary from a document. 
+In recent years, neural extractive summarization is becoming increasingly attractive. 
+However, most of them ignore the coherence of summaries when extracting sentences. 
+As an effort towards extracting coherent summaries, we propose a neural coherence 
+model to capture the cross-sentence semantic and syntactic coherence patterns. The 
+proposed neural coherence model obviates the need for feature engineering and can 
+be trained in an end-to-end fashion using unlabeled data. Empirical results show 
+that the proposed neural coherence model can efficiently capture the cross-sentence 
+coherence patterns. Using the combined output of the neural coherence model and 
+ROUGE package as the reward, we design a reinforcement learning method to train 
+a proposed neural extractive summarizer which is named Reinforced Neural Extractive 
+Summarization (RNES) model. The RNES model learns to optimize coherence and informative 
+importance of the summary simultaneously. The experimental results show that the 
+proposed RNES outperforms existing baselines and achieves state-of-the-art performance 
+in term of ROUGE on CNN/Daily Mail dataset. The qualitative evaluation indicates 
+that summaries produced by RNES are more coherent and readable."
+
+# 对应改论文的 GB/T 7714 引用格式，可从google scholar上直接获取
+citation_string: "Wu Y, Hu B. Learning to extract coherent summary via deep reinforcement learning[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2018, 32(1)."
