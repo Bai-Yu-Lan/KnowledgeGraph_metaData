@@ -33,3 +33,5 @@ Naming format: `r_[paper title]_[uploader name]_[update time(year)].yaml`
 Before you submit new data, please read the **`ReadMe.md` file in the `Template` folder** and check the contents of your file according to the template format.
 
 Details are described in the `Template` folder. Any questions, please contact me
+
+Please submit new data by Github pull request
